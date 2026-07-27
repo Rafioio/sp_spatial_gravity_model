@@ -19,8 +19,7 @@ def run_step(script_name: str) -> None:
 
 
 def main() -> None:
-    run_step("sidra_data.py")
-    run_step("economic_center.py")
+    run_step("population_weighted_centroid.py")
     run_step("gravity_model.py")
     print("\nFluxo concluído com sucesso!")
 

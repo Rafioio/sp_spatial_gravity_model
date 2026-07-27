@@ -1,13 +1,13 @@
 # SIDRA Spatial Gravity Model
 
-This project downloads economic data from SIDRA, aggregates it by São Paulo intermediate regions, geocodes the regions, and generates a flow matrix for a gravitational model.
+This project downloads municipality population data, geocodes São Paulo municipalities, computes population-weighted centroids for São Paulo intermediate regions, and generates a normalized flow matrix for a spatial gravity model.
 
 ## Project structure
 
-- `src/sidra_data.py` - fetches PIB data from SIDRA and saves it as JSON.
-- `src/economic_center.py` - geocodes the intermediate regions and joins them with PIB data.
-- `src/gravity_model.py` - generates the flow matrix instance file for the model.
-- `output/` - generated JSON and text files.
+- `src/population_weighted_centroid.py` - fetches IBGE municipality population and location data, geocodes municipalities with Nominatim, and calculates population-weighted centroids by intermediate region.
+- `src/gravity_model.py` - reads the generated centroid data and writes a normalized flow matrix instance file using a gravity model.
+- `main.py` - runs the full pipeline in sequence.
+- `output/` - stores generated JSON and text outputs.
 
 ## Requirements
 
@@ -27,12 +27,11 @@ python main.py
 
 This will execute, in order:
 
-1. `src/sidra_data.py`
-2. `src/economic_center.py`
-3. `src/gravity_model.py`
+1. `src/population_weighted_centroid.py`
+2. `src/gravity_model.py`
 
 ## Output files
 
-- `output/pib_regions_sp.json`
-- `output/pib_with_coordinates_sp.json`
-- `output/sp11_flow_only.txt`
+- `output/municipios_sp_coordenadas.json` - cached municipality coordinates.
+- `output/centroides_populacionais_sp.json` - population-weighted centroids by intermediate region.
+- `output/sp11_flow_only.txt` - gravity model flow matrix instance.
