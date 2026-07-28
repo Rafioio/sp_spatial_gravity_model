@@ -4,13 +4,7 @@ import time
 import pandas as pd
 import requests
 from geopy.geocoders import Nominatim
-
-from paths import (
-    ARQUIVO_BASE_MUNICIPIOS,
-    ARQUIVO_MUNICIPIOS_SP,
-    ARQUIVO_REGIOES_SP,
-    ensure_output_dir,
-)
+import paths
 
 
 def buscar_coordenadas_municipios(df_mun, arquivo_cache):
@@ -91,11 +85,11 @@ def calcular_centroide_ponderado(df_mun):
     return df_final
 
 if __name__ == "__main__":
-    ensure_output_dir()
+    paths.ensure_output_dir()
 
-    arquivo_base_mun = ARQUIVO_BASE_MUNICIPIOS
-    arquivo_cache_coord = ARQUIVO_MUNICIPIOS_SP
-    arquivo_saida = ARQUIVO_REGIOES_SP
+    arquivo_base_mun = paths.ARQUIVO_BASE_MUNICIPIOS
+    arquivo_cache_coord = paths.ARQUIVO_MUNICIPIOS_SP
+    arquivo_saida = paths.ARQUIVO_REGIOES_SP
 
     headers = {"User-Agent": "modelo_gravitacional_sp"}
 

@@ -3,8 +3,7 @@ import unicodedata
 
 import pandas as pd
 import requests
-
-from paths import ARQUIVO_MUNICIPIOS_SP, ARQUIVO_PLANILHA_AREA, ARQUIVO_REGIOES_SP
+import paths
 
 # Nome do campo que será adicionado nos JSONs.
 # ATENÇÃO: confirme a unidade da planilha do IBGE (km² ou ha) antes de usar
@@ -65,11 +64,11 @@ def ler_planilha_area(arquivo_planilha):
 
 
 def atualizar_municipios_sp(df_area, df_mapa):
-    if not os.path.exists(ARQUIVO_MUNICIPIOS_SP):
-        print(f"Aviso: {ARQUIVO_MUNICIPIOS_SP} não encontrado, pulando atualização de municípios.")
+    if not os.path.exists(paths.ARQUIVO_MUNICIPIOS_SP):
+        print(f"Aviso: {paths.ARQUIVO_MUNICIPIOS_SP} não encontrado, pulando atualização de municípios.")
         return None
 
-    df_municipios = pd.read_json(ARQUIVO_MUNICIPIOS_SP)
+    df_municipios = pd.read_json(paths.ARQUIVO_MUNICIPIOS_SP)
     df_municipios["Nome_Normalizado"] = df_municipios["Nome_Municipio"].apply(normalizar_nome)
 
     # --- A CORREÇÃO ESTÁ AQUI ---
@@ -91,14 +90,14 @@ def atualizar_municipios_sp(df_area, df_mapa):
         print(faltantes["Nome_Municipio"].tolist())
 
     df_municipios = df_municipios.drop(columns=["Nome_Normalizado"])
-    df_municipios.to_json(ARQUIVO_MUNICIPIOS_SP, orient="records", force_ascii=False, indent=4)
-    print(f"Atualizado: {ARQUIVO_MUNICIPIOS_SP}")
+    df_municipios.to_json(paths.ARQUIVO_MUNICIPIOS_SP, orient="records", force_ascii=False, indent=4)
+    print(f"Atualizado: {paths.ARQUIVO_MUNICIPIOS_SP}")
     return df_municipios
 
 
 def atualizar_regioes_sp(df_area, df_mapa):
-    if not os.path.exists(ARQUIVO_REGIOES_SP):
-        print(f"Aviso: {ARQUIVO_REGIOES_SP} não encontrado, pulando atualização de regiões.")
+    if not os.path.exists(paths.ARQUIVO_REGIOES_SP):
+        print(f"Aviso: {paths.ARQUIVO_REGIOES_SP} não encontrado, pulando atualização de regiões.")
         return None
 
     # Junta planilha de área (por município) com o mapa Município -> Região
@@ -117,7 +116,7 @@ def atualizar_regioes_sp(df_area, df_mapa):
         .reset_index()
     )
 
-    df_regioes = pd.read_json(ARQUIVO_REGIOES_SP)
+    df_regioes = pd.read_json(paths.ARQUIVO_REGIOES_SP)
     df_regioes = df_regioes.merge(df_area_por_regiao, on="Região Intermediária", how="left")
 
     faltantes_regiao = df_regioes[df_regioes[CAMPO_AREA_REGIAO].isna()]
@@ -125,13 +124,13 @@ def atualizar_regioes_sp(df_area, df_mapa):
         print(f"Atenção: {len(faltantes_regiao)} região(ões) sem área urbana total:")
         print(faltantes_regiao["Região Intermediária"].tolist())
 
-    df_regioes.to_json(ARQUIVO_REGIOES_SP, orient="records", force_ascii=False, indent=4)
-    print(f"Atualizado: {ARQUIVO_REGIOES_SP}")
+    df_regioes.to_json(paths.ARQUIVO_REGIOES_SP, orient="records", force_ascii=False, indent=4)
+    print(f"Atualizado: {paths.ARQUIVO_REGIOES_SP}")
     return df_regioes
 
 
 if __name__ == "__main__":
-    df_area = ler_planilha_area(ARQUIVO_PLANILHA_AREA)
+    df_area = ler_planilha_area(paths.ARQUIVO_PLANILHA_AREA)
     df_mapa = buscar_mapa_municipio_regiao()
 
     print("\n--- Atualizando municipios_sp.json ---")

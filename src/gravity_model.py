@@ -3,8 +3,7 @@ from math import atan2, cos, radians, sin, sqrt
 
 import numpy as np
 import pandas as pd
-
-from paths import ARQUIVO_INSTANCIA_GRAVIDADE, ARQUIVO_REGIOES_SP
+import paths
 
 # --- FUNÇÕES MATEMÁTICAS ---
 
@@ -95,10 +94,10 @@ def escrever_arquivo_instancia(df_dados, arquivo_saida):
 
 if __name__ == "__main__":
     # Agora lendo os centroides populacionais gerados no script anterior
-    arquivo_entrada = ARQUIVO_REGIOES_SP
+    arquivo_entrada = paths.ARQUIVO_REGIOES_SP
 
     # Nome do arquivo da instância
-    arquivo_instancia = ARQUIVO_INSTANCIA_GRAVIDADE
+    arquivo_instancia = paths.ARQUIVO_INSTANCIA_GRAVIDADE
 
     if not os.path.exists(arquivo_entrada):
         print(f"Erro: Arquivo base {arquivo_entrada} não encontrado.")
