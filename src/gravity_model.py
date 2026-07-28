@@ -95,7 +95,7 @@ if __name__ == "__main__":
     pasta_src = os.path.dirname(os.path.abspath(__file__))
     pasta_output = os.path.join(pasta_src, "..", "output")
     # Agora lendo os centroides populacionais gerados no script anterior
-    arquivo_entrada = os.path.join(pasta_output, "centroides_populacionais_sp.json")
+    arquivo_entrada = os.path.join(pasta_output, "regioes_sp.json")
     
     # Nome do arquivo da instância
     arquivo_instancia = os.path.join(pasta_output, "sp11_flow_only.txt")

@@ -89,8 +89,8 @@ if __name__ == "__main__":
     os.makedirs(pasta_output, exist_ok=True)
     
     arquivo_base_mun = os.path.join(pasta_output, "municipios_sp_base.json")
-    arquivo_cache_coord = os.path.join(pasta_output, "municipios_sp_coordenadas.json")
-    arquivo_saida = os.path.join(pasta_output, "centroides_populacionais_sp.json")
+    arquivo_cache_coord = os.path.join(pasta_output, "municipios_sp.json")
+    arquivo_saida = os.path.join(pasta_output, "regioes_sp.json")
     
     headers = {"User-Agent": "modelo_gravitacional_sp"}
 

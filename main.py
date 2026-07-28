@@ -21,6 +21,7 @@ def run_step(script_name: str) -> None:
 def main() -> None:
     run_step("population_weighted_centroid.py")
     run_step("gravity_model.py")
+    run_step("ca_data.py")
     print("\nFluxo concluído com sucesso!")
 
 

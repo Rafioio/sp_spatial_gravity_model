@@ -1,0 +1,5807 @@
+[
+    {
+        "Cod_IBGE":3500105,
+        "Populacao":34687,
+        "Nome_Municipio":"Adamantina",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.6866517,
+        "Longitude":-51.0762975,
+        "Area_Urbana_2024":1164.0020070435
+    },
+    {
+        "Cod_IBGE":3500204,
+        "Populacao":4351,
+        "Nome_Municipio":"Adolfo",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.2356597,
+        "Longitude":-49.6441918,
+        "Area_Urbana_2024":146.9847881531
+    },
+    {
+        "Cod_IBGE":3500303,
+        "Populacao":32072,
+        "Nome_Municipio":"Aguaí",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.0592036,
+        "Longitude":-46.979384,
+        "Area_Urbana_2024":951.889265332
+    },
+    {
+        "Cod_IBGE":3500402,
+        "Populacao":7369,
+        "Nome_Municipio":"Águas da Prata",
+        "Região Intermediária":"Campinas",
+        "Latitude":-21.9464285,
+        "Longitude":-46.7192121,
+        "Area_Urbana_2024":269.5297938416
+    },
+    {
+        "Cod_IBGE":3500501,
+        "Populacao":17930,
+        "Nome_Municipio":"Águas de Lindóia",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.4718855,
+        "Longitude":-46.6291034,
+        "Area_Urbana_2024":498.4364143921
+    },
+    {
+        "Cod_IBGE":3500550,
+        "Populacao":7177,
+        "Nome_Municipio":"Águas de Santa Bárbara",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-22.8821912,
+        "Longitude":-49.2383956,
+        "Area_Urbana_2024":1217.5341146423
+    },
+    {
+        "Cod_IBGE":3500600,
+        "Populacao":2780,
+        "Nome_Municipio":"Águas de São Pedro",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.6000681,
+        "Longitude":-47.8750887,
+        "Area_Urbana_2024":162.0825222961
+    },
+    {
+        "Cod_IBGE":3500709,
+        "Populacao":37680,
+        "Nome_Municipio":"Agudos",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.4719836,
+        "Longitude":-48.9884476,
+        "Area_Urbana_2024":1169.5668598266
+    },
+    {
+        "Cod_IBGE":3500758,
+        "Populacao":6141,
+        "Nome_Municipio":"Alambari",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.550338,
+        "Longitude":-47.897971,
+        "Area_Urbana_2024":413.5704018982
+    },
+    {
+        "Cod_IBGE":3500808,
+        "Populacao":4445,
+        "Nome_Municipio":"Alfredo Marcondes",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.9527,
+        "Longitude":-51.413956,
+        "Area_Urbana_2024":102.1759974731
+    },
+    {
+        "Cod_IBGE":3500907,
+        "Populacao":3451,
+        "Nome_Municipio":"Altair",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.5238955,
+        "Longitude":-49.0606135,
+        "Area_Urbana_2024":95.7761154358
+    },
+    {
+        "Cod_IBGE":3501004,
+        "Populacao":16818,
+        "Nome_Municipio":"Altinópolis",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.021364,
+        "Longitude":-47.3712,
+        "Area_Urbana_2024":487.1769361023
+    },
+    {
+        "Cod_IBGE":3501103,
+        "Populacao":3841,
+        "Nome_Municipio":"Alto Alegre",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.5820592,
+        "Longitude":-50.1661976,
+        "Area_Urbana_2024":113.2536151672
+    },
+    {
+        "Cod_IBGE":3501152,
+        "Populacao":17301,
+        "Nome_Municipio":"Alumínio",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.5203479,
+        "Longitude":-47.2575256,
+        "Area_Urbana_2024":901.145316687
+    },
+    {
+        "Cod_IBGE":3501202,
+        "Populacao":3915,
+        "Nome_Municipio":"Álvares Florence",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.2936023,
+        "Longitude":-49.9330156,
+        "Area_Urbana_2024":100.0144985718
+    },
+    {
+        "Cod_IBGE":3501301,
+        "Populacao":27255,
+        "Nome_Municipio":"Álvares Machado",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.076415,
+        "Longitude":-51.47224,
+        "Area_Urbana_2024":824.7204885742
+    },
+    {
+        "Cod_IBGE":3501400,
+        "Populacao":4808,
+        "Nome_Municipio":"Álvaro de Carvalho",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.0787992,
+        "Longitude":-49.7194861,
+        "Area_Urbana_2024":80.6764336731
+    },
+    {
+        "Cod_IBGE":3501509,
+        "Populacao":2885,
+        "Nome_Municipio":"Alvinlândia",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.4431852,
+        "Longitude":-49.7643596,
+        "Area_Urbana_2024":65.1543051331
+    },
+    {
+        "Cod_IBGE":3501608,
+        "Populacao":237240,
+        "Nome_Municipio":"Americana",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.7392463,
+        "Longitude":-47.3306032,
+        "Area_Urbana_2024":5749.5867452759
+    },
+    {
+        "Cod_IBGE":3501707,
+        "Populacao":33019,
+        "Nome_Municipio":"Américo Brasiliense",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.7297099,
+        "Longitude":-48.1052092,
+        "Area_Urbana_2024":800.9825101502
+    },
+    {
+        "Cod_IBGE":3501806,
+        "Populacao":5870,
+        "Nome_Municipio":"Américo de Campos",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.298476,
+        "Longitude":-49.735904,
+        "Area_Urbana_2024":161.9977480286
+    },
+    {
+        "Cod_IBGE":3501905,
+        "Populacao":68008,
+        "Nome_Municipio":"Amparo",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.70111,
+        "Longitude":-46.76444,
+        "Area_Urbana_2024":1671.1226097778
+    },
+    {
+        "Cod_IBGE":3502002,
+        "Populacao":4589,
+        "Nome_Municipio":"Analândia",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.128917,
+        "Longitude":-47.661939,
+        "Area_Urbana_2024":333.6123822327
+    },
+    {
+        "Cod_IBGE":3502101,
+        "Populacao":59783,
+        "Nome_Municipio":"Andradina",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-20.896505,
+        "Longitude":-51.3742765,
+        "Area_Urbana_2024":1887.3651207458
+    },
+    {
+        "Cod_IBGE":3502200,
+        "Populacao":24022,
+        "Nome_Municipio":"Angatuba",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.4938938,
+        "Longitude":-48.4110675,
+        "Area_Urbana_2024":566.4853209595
+    },
+    {
+        "Cod_IBGE":3502309,
+        "Populacao":5674,
+        "Nome_Municipio":"Anhembi",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.7891096,
+        "Longitude":-48.1316776,
+        "Area_Urbana_2024":257.9513922363
+    },
+    {
+        "Cod_IBGE":3502408,
+        "Populacao":4023,
+        "Nome_Municipio":"Anhumas",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.2956478,
+        "Longitude":-51.3873401,
+        "Area_Urbana_2024":106.990018512
+    },
+    {
+        "Cod_IBGE":3502507,
+        "Populacao":32569,
+        "Nome_Municipio":"Aparecida",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.851552,
+        "Longitude":-45.2340924,
+        "Area_Urbana_2024":735.1704995789
+    },
+    {
+        "Cod_IBGE":3502606,
+        "Populacao":4086,
+        "Nome_Municipio":"Aparecida d'Oeste",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.4498109,
+        "Longitude":-50.8808706,
+        "Area_Urbana_2024":99.756014093
+    },
+    {
+        "Cod_IBGE":3502705,
+        "Populacao":24585,
+        "Nome_Municipio":"Apiaí",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.5076527,
+        "Longitude":-48.8461582,
+        "Area_Urbana_2024":580.5668795898
+    },
+    {
+        "Cod_IBGE":3502754,
+        "Populacao":21522,
+        "Nome_Municipio":"Araçariguama",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.4388277,
+        "Longitude":-47.0613084,
+        "Area_Urbana_2024":1024.9288168762
+    },
+    {
+        "Cod_IBGE":3502804,
+        "Populacao":200124,
+        "Nome_Municipio":"Araçatuba",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.207992,
+        "Longitude":-50.4390225,
+        "Area_Urbana_2024":5055.1525579038
+    },
+    {
+        "Cod_IBGE":3502903,
+        "Populacao":32443,
+        "Nome_Municipio":"Araçoiaba da Serra",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.5045367,
+        "Longitude":-47.6168158,
+        "Area_Urbana_2024":2337.1557096985
+    },
+    {
+        "Cod_IBGE":3503000,
+        "Populacao":5420,
+        "Nome_Municipio":"Aramina",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.0876144,
+        "Longitude":-47.789201,
+        "Area_Urbana_2024":199.7051758484
+    },
+    {
+        "Cod_IBGE":3503109,
+        "Populacao":6885,
+        "Nome_Municipio":"Arandu",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.1345103,
+        "Longitude":-49.0545651,
+        "Area_Urbana_2024":680.073635144
+    },
+    {
+        "Cod_IBGE":3503158,
+        "Populacao":2330,
+        "Nome_Municipio":"Arapeí",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.6738889,
+        "Longitude":-44.4477778,
+        "Area_Urbana_2024":30.8306408752
+    },
+    {
+        "Cod_IBGE":3503208,
+        "Populacao":242228,
+        "Nome_Municipio":"Araraquara",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.7886713,
+        "Longitude":-48.1773096,
+        "Area_Urbana_2024":7056.0072559873
+    },
+    {
+        "Cod_IBGE":3503307,
+        "Populacao":130866,
+        "Nome_Municipio":"Araras",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.3569192,
+        "Longitude":-47.3838766,
+        "Area_Urbana_2024":3948.5787460143
+    },
+    {
+        "Cod_IBGE":3503356,
+        "Populacao":2044,
+        "Nome_Municipio":"Arco-Íris",
+        "Região Intermediária":"Marília",
+        "Latitude":-21.7741308,
+        "Longitude":-50.4668814,
+        "Area_Urbana_2024":32.2709221985
+    },
+    {
+        "Cod_IBGE":3503406,
+        "Populacao":8130,
+        "Nome_Municipio":"Arealva",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.0301906,
+        "Longitude":-48.9111936,
+        "Area_Urbana_2024":435.9467917114
+    },
+    {
+        "Cod_IBGE":3503505,
+        "Populacao":3577,
+        "Nome_Municipio":"Areias",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.5800929,
+        "Longitude":-44.6975127,
+        "Area_Urbana_2024":53.4283903503
+    },
+    {
+        "Cod_IBGE":3503604,
+        "Populacao":10130,
+        "Nome_Municipio":"Areiópolis",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.6758064,
+        "Longitude":-48.6673653,
+        "Area_Urbana_2024":275.8871321594
+    },
+    {
+        "Cod_IBGE":3503703,
+        "Populacao":7602,
+        "Nome_Municipio":"Ariranha",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.18716,
+        "Longitude":-48.790418,
+        "Area_Urbana_2024":280.9684511719
+    },
+    {
+        "Cod_IBGE":3503802,
+        "Populacao":51456,
+        "Nome_Municipio":"Artur Nogueira",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.572737,
+        "Longitude":-47.172679,
+        "Area_Urbana_2024":1596.6159308716
+    },
+    {
+        "Cod_IBGE":3503901,
+        "Populacao":86678,
+        "Nome_Municipio":"Arujá",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.396266,
+        "Longitude":-46.3175449,
+        "Area_Urbana_2024":2571.5336400569
+    },
+    {
+        "Cod_IBGE":3503950,
+        "Populacao":1842,
+        "Nome_Municipio":"Aspásia",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.1596604,
+        "Longitude":-50.7279226,
+        "Area_Urbana_2024":56.4850733643
+    },
+    {
+        "Cod_IBGE":3504008,
+        "Populacao":101409,
+        "Nome_Municipio":"Assis",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.6620892,
+        "Longitude":-50.420623,
+        "Area_Urbana_2024":2942.4198482911
+    },
+    {
+        "Cod_IBGE":3504107,
+        "Populacao":158647,
+        "Nome_Municipio":"Atibaia",
+        "Região Intermediária":"Campinas",
+        "Latitude":-23.1177393,
+        "Longitude":-46.5547861,
+        "Area_Urbana_2024":6497.0299191466
+    },
+    {
+        "Cod_IBGE":3504206,
+        "Populacao":13692,
+        "Nome_Municipio":"Auriflama",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-20.6840418,
+        "Longitude":-50.5554616,
+        "Area_Urbana_2024":364.2576984497
+    },
+    {
+        "Cod_IBGE":3504305,
+        "Populacao":4483,
+        "Nome_Municipio":"Avaí",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.1564662,
+        "Longitude":-49.3316395,
+        "Area_Urbana_2024":117.8704557373
+    },
+    {
+        "Cod_IBGE":3504404,
+        "Populacao":11263,
+        "Nome_Municipio":"Avanhandava",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.4603331,
+        "Longitude":-49.9465156,
+        "Area_Urbana_2024":277.3921887207
+    },
+    {
+        "Cod_IBGE":3504503,
+        "Populacao":92805,
+        "Nome_Municipio":"Avaré",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.1045215,
+        "Longitude":-48.9259103,
+        "Area_Urbana_2024":3143.9301427552
+    },
+    {
+        "Cod_IBGE":3504602,
+        "Populacao":27260,
+        "Nome_Municipio":"Bady Bassitt",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.9178969,
+        "Longitude":-49.4517911,
+        "Area_Urbana_2024":841.9304417053
+    },
+    {
+        "Cod_IBGE":3504701,
+        "Populacao":3887,
+        "Nome_Municipio":"Balbinos",
+        "Região Intermediária":"Bauru",
+        "Latitude":-21.9006253,
+        "Longitude":-49.3583966,
+        "Area_Urbana_2024":56.0917006958
+    },
+    {
+        "Cod_IBGE":3504800,
+        "Populacao":9596,
+        "Nome_Municipio":"Bálsamo",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.7343722,
+        "Longitude":-49.5807484,
+        "Area_Urbana_2024":268.9918838989
+    },
+    {
+        "Cod_IBGE":3504909,
+        "Populacao":9969,
+        "Nome_Municipio":"Bananal",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.6820178,
+        "Longitude":-44.3221805,
+        "Area_Urbana_2024":135.5426583984
+    },
+    {
+        "Cod_IBGE":3505005,
+        "Populacao":3531,
+        "Nome_Municipio":"Barão de Antonina",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.6295651,
+        "Longitude":-49.5632104,
+        "Area_Urbana_2024":84.9497500549
+    },
+    {
+        "Cod_IBGE":3505104,
+        "Populacao":5640,
+        "Nome_Municipio":"Barbosa",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.265661,
+        "Longitude":-49.951816,
+        "Area_Urbana_2024":154.3125079468
+    },
+    {
+        "Cod_IBGE":3505203,
+        "Populacao":31595,
+        "Nome_Municipio":"Bariri",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.0746355,
+        "Longitude":-48.7394852,
+        "Area_Urbana_2024":995.0053803101
+    },
+    {
+        "Cod_IBGE":3505302,
+        "Populacao":34346,
+        "Nome_Municipio":"Barra Bonita",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.490859,
+        "Longitude":-48.558349,
+        "Area_Urbana_2024":1279.8071839234
+    },
+    {
+        "Cod_IBGE":3505351,
+        "Populacao":5179,
+        "Nome_Municipio":"Barra do Chapéu",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.472203,
+        "Longitude":-49.023784,
+        "Area_Urbana_2024":73.0714079773
+    },
+    {
+        "Cod_IBGE":3505401,
+        "Populacao":6876,
+        "Nome_Municipio":"Barra do Turvo",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.756421,
+        "Longitude":-48.5056942,
+        "Area_Urbana_2024":127.5210099792
+    },
+    {
+        "Cod_IBGE":3505500,
+        "Populacao":122485,
+        "Nome_Municipio":"Barretos",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.5531437,
+        "Longitude":-48.5697509,
+        "Area_Urbana_2024":3525.5652201475
+    },
+    {
+        "Cod_IBGE":3505609,
+        "Populacao":32092,
+        "Nome_Municipio":"Barrinha",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.1898849,
+        "Longitude":-48.1550642,
+        "Area_Urbana_2024":552.8503429321
+    },
+    {
+        "Cod_IBGE":3505708,
+        "Populacao":316473,
+        "Nome_Municipio":"Barueri",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.5112184,
+        "Longitude":-46.8764612,
+        "Area_Urbana_2024":4691.4094172853
+    },
+    {
+        "Cod_IBGE":3505807,
+        "Populacao":21503,
+        "Nome_Municipio":"Bastos",
+        "Região Intermediária":"Marília",
+        "Latitude":-21.9222474,
+        "Longitude":-50.7317727,
+        "Area_Urbana_2024":695.3635450928
+    },
+    {
+        "Cod_IBGE":3505906,
+        "Populacao":58402,
+        "Nome_Municipio":"Batatais",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.892867,
+        "Longitude":-47.592149,
+        "Area_Urbana_2024":1753.0662646362
+    },
+    {
+        "Cod_IBGE":3506003,
+        "Populacao":379146,
+        "Nome_Municipio":"Bauru",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.3173803,
+        "Longitude":-49.0689778,
+        "Area_Urbana_2024":9018.9999635806
+    },
+    {
+        "Cod_IBGE":3506102,
+        "Populacao":76373,
+        "Nome_Municipio":"Bebedouro",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.949077,
+        "Longitude":-48.479083,
+        "Area_Urbana_2024":2259.1612246826
+    },
+    {
+        "Cod_IBGE":3506201,
+        "Populacao":2606,
+        "Nome_Municipio":"Bento de Abreu",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.2715723,
+        "Longitude":-50.8117225,
+        "Area_Urbana_2024":108.0836985291
+    },
+    {
+        "Cod_IBGE":3506300,
+        "Populacao":11607,
+        "Nome_Municipio":"Bernardino de Campos",
+        "Região Intermediária":"Marília",
+        "Latitude":-23.0140216,
+        "Longitude":-49.4760724,
+        "Area_Urbana_2024":341.9867476624
+    },
+    {
+        "Cod_IBGE":3506359,
+        "Populacao":64188,
+        "Nome_Municipio":"Bertioga",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.848568,
+        "Longitude":-46.139586,
+        "Area_Urbana_2024":2790.7286156434
+    },
+    {
+        "Cod_IBGE":3506409,
+        "Populacao":7319,
+        "Nome_Municipio":"Bilac",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.403962,
+        "Longitude":-50.47464,
+        "Area_Urbana_2024":239.5554319641
+    },
+    {
+        "Cod_IBGE":3506508,
+        "Populacao":118979,
+        "Nome_Municipio":"Birigui",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.2908491,
+        "Longitude":-50.34144,
+        "Area_Urbana_2024":3030.8108223877
+    },
+    {
+        "Cod_IBGE":3506607,
+        "Populacao":29683,
+        "Nome_Municipio":"Biritiba Mirim",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.5697765,
+        "Longitude":-46.0407456,
+        "Area_Urbana_2024":1047.773143811
+    },
+    {
+        "Cod_IBGE":3506706,
+        "Populacao":12978,
+        "Nome_Municipio":"Boa Esperança do Sul",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.9930206,
+        "Longitude":-48.3917372,
+        "Area_Urbana_2024":290.4163378845
+    },
+    {
+        "Cod_IBGE":3506805,
+        "Populacao":11259,
+        "Nome_Municipio":"Bocaina",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.1421831,
+        "Longitude":-48.522276,
+        "Area_Urbana_2024":393.6729164062
+    },
+    {
+        "Cod_IBGE":3506904,
+        "Populacao":10460,
+        "Nome_Municipio":"Bofete",
+        "Região Intermediária":"Bauru",
+        "Latitude":-23.1019554,
+        "Longitude":-48.2610535,
+        "Area_Urbana_2024":649.5824609619
+    },
+    {
+        "Cod_IBGE":3507001,
+        "Populacao":61081,
+        "Nome_Municipio":"Boituva",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.2838893,
+        "Longitude":-47.6738231,
+        "Area_Urbana_2024":2901.0930227233
+    },
+    {
+        "Cod_IBGE":3507100,
+        "Populacao":22006,
+        "Nome_Municipio":"Bom Jesus dos Perdões",
+        "Região Intermediária":"Campinas",
+        "Latitude":-23.1353864,
+        "Longitude":-46.4648052,
+        "Area_Urbana_2024":904.9979338989
+    },
+    {
+        "Cod_IBGE":3507159,
+        "Populacao":3555,
+        "Nome_Municipio":"Bom Sucesso de Itararé",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.3190016,
+        "Longitude":-49.1446207,
+        "Area_Urbana_2024":97.0857967834
+    },
+    {
+        "Cod_IBGE":3507209,
+        "Populacao":907,
+        "Nome_Municipio":"Borá",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.2703347,
+        "Longitude":-50.5442675,
+        "Area_Urbana_2024":67.9164055847
+    },
+    {
+        "Cod_IBGE":3507308,
+        "Populacao":4715,
+        "Nome_Municipio":"Boracéia",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.195355,
+        "Longitude":-48.7801925,
+        "Area_Urbana_2024":161.4720737549
+    },
+    {
+        "Cod_IBGE":3507407,
+        "Populacao":14226,
+        "Nome_Municipio":"Borborema",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.6212706,
+        "Longitude":-49.074135,
+        "Area_Urbana_2024":604.0749592041
+    },
+    {
+        "Cod_IBGE":3507456,
+        "Populacao":2713,
+        "Nome_Municipio":"Borebi",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.5700178,
+        "Longitude":-48.9714871,
+        "Area_Urbana_2024":103.3925915222
+    },
+    {
+        "Cod_IBGE":3507506,
+        "Populacao":145155,
+        "Nome_Municipio":"Botucatu",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.8879628,
+        "Longitude":-48.4410712,
+        "Area_Urbana_2024":5058.4251584904
+    },
+    {
+        "Cod_IBGE":3507605,
+        "Populacao":176811,
+        "Nome_Municipio":"Bragança Paulista",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.9520235,
+        "Longitude":-46.5418586,
+        "Area_Urbana_2024":4894.6468221437
+    },
+    {
+        "Cod_IBGE":3507704,
+        "Populacao":5356,
+        "Nome_Municipio":"Braúna",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.5015319,
+        "Longitude":-50.3175246,
+        "Area_Urbana_2024":132.237010498
+    },
+    {
+        "Cod_IBGE":3507753,
+        "Populacao":2565,
+        "Nome_Municipio":"Brejo Alegre",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.1671191,
+        "Longitude":-50.1850393,
+        "Area_Urbana_2024":230.6901544434
+    },
+    {
+        "Cod_IBGE":3507803,
+        "Populacao":25201,
+        "Nome_Municipio":"Brodowski",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.9862299,
+        "Longitude":-47.6578768,
+        "Area_Urbana_2024":805.8084056641
+    },
+    {
+        "Cod_IBGE":3507902,
+        "Populacao":23898,
+        "Nome_Municipio":"Brotas",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.2840884,
+        "Longitude":-48.1267265,
+        "Area_Urbana_2024":1028.5691390991
+    },
+    {
+        "Cod_IBGE":3508009,
+        "Populacao":20250,
+        "Nome_Municipio":"Buri",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.79849,
+        "Longitude":-48.598924,
+        "Area_Urbana_2024":551.6217808594
+    },
+    {
+        "Cod_IBGE":3508108,
+        "Populacao":17210,
+        "Nome_Municipio":"Buritama",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.0664017,
+        "Longitude":-50.1448077,
+        "Area_Urbana_2024":694.5680072388
+    },
+    {
+        "Cod_IBGE":3508207,
+        "Populacao":4356,
+        "Nome_Municipio":"Buritizal",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.1933264,
+        "Longitude":-47.7097165,
+        "Area_Urbana_2024":204.0275152344
+    },
+    {
+        "Cod_IBGE":3508306,
+        "Populacao":4299,
+        "Nome_Municipio":"Cabrália Paulista",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.4562909,
+        "Longitude":-49.3385645,
+        "Area_Urbana_2024":153.3859826172
+    },
+    {
+        "Cod_IBGE":3508405,
+        "Populacao":47011,
+        "Nome_Municipio":"Cabreúva",
+        "Região Intermediária":"Campinas",
+        "Latitude":-23.3076663,
+        "Longitude":-47.1324726,
+        "Area_Urbana_2024":1610.1933692444
+    },
+    {
+        "Cod_IBGE":3508504,
+        "Populacao":96202,
+        "Nome_Municipio":"Caçapava",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-23.099204,
+        "Longitude":-45.707645,
+        "Area_Urbana_2024":3471.3221373475
+    },
+    {
+        "Cod_IBGE":3508603,
+        "Populacao":31564,
+        "Nome_Municipio":"Cachoeira Paulista",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.6605578,
+        "Longitude":-45.0081689,
+        "Area_Urbana_2024":759.818650238
+    },
+    {
+        "Cod_IBGE":3508702,
+        "Populacao":17101,
+        "Nome_Municipio":"Caconde",
+        "Região Intermediária":"Campinas",
+        "Latitude":-21.5281123,
+        "Longitude":-46.6434015,
+        "Area_Urbana_2024":340.5606821045
+    },
+    {
+        "Cod_IBGE":3508801,
+        "Populacao":16654,
+        "Nome_Municipio":"Cafelândia",
+        "Região Intermediária":"Bauru",
+        "Latitude":-21.8054355,
+        "Longitude":-49.6030627,
+        "Area_Urbana_2024":531.1655623352
+    },
+    {
+        "Cod_IBGE":3508900,
+        "Populacao":3712,
+        "Nome_Municipio":"Caiabu",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.0143038,
+        "Longitude":-51.2356597,
+        "Area_Urbana_2024":91.7802053528
+    },
+    {
+        "Cod_IBGE":3509007,
+        "Populacao":95032,
+        "Nome_Municipio":"Caieiras",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.3644621,
+        "Longitude":-46.7484765,
+        "Area_Urbana_2024":1674.1509326538
+    },
+    {
+        "Cod_IBGE":3509106,
+        "Populacao":5466,
+        "Nome_Municipio":"Caiuá",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.8319357,
+        "Longitude":-51.9887179,
+        "Area_Urbana_2024":127.8235526367
+    },
+    {
+        "Cod_IBGE":3509205,
+        "Populacao":92689,
+        "Nome_Municipio":"Cajamar",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.3561111,
+        "Longitude":-46.8769444,
+        "Area_Urbana_2024":2366.7560687012
+    },
+    {
+        "Cod_IBGE":3509254,
+        "Populacao":28515,
+        "Nome_Municipio":"Cajati",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.7272376,
+        "Longitude":-48.1077914,
+        "Area_Urbana_2024":811.4573530335
+    },
+    {
+        "Cod_IBGE":3509304,
+        "Populacao":9133,
+        "Nome_Municipio":"Cajobi",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.8776238,
+        "Longitude":-48.8106972,
+        "Area_Urbana_2024":220.9762624329
+    },
+    {
+        "Cod_IBGE":3509403,
+        "Populacao":23830,
+        "Nome_Municipio":"Cajuru",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.2759978,
+        "Longitude":-47.3046035,
+        "Area_Urbana_2024":740.1527289063
+    },
+    {
+        "Cod_IBGE":3509452,
+        "Populacao":5954,
+        "Nome_Municipio":"Campina do Monte Alegre",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.5935653,
+        "Longitude":-48.4801876,
+        "Area_Urbana_2024":135.4704046814
+    },
+    {
+        "Cod_IBGE":3509502,
+        "Populacao":1139047,
+        "Nome_Municipio":"Campinas",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.9056391,
+        "Longitude":-47.059564,
+        "Area_Urbana_2024":25021.1944567306
+    },
+    {
+        "Cod_IBGE":3509601,
+        "Populacao":77632,
+        "Nome_Municipio":"Campo Limpo Paulista",
+        "Região Intermediária":"Campinas",
+        "Latitude":-23.207791,
+        "Longitude":-46.788919,
+        "Area_Urbana_2024":1704.197907727
+    },
+    {
+        "Cod_IBGE":3509700,
+        "Populacao":46974,
+        "Nome_Municipio":"Campos do Jordão",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.738299,
+        "Longitude":-45.5903769,
+        "Area_Urbana_2024":1223.6413008179
+    },
+    {
+        "Cod_IBGE":3509809,
+        "Populacao":4888,
+        "Nome_Municipio":"Campos Novos Paulista",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.601952,
+        "Longitude":-49.998726,
+        "Area_Urbana_2024":114.0334247681
+    },
+    {
+        "Cod_IBGE":3509908,
+        "Populacao":12289,
+        "Nome_Municipio":"Cananéia",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-25.0104609,
+        "Longitude":-47.9315628,
+        "Area_Urbana_2024":413.5203285278
+    },
+    {
+        "Cod_IBGE":3509957,
+        "Populacao":4931,
+        "Nome_Municipio":"Canas",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.7029347,
+        "Longitude":-45.0526508,
+        "Area_Urbana_2024":239.1423283691
+    },
+    {
+        "Cod_IBGE":3510005,
+        "Populacao":29449,
+        "Nome_Municipio":"Cândido Mota",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.7434964,
+        "Longitude":-50.38924,
+        "Area_Urbana_2024":905.4938100952
+    },
+    {
+        "Cod_IBGE":3510104,
+        "Populacao":2889,
+        "Nome_Municipio":"Cândido Rodrigues",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.3255615,
+        "Longitude":-48.6308798,
+        "Area_Urbana_2024":112.5394721069
+    },
+    {
+        "Cod_IBGE":3510153,
+        "Populacao":6283,
+        "Nome_Municipio":"Canitar",
+        "Região Intermediária":"Marília",
+        "Latitude":-23.0066616,
+        "Longitude":-49.7840632,
+        "Area_Urbana_2024":234.9208160339
+    },
+    {
+        "Cod_IBGE":3510203,
+        "Populacao":46337,
+        "Nome_Municipio":"Capão Bonito",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.0048759,
+        "Longitude":-48.3489848,
+        "Area_Urbana_2024":1347.1997822632
+    },
+    {
+        "Cod_IBGE":3510302,
+        "Populacao":22866,
+        "Nome_Municipio":"Capela do Alto",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.4704798,
+        "Longitude":-47.7352309,
+        "Area_Urbana_2024":925.5210950867
+    },
+    {
+        "Cod_IBGE":3510401,
+        "Populacao":50068,
+        "Nome_Municipio":"Capivari",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.9999295,
+        "Longitude":-47.5031066,
+        "Area_Urbana_2024":1729.0549923157
+    },
+    {
+        "Cod_IBGE":3510500,
+        "Populacao":134873,
+        "Nome_Municipio":"Caraguatatuba",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-23.62028,
+        "Longitude":-45.41306,
+        "Area_Urbana_2024":3845.736031659
+    },
+    {
+        "Cod_IBGE":3510609,
+        "Populacao":386984,
+        "Nome_Municipio":"Carapicuíba",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.5234673,
+        "Longitude":-46.8406808,
+        "Area_Urbana_2024":2966.8260573547
+    },
+    {
+        "Cod_IBGE":3510708,
+        "Populacao":11345,
+        "Nome_Municipio":"Cardoso",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.080447,
+        "Longitude":-49.9139767,
+        "Area_Urbana_2024":459.5930052612
+    },
+    {
+        "Cod_IBGE":3510807,
+        "Populacao":28083,
+        "Nome_Municipio":"Casa Branca",
+        "Região Intermediária":"Campinas",
+        "Latitude":-21.7743137,
+        "Longitude":-47.0852175,
+        "Area_Urbana_2024":1088.8119107056
+    },
+    {
+        "Cod_IBGE":3510906,
+        "Populacao":2799,
+        "Nome_Municipio":"Cássia dos Coqueiros",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.280082,
+        "Longitude":-47.164327,
+        "Area_Urbana_2024":80.027726593
+    },
+    {
+        "Cod_IBGE":3511003,
+        "Populacao":19977,
+        "Nome_Municipio":"Castilho",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-20.8695636,
+        "Longitude":-51.4877792,
+        "Area_Urbana_2024":567.3381543579
+    },
+    {
+        "Cod_IBGE":3511102,
+        "Populacao":115791,
+        "Nome_Municipio":"Catanduva",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.1331035,
+        "Longitude":-48.9712817,
+        "Area_Urbana_2024":3608.9690486511
+    },
+    {
+        "Cod_IBGE":3511201,
+        "Populacao":7003,
+        "Nome_Municipio":"Catiguá",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.0491485,
+        "Longitude":-49.0578923,
+        "Area_Urbana_2024":195.9776379211
+    },
+    {
+        "Cod_IBGE":3511300,
+        "Populacao":12618,
+        "Nome_Municipio":"Cedral",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.9028433,
+        "Longitude":-49.2699665,
+        "Area_Urbana_2024":460.2633221313
+    },
+    {
+        "Cod_IBGE":3511409,
+        "Populacao":21469,
+        "Nome_Municipio":"Cerqueira César",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.0353135,
+        "Longitude":-49.1650519,
+        "Area_Urbana_2024":736.7815123962
+    },
+    {
+        "Cod_IBGE":3511508,
+        "Populacao":44695,
+        "Nome_Municipio":"Cerquilho",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.1626556,
+        "Longitude":-47.7433878,
+        "Area_Urbana_2024":1551.5536031189
+    },
+    {
+        "Cod_IBGE":3511607,
+        "Populacao":19048,
+        "Nome_Municipio":"Cesário Lange",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.226035,
+        "Longitude":-47.954453,
+        "Area_Urbana_2024":893.5479175415
+    },
+    {
+        "Cod_IBGE":3511706,
+        "Populacao":15535,
+        "Nome_Municipio":"Charqueada",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.50958,
+        "Longitude":-47.775468,
+        "Area_Urbana_2024":570.6302405945
+    },
+    {
+        "Cod_IBGE":3511904,
+        "Populacao":6982,
+        "Nome_Municipio":"Clementina",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.5594631,
+        "Longitude":-50.448624,
+        "Area_Urbana_2024":223.4689202332
+    },
+    {
+        "Cod_IBGE":3512001,
+        "Populacao":18486,
+        "Nome_Municipio":"Colina",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.711443,
+        "Longitude":-48.53867,
+        "Area_Urbana_2024":696.87674198
+    },
+    {
+        "Cod_IBGE":3512100,
+        "Populacao":6629,
+        "Nome_Municipio":"Colômbia",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.1774291,
+        "Longitude":-48.6872822,
+        "Area_Urbana_2024":246.4495199463
+    },
+    {
+        "Cod_IBGE":3512209,
+        "Populacao":28101,
+        "Nome_Municipio":"Conchal",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.337512,
+        "Longitude":-47.172927,
+        "Area_Urbana_2024":716.9617181152
+    },
+    {
+        "Cod_IBGE":3512308,
+        "Populacao":15232,
+        "Nome_Municipio":"Conchas",
+        "Região Intermediária":"Bauru",
+        "Latitude":-23.0133538,
+        "Longitude":-48.0077595,
+        "Area_Urbana_2024":397.9832486816
+    },
+    {
+        "Cod_IBGE":3512407,
+        "Populacao":24514,
+        "Nome_Municipio":"Cordeirópolis",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.4768324,
+        "Longitude":-47.4550551,
+        "Area_Urbana_2024":1174.870763855
+    },
+    {
+        "Cod_IBGE":3512506,
+        "Populacao":5400,
+        "Nome_Municipio":"Coroados",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.3554634,
+        "Longitude":-50.2853589,
+        "Area_Urbana_2024":181.7399484924
+    },
+    {
+        "Cod_IBGE":3512605,
+        "Populacao":4280,
+        "Nome_Municipio":"Coronel Macedo",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.6304001,
+        "Longitude":-49.313234,
+        "Area_Urbana_2024":114.5760713806
+    },
+    {
+        "Cod_IBGE":3512704,
+        "Populacao":4195,
+        "Nome_Municipio":"Corumbataí",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.2210521,
+        "Longitude":-47.6249638,
+        "Area_Urbana_2024":158.4264166565
+    },
+    {
+        "Cod_IBGE":3512803,
+        "Populacao":59773,
+        "Nome_Municipio":"Cosmópolis",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.6437398,
+        "Longitude":-47.1972086,
+        "Area_Urbana_2024":1436.3618684144
+    },
+    {
+        "Cod_IBGE":3512902,
+        "Populacao":8719,
+        "Nome_Municipio":"Cosmorama",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.4801328,
+        "Longitude":-49.7782265,
+        "Area_Urbana_2024":363.4815213318
+    },
+    {
+        "Cod_IBGE":3513009,
+        "Populacao":274413,
+        "Nome_Municipio":"Cotia",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.603889,
+        "Longitude":-46.918889,
+        "Area_Urbana_2024":5879.1469109618
+    },
+    {
+        "Cod_IBGE":3513108,
+        "Populacao":33281,
+        "Nome_Municipio":"Cravinhos",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.340278,
+        "Longitude":-47.729444,
+        "Area_Urbana_2024":1168.9096315369
+    },
+    {
+        "Cod_IBGE":3513207,
+        "Populacao":9272,
+        "Nome_Municipio":"Cristais Paulista",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.403569,
+        "Longitude":-47.420915,
+        "Area_Urbana_2024":353.2180983276
+    },
+    {
+        "Cod_IBGE":3513306,
+        "Populacao":2108,
+        "Nome_Municipio":"Cruzália",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.7434438,
+        "Longitude":-50.7911037,
+        "Area_Urbana_2024":71.7046680725
+    },
+    {
+        "Cod_IBGE":3513405,
+        "Populacao":74961,
+        "Nome_Municipio":"Cruzeiro",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.5783685,
+        "Longitude":-44.9642044,
+        "Area_Urbana_2024":1504.2456596436
+    },
+    {
+        "Cod_IBGE":3513504,
+        "Populacao":112476,
+        "Nome_Municipio":"Cubatão",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.8842077,
+        "Longitude":-46.4213061,
+        "Area_Urbana_2024":2672.3562568665
+    },
+    {
+        "Cod_IBGE":3513603,
+        "Populacao":22110,
+        "Nome_Municipio":"Cunha",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-23.07753,
+        "Longitude":-44.9567436,
+        "Area_Urbana_2024":395.4645848206
+    },
+    {
+        "Cod_IBGE":3513702,
+        "Populacao":31756,
+        "Nome_Municipio":"Descalvado",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.8797111,
+        "Longitude":-47.6507427,
+        "Area_Urbana_2024":1102.4512818481
+    },
+    {
+        "Cod_IBGE":3513801,
+        "Populacao":393237,
+        "Nome_Municipio":"Diadema",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.6866428,
+        "Longitude":-46.6246935,
+        "Area_Urbana_2024":2709.5228595581
+    },
+    {
+        "Cod_IBGE":3513850,
+        "Populacao":1620,
+        "Nome_Municipio":"Dirce Reis",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.4664067,
+        "Longitude":-50.606276,
+        "Area_Urbana_2024":36.4930578003
+    },
+    {
+        "Cod_IBGE":3513900,
+        "Populacao":11158,
+        "Nome_Municipio":"Divinolândia",
+        "Região Intermediária":"Campinas",
+        "Latitude":-21.6604584,
+        "Longitude":-46.7371151,
+        "Area_Urbana_2024":256.1068840271
+    },
+    {
+        "Cod_IBGE":3514007,
+        "Populacao":8759,
+        "Nome_Municipio":"Dobrada",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.5180904,
+        "Longitude":-48.3938897,
+        "Area_Urbana_2024":242.0255811157
+    },
+    {
+        "Cod_IBGE":3514106,
+        "Populacao":24510,
+        "Nome_Municipio":"Dois Córregos",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.3697554,
+        "Longitude":-48.3845315,
+        "Area_Urbana_2024":960.5045023193
+    },
+    {
+        "Cod_IBGE":3514205,
+        "Populacao":2207,
+        "Nome_Municipio":"Dolcinópolis",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.1230736,
+        "Longitude":-50.513261,
+        "Area_Urbana_2024":79.7016843384
+    },
+    {
+        "Cod_IBGE":3514304,
+        "Populacao":8096,
+        "Nome_Municipio":"Dourado",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-22.116287,
+        "Longitude":-48.3174349,
+        "Area_Urbana_2024":280.9838850342
+    },
+    {
+        "Cod_IBGE":3514403,
+        "Populacao":45474,
+        "Nome_Municipio":"Dracena",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.4835523,
+        "Longitude":-51.5334408,
+        "Area_Urbana_2024":1374.0989621887
+    },
+    {
+        "Cod_IBGE":3514502,
+        "Populacao":12328,
+        "Nome_Municipio":"Duartina",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.414562,
+        "Longitude":-49.408355,
+        "Area_Urbana_2024":371.3790681824
+    },
+    {
+        "Cod_IBGE":3514601,
+        "Populacao":9471,
+        "Nome_Municipio":"Dumont",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.2391417,
+        "Longitude":-47.9747665,
+        "Area_Urbana_2024":339.8066310425
+    },
+    {
+        "Cod_IBGE":3514700,
+        "Populacao":6205,
+        "Nome_Municipio":"Echaporã",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.4325855,
+        "Longitude":-50.2037693,
+        "Area_Urbana_2024":200.7638432434
+    },
+    {
+        "Cod_IBGE":3514809,
+        "Populacao":13069,
+        "Nome_Municipio":"Eldorado",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.522583,
+        "Longitude":-48.1093489,
+        "Area_Urbana_2024":152.8329598572
+    },
+    {
+        "Cod_IBGE":3514908,
+        "Populacao":17699,
+        "Nome_Municipio":"Elias Fausto",
+        "Região Intermediária":"Campinas",
+        "Latitude":-23.0416538,
+        "Longitude":-47.3718002,
+        "Area_Urbana_2024":727.0141295593
+    },
+    {
+        "Cod_IBGE":3514924,
+        "Populacao":3138,
+        "Nome_Municipio":"Elisiário",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.1673392,
+        "Longitude":-49.1111015,
+        "Area_Urbana_2024":100.048394574
+    },
+    {
+        "Cod_IBGE":3514957,
+        "Populacao":2323,
+        "Nome_Municipio":"Embaúba",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.9819513,
+        "Longitude":-48.837455,
+        "Area_Urbana_2024":55.6028792847
+    },
+    {
+        "Cod_IBGE":3515004,
+        "Populacao":250691,
+        "Nome_Municipio":"Embu das Artes",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.6495294,
+        "Longitude":-46.8528497,
+        "Area_Urbana_2024":2928.4070305543
+    },
+    {
+        "Cod_IBGE":3515103,
+        "Populacao":66970,
+        "Nome_Municipio":"Embu-Guaçu",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.8317997,
+        "Longitude":-46.8156204,
+        "Area_Urbana_2024":1313.9847397766
+    },
+    {
+        "Cod_IBGE":3515129,
+        "Populacao":3014,
+        "Nome_Municipio":"Emilianópolis",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.831436,
+        "Longitude":-51.483168,
+        "Area_Urbana_2024":64.7664393738
+    },
+    {
+        "Cod_IBGE":3515152,
+        "Populacao":19566,
+        "Nome_Municipio":"Engenheiro Coelho",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.4896659,
+        "Longitude":-47.2119005,
+        "Area_Urbana_2024":624.4308805786
+    },
+    {
+        "Cod_IBGE":3515186,
+        "Populacao":39816,
+        "Nome_Municipio":"Espírito Santo do Pinhal",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.1929522,
+        "Longitude":-46.7470021,
+        "Area_Urbana_2024":994.2082086792
+    },
+    {
+        "Cod_IBGE":3515194,
+        "Populacao":4157,
+        "Nome_Municipio":"Espírito Santo do Turvo",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.6939723,
+        "Longitude":-49.4295067,
+        "Area_Urbana_2024":181.8181896118
+    },
+    {
+        "Cod_IBGE":3515202,
+        "Populacao":9417,
+        "Nome_Municipio":"Estrela d'Oeste",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.2860692,
+        "Longitude":-50.3986216,
+        "Area_Urbana_2024":245.078478595
+    },
+    {
+        "Cod_IBGE":3515301,
+        "Populacao":2703,
+        "Nome_Municipio":"Estrela do Norte",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.4886301,
+        "Longitude":-51.6606857,
+        "Area_Urbana_2024":82.5958278198
+    },
+    {
+        "Cod_IBGE":3515350,
+        "Populacao":7924,
+        "Nome_Municipio":"Euclides da Cunha Paulista",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.55452,
+        "Longitude":-52.592779,
+        "Area_Urbana_2024":203.2448806458
+    },
+    {
+        "Cod_IBGE":3515400,
+        "Populacao":16641,
+        "Nome_Municipio":"Fartura",
+        "Região Intermediária":"Marília",
+        "Latitude":-23.390039,
+        "Longitude":-49.5109023,
+        "Area_Urbana_2024":417.2859724121
+    },
+    {
+        "Cod_IBGE":3515509,
+        "Populacao":71186,
+        "Nome_Municipio":"Fernandópolis",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.2825647,
+        "Longitude":-50.2500762,
+        "Area_Urbana_2024":2335.5553253906
+    },
+    {
+        "Cod_IBGE":3515608,
+        "Populacao":5942,
+        "Nome_Municipio":"Fernando Prestes",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.266061,
+        "Longitude":-48.687384,
+        "Area_Urbana_2024":263.3474702576
+    },
+    {
+        "Cod_IBGE":3515657,
+        "Populacao":1656,
+        "Nome_Municipio":"Fernão",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.3595388,
+        "Longitude":-49.5209504,
+        "Area_Urbana_2024":55.9989442078
+    },
+    {
+        "Cod_IBGE":3515707,
+        "Populacao":179198,
+        "Nome_Municipio":"Ferraz de Vasconcelos",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.541056,
+        "Longitude":-46.37097,
+        "Area_Urbana_2024":1807.6034456542
+    },
+    {
+        "Cod_IBGE":3515806,
+        "Populacao":1487,
+        "Nome_Municipio":"Flora Rica",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.6760063,
+        "Longitude":-51.3804532,
+        "Area_Urbana_2024":43.3617653992
+    },
+    {
+        "Cod_IBGE":3515905,
+        "Populacao":2733,
+        "Nome_Municipio":"Floreal",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.6767063,
+        "Longitude":-50.1455638,
+        "Area_Urbana_2024":101.7913595398
+    },
+    {
+        "Cod_IBGE":3516002,
+        "Populacao":12958,
+        "Nome_Municipio":"Flórida Paulista",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.614061,
+        "Longitude":-51.1729548,
+        "Area_Urbana_2024":342.8215791443
+    },
+    {
+        "Cod_IBGE":3516101,
+        "Populacao":3851,
+        "Nome_Municipio":"Florínea",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.9016004,
+        "Longitude":-50.7268005,
+        "Area_Urbana_2024":125.5861965942
+    },
+    {
+        "Cod_IBGE":3516200,
+        "Populacao":352536,
+        "Nome_Municipio":"Franca",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.5381768,
+        "Longitude":-47.4009795,
+        "Area_Urbana_2024":7837.1994996451
+    },
+    {
+        "Cod_IBGE":3516309,
+        "Populacao":165139,
+        "Nome_Municipio":"Francisco Morato",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.2817308,
+        "Longitude":-46.7448996,
+        "Area_Urbana_2024":2067.5048132018
+    },
+    {
+        "Cod_IBGE":3516408,
+        "Populacao":144849,
+        "Nome_Municipio":"Franco da Rocha",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.3328038,
+        "Longitude":-46.724446,
+        "Area_Urbana_2024":2485.2832547055
+    },
+    {
+        "Cod_IBGE":3516507,
+        "Populacao":2763,
+        "Nome_Municipio":"Gabriel Monteiro",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.5299436,
+        "Longitude":-50.5533059,
+        "Area_Urbana_2024":65.7314685608
+    },
+    {
+        "Cod_IBGE":3516606,
+        "Populacao":6380,
+        "Nome_Municipio":"Gália",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.2936976,
+        "Longitude":-49.5516228,
+        "Area_Urbana_2024":238.6093232971
+    },
+    {
+        "Cod_IBGE":3516705,
+        "Populacao":42110,
+        "Nome_Municipio":"Garça",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.2125766,
+        "Longitude":-49.6547994,
+        "Area_Urbana_2024":1254.9197148682
+    },
+    {
+        "Cod_IBGE":3516804,
+        "Populacao":3252,
+        "Nome_Municipio":"Gastão Vidigal",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-20.7956829,
+        "Longitude":-50.1907615,
+        "Area_Urbana_2024":77.3514019165
+    },
+    {
+        "Cod_IBGE":3516853,
+        "Populacao":4702,
+        "Nome_Municipio":"Gavião Peixoto",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.8377536,
+        "Longitude":-48.492853,
+        "Area_Urbana_2024":330.152909845
+    },
+    {
+        "Cod_IBGE":3516903,
+        "Populacao":10312,
+        "Nome_Municipio":"General Salgado",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-20.6488139,
+        "Longitude":-50.3608101,
+        "Area_Urbana_2024":352.8044175537
+    },
+    {
+        "Cod_IBGE":3517000,
+        "Populacao":10232,
+        "Nome_Municipio":"Getulina",
+        "Região Intermediária":"Marília",
+        "Latitude":-21.7988557,
+        "Longitude":-49.9288096,
+        "Area_Urbana_2024":219.1305312683
+    },
+    {
+        "Cod_IBGE":3517109,
+        "Populacao":4138,
+        "Nome_Municipio":"Glicério",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.3814805,
+        "Longitude":-50.2100452,
+        "Area_Urbana_2024":169.7015150085
+    },
+    {
+        "Cod_IBGE":3517208,
+        "Populacao":11239,
+        "Nome_Municipio":"Guaiçara",
+        "Região Intermediária":"Bauru",
+        "Latitude":-21.6213012,
+        "Longitude":-49.7962941,
+        "Area_Urbana_2024":411.7909798218
+    },
+    {
+        "Cod_IBGE":3517307,
+        "Populacao":5512,
+        "Nome_Municipio":"Guaimbê",
+        "Região Intermediária":"Marília",
+        "Latitude":-21.909072,
+        "Longitude":-49.89861,
+        "Area_Urbana_2024":132.7873167725
+    },
+    {
+        "Cod_IBGE":3517406,
+        "Populacao":39279,
+        "Nome_Municipio":"Guaíra",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.3245873,
+        "Longitude":-48.3148818,
+        "Area_Urbana_2024":1202.9861057129
+    },
+    {
+        "Cod_IBGE":3517505,
+        "Populacao":21711,
+        "Nome_Municipio":"Guapiaçu",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.79663,
+        "Longitude":-49.2253917,
+        "Area_Urbana_2024":481.8789879883
+    },
+    {
+        "Cod_IBGE":3517604,
+        "Populacao":17071,
+        "Nome_Municipio":"Guapiara",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.18921,
+        "Longitude":-48.529549,
+        "Area_Urbana_2024":370.9434263245
+    },
+    {
+        "Cod_IBGE":3517703,
+        "Populacao":18606,
+        "Nome_Municipio":"Guará",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.4290496,
+        "Longitude":-47.8250067,
+        "Area_Urbana_2024":585.2390095032
+    },
+    {
+        "Cod_IBGE":3517802,
+        "Populacao":7441,
+        "Nome_Municipio":"Guaraçaí",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.0322387,
+        "Longitude":-51.2100464,
+        "Area_Urbana_2024":203.1978480103
+    },
+    {
+        "Cod_IBGE":3517901,
+        "Populacao":10350,
+        "Nome_Municipio":"Guaraci",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.4976771,
+        "Longitude":-48.9452074,
+        "Area_Urbana_2024":354.4190345398
+    },
+    {
+        "Cod_IBGE":3518008,
+        "Populacao":1968,
+        "Nome_Municipio":"Guarani d'Oeste",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.0749605,
+        "Longitude":-50.3398517,
+        "Area_Urbana_2024":61.3920458069
+    },
+    {
+        "Cod_IBGE":3518107,
+        "Populacao":6427,
+        "Nome_Municipio":"Guarantã",
+        "Região Intermediária":"Bauru",
+        "Latitude":-21.8950705,
+        "Longitude":-49.590107,
+        "Area_Urbana_2024":204.4387674133
+    },
+    {
+        "Cod_IBGE":3518206,
+        "Populacao":31043,
+        "Nome_Municipio":"Guararapes",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.2542739,
+        "Longitude":-50.6440083,
+        "Area_Urbana_2024":912.8865722595
+    },
+    {
+        "Cod_IBGE":3518305,
+        "Populacao":31236,
+        "Nome_Municipio":"Guararema",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.4136776,
+        "Longitude":-46.0383744,
+        "Area_Urbana_2024":1582.083529071
+    },
+    {
+        "Cod_IBGE":3518404,
+        "Populacao":118044,
+        "Nome_Municipio":"Guaratinguetá",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.8057839,
+        "Longitude":-45.1908926,
+        "Area_Urbana_2024":2820.7941449768
+    },
+    {
+        "Cod_IBGE":3518503,
+        "Populacao":15013,
+        "Nome_Municipio":"Guareí",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.3718195,
+        "Longitude":-48.184685,
+        "Area_Urbana_2024":230.25653974
+    },
+    {
+        "Cod_IBGE":3518602,
+        "Populacao":37498,
+        "Nome_Municipio":"Guariba",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.35938,
+        "Longitude":-48.23158,
+        "Area_Urbana_2024":1130.1152173706
+    },
+    {
+        "Cod_IBGE":3518701,
+        "Populacao":287634,
+        "Nome_Municipio":"Guarujá",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.9927768,
+        "Longitude":-46.2558332,
+        "Area_Urbana_2024":4103.1002292785
+    },
+    {
+        "Cod_IBGE":3518800,
+        "Populacao":1291771,
+        "Nome_Municipio":"Guarulhos",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.4675941,
+        "Longitude":-46.5277704,
+        "Area_Urbana_2024":15808.0020680048
+    },
+    {
+        "Cod_IBGE":3518859,
+        "Populacao":7320,
+        "Nome_Municipio":"Guatapará",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.496092,
+        "Longitude":-48.0360685,
+        "Area_Urbana_2024":311.0266404785
+    },
+    {
+        "Cod_IBGE":3518909,
+        "Populacao":4246,
+        "Nome_Municipio":"Guzolândia",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-20.6491637,
+        "Longitude":-50.6622974,
+        "Area_Urbana_2024":113.2908069153
+    },
+    {
+        "Cod_IBGE":3519006,
+        "Populacao":9125,
+        "Nome_Municipio":"Herculândia",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.004508,
+        "Longitude":-50.3862746,
+        "Area_Urbana_2024":346.7891134521
+    },
+    {
+        "Cod_IBGE":3519055,
+        "Populacao":15094,
+        "Nome_Municipio":"Holambra",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.6332028,
+        "Longitude":-47.0545305,
+        "Area_Urbana_2024":1153.5523663757
+    },
+    {
+        "Cod_IBGE":3519071,
+        "Populacao":236641,
+        "Nome_Municipio":"Hortolândia",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.8620175,
+        "Longitude":-47.2164219,
+        "Area_Urbana_2024":4533.7681413516
+    },
+    {
+        "Cod_IBGE":3519105,
+        "Populacao":10437,
+        "Nome_Municipio":"Iacanga",
+        "Região Intermediária":"Bauru",
+        "Latitude":-21.8928341,
+        "Longitude":-49.0226082,
+        "Area_Urbana_2024":383.2305911133
+    },
+    {
+        "Cod_IBGE":3519204,
+        "Populacao":6131,
+        "Nome_Municipio":"Iacri",
+        "Região Intermediária":"Marília",
+        "Latitude":-21.8583385,
+        "Longitude":-50.6892931,
+        "Area_Urbana_2024":213.0505372131
+    },
+    {
+        "Cod_IBGE":3519253,
+        "Populacao":8010,
+        "Nome_Municipio":"Iaras",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-22.8742567,
+        "Longitude":-49.1593923,
+        "Area_Urbana_2024":234.56024823
+    },
+    {
+        "Cod_IBGE":3519303,
+        "Populacao":32178,
+        "Nome_Municipio":"Ibaté",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.9562015,
+        "Longitude":-48.0007848,
+        "Area_Urbana_2024":959.9015015015
+    },
+    {
+        "Cod_IBGE":3519402,
+        "Populacao":11690,
+        "Nome_Municipio":"Ibirá",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.0815104,
+        "Longitude":-49.2424619,
+        "Area_Urbana_2024":338.7433655395
+    },
+    {
+        "Cod_IBGE":3519501,
+        "Populacao":6385,
+        "Nome_Municipio":"Ibirarema",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.8131812,
+        "Longitude":-50.0720477,
+        "Area_Urbana_2024":320.9653089478
+    },
+    {
+        "Cod_IBGE":3519600,
+        "Populacao":60033,
+        "Nome_Municipio":"Ibitinga",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.75623,
+        "Longitude":-48.831903,
+        "Area_Urbana_2024":1687.9017116333
+    },
+    {
+        "Cod_IBGE":3519709,
+        "Populacao":75605,
+        "Nome_Municipio":"Ibiúna",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.6544825,
+        "Longitude":-47.220856,
+        "Area_Urbana_2024":3309.9862307128
+    },
+    {
+        "Cod_IBGE":3519808,
+        "Populacao":7819,
+        "Nome_Municipio":"Icém",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.3413103,
+        "Longitude":-49.1970982,
+        "Area_Urbana_2024":281.2671030273
+    },
+    {
+        "Cod_IBGE":3519907,
+        "Populacao":7619,
+        "Nome_Municipio":"Iepê",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.660165,
+        "Longitude":-51.077881,
+        "Area_Urbana_2024":224.1793810303
+    },
+    {
+        "Cod_IBGE":3520004,
+        "Populacao":23106,
+        "Nome_Municipio":"Igaraçu do Tietê",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.5118084,
+        "Longitude":-48.5578207,
+        "Area_Urbana_2024":499.9509180725
+    },
+    {
+        "Cod_IBGE":3520103,
+        "Populacao":26212,
+        "Nome_Municipio":"Igarapava",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.0411748,
+        "Longitude":-47.7476682,
+        "Area_Urbana_2024":812.8377561096
+    },
+    {
+        "Cod_IBGE":3520202,
+        "Populacao":10605,
+        "Nome_Municipio":"Igaratá",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-23.2063475,
+        "Longitude":-46.156934,
+        "Area_Urbana_2024":573.869621228
+    },
+    {
+        "Cod_IBGE":3520301,
+        "Populacao":29115,
+        "Nome_Municipio":"Iguape",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.7042692,
+        "Longitude":-47.5563733,
+        "Area_Urbana_2024":607.4226433838
+    },
+    {
+        "Cod_IBGE":3520400,
+        "Populacao":34934,
+        "Nome_Municipio":"Ilhabela",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-23.816628,
+        "Longitude":-45.368685,
+        "Area_Urbana_2024":600.6195157654
+    },
+    {
+        "Cod_IBGE":3520426,
+        "Populacao":13419,
+        "Nome_Municipio":"Ilha Comprida",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.7445292,
+        "Longitude":-47.5525529,
+        "Area_Urbana_2024":1643.1285205139
+    },
+    {
+        "Cod_IBGE":3520442,
+        "Populacao":25549,
+        "Nome_Municipio":"Ilha Solteira",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-20.4281001,
+        "Longitude":-51.3410871,
+        "Area_Urbana_2024":764.3772716064
+    },
+    {
+        "Cod_IBGE":3520509,
+        "Populacao":255748,
+        "Nome_Municipio":"Indaiatuba",
+        "Região Intermediária":"Campinas",
+        "Latitude":-23.0908356,
+        "Longitude":-47.2180677,
+        "Area_Urbana_2024":6867.8086857174
+    },
+    {
+        "Cod_IBGE":3520608,
+        "Populacao":5090,
+        "Nome_Municipio":"Indiana",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.1748508,
+        "Longitude":-51.2534615,
+        "Area_Urbana_2024":152.4519307617
+    },
+    {
+        "Cod_IBGE":3520707,
+        "Populacao":4035,
+        "Nome_Municipio":"Indiaporã",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-19.9802644,
+        "Longitude":-50.2906035,
+        "Area_Urbana_2024":120.8388174866
+    },
+    {
+        "Cod_IBGE":3520806,
+        "Populacao":3615,
+        "Nome_Municipio":"Inúbia Paulista",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.7701831,
+        "Longitude":-50.9616718,
+        "Area_Urbana_2024":106.6303915588
+    },
+    {
+        "Cod_IBGE":3520905,
+        "Populacao":13712,
+        "Nome_Municipio":"Ipaussu",
+        "Região Intermediária":"Marília",
+        "Latitude":-23.0544285,
+        "Longitude":-49.6264306,
+        "Area_Urbana_2024":513.3357325317
+    },
+    {
+        "Cod_IBGE":3521002,
+        "Populacao":36459,
+        "Nome_Municipio":"Iperó",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.3508977,
+        "Longitude":-47.687611,
+        "Area_Urbana_2024":1147.1782852356
+    },
+    {
+        "Cod_IBGE":3521101,
+        "Populacao":6831,
+        "Nome_Municipio":"Ipeúna",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.4356582,
+        "Longitude":-47.7146714,
+        "Area_Urbana_2024":373.504841156
+    },
+    {
+        "Cod_IBGE":3521150,
+        "Populacao":6761,
+        "Nome_Municipio":"Ipiguá",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.657282,
+        "Longitude":-49.3881146,
+        "Area_Urbana_2024":209.9513091675
+    },
+    {
+        "Cod_IBGE":3521200,
+        "Populacao":4046,
+        "Nome_Municipio":"Iporanga",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.5843214,
+        "Longitude":-48.594028,
+        "Area_Urbana_2024":48.8891907043
+    },
+    {
+        "Cod_IBGE":3521309,
+        "Populacao":14454,
+        "Nome_Municipio":"Ipuã",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.4441839,
+        "Longitude":-48.012504,
+        "Area_Urbana_2024":394.9309823425
+    },
+    {
+        "Cod_IBGE":3521408,
+        "Populacao":21967,
+        "Nome_Municipio":"Iracemápolis",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.5869091,
+        "Longitude":-47.5160966,
+        "Area_Urbana_2024":769.5951925537
+    },
+    {
+        "Cod_IBGE":3521507,
+        "Populacao":6867,
+        "Nome_Municipio":"Irapuã",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.2791964,
+        "Longitude":-49.4101967,
+        "Area_Urbana_2024":145.4526892151
+    },
+    {
+        "Cod_IBGE":3521606,
+        "Populacao":7085,
+        "Nome_Municipio":"Irapuru",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.5691828,
+        "Longitude":-51.3494606,
+        "Area_Urbana_2024":190.7335452209
+    },
+    {
+        "Cod_IBGE":3521705,
+        "Populacao":17983,
+        "Nome_Municipio":"Itaberá",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.8621345,
+        "Longitude":-49.1398926,
+        "Area_Urbana_2024":489.545255835
+    },
+    {
+        "Cod_IBGE":3521804,
+        "Populacao":25180,
+        "Nome_Municipio":"Itaí",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.4172598,
+        "Longitude":-49.0935788,
+        "Area_Urbana_2024":1761.3944455566
+    },
+    {
+        "Cod_IBGE":3521903,
+        "Populacao":16989,
+        "Nome_Municipio":"Itajobi",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.312294,
+        "Longitude":-49.0596336,
+        "Area_Urbana_2024":514.2743466431
+    },
+    {
+        "Cod_IBGE":3522000,
+        "Populacao":3618,
+        "Nome_Municipio":"Itaju",
+        "Região Intermediária":"Bauru",
+        "Latitude":-21.9816841,
+        "Longitude":-48.8046536,
+        "Area_Urbana_2024":194.2786617065
+    },
+    {
+        "Cod_IBGE":3522109,
+        "Populacao":112476,
+        "Nome_Municipio":"Itanhaém",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-24.1833421,
+        "Longitude":-46.7896229,
+        "Area_Urbana_2024":4067.2699961609
+    },
+    {
+        "Cod_IBGE":3522158,
+        "Populacao":3422,
+        "Nome_Municipio":"Itaoca",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.6409691,
+        "Longitude":-48.8410159,
+        "Area_Urbana_2024":32.6595001648
+    },
+    {
+        "Cod_IBGE":3522208,
+        "Populacao":158522,
+        "Nome_Municipio":"Itapecerica da Serra",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.7176303,
+        "Longitude":-46.8492435,
+        "Area_Urbana_2024":2441.9768513123
+    },
+    {
+        "Cod_IBGE":3522307,
+        "Populacao":157790,
+        "Nome_Municipio":"Itapetininga",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.588607,
+        "Longitude":-48.048326,
+        "Area_Urbana_2024":4602.4626262938
+    },
+    {
+        "Cod_IBGE":3522406,
+        "Populacao":89728,
+        "Nome_Municipio":"Itapeva",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.9849105,
+        "Longitude":-48.8803886,
+        "Area_Urbana_2024":2348.1518190674
+    },
+    {
+        "Cod_IBGE":3522505,
+        "Populacao":232297,
+        "Nome_Municipio":"Itapevi",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.54888,
+        "Longitude":-46.933889,
+        "Area_Urbana_2024":2773.4995990601
+    },
+    {
+        "Cod_IBGE":3522604,
+        "Populacao":72022,
+        "Nome_Municipio":"Itapira",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.436111,
+        "Longitude":-46.821667,
+        "Area_Urbana_2024":2034.403888794
+    },
+    {
+        "Cod_IBGE":3522653,
+        "Populacao":4306,
+        "Nome_Municipio":"Itapirapuã Paulista",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.5735083,
+        "Longitude":-49.1703846,
+        "Area_Urbana_2024":72.8651175293
+    },
+    {
+        "Cod_IBGE":3522703,
+        "Populacao":39493,
+        "Nome_Municipio":"Itápolis",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.5958368,
+        "Longitude":-48.8122696,
+        "Area_Urbana_2024":1336.5277811585
+    },
+    {
+        "Cod_IBGE":3522802,
+        "Populacao":14085,
+        "Nome_Municipio":"Itaporanga",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.7066252,
+        "Longitude":-49.4895934,
+        "Area_Urbana_2024":344.4643383179
+    },
+    {
+        "Cod_IBGE":3522901,
+        "Populacao":13659,
+        "Nome_Municipio":"Itapuí",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.2346755,
+        "Longitude":-48.7189744,
+        "Area_Urbana_2024":370.765041748
+    },
+    {
+        "Cod_IBGE":3523008,
+        "Populacao":3979,
+        "Nome_Municipio":"Itapura",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-20.6435211,
+        "Longitude":-51.5084479,
+        "Area_Urbana_2024":136.16997677
+    },
+    {
+        "Cod_IBGE":3523107,
+        "Populacao":369275,
+        "Nome_Municipio":"Itaquaquecetuba",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.4754492,
+        "Longitude":-46.3514033,
+        "Area_Urbana_2024":5316.1555317808
+    },
+    {
+        "Cod_IBGE":3523206,
+        "Populacao":44438,
+        "Nome_Municipio":"Itararé",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.1145368,
+        "Longitude":-49.3352464,
+        "Area_Urbana_2024":1125.9944039734
+    },
+    {
+        "Cod_IBGE":3523305,
+        "Populacao":15528,
+        "Nome_Municipio":"Itariri",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-24.2900711,
+        "Longitude":-47.176151,
+        "Area_Urbana_2024":256.5144112305
+    },
+    {
+        "Cod_IBGE":3523404,
+        "Populacao":121590,
+        "Nome_Municipio":"Itatiba",
+        "Região Intermediária":"Campinas",
+        "Latitude":-23.0055542,
+        "Longitude":-46.8397726,
+        "Area_Urbana_2024":3895.8421274781
+    },
+    {
+        "Cod_IBGE":3523503,
+        "Populacao":19070,
+        "Nome_Municipio":"Itatinga",
+        "Região Intermediária":"Bauru",
+        "Latitude":-23.1042417,
+        "Longitude":-48.6134874,
+        "Area_Urbana_2024":530.9761041809
+    },
+    {
+        "Cod_IBGE":3523602,
+        "Populacao":16148,
+        "Nome_Municipio":"Itirapina",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-22.2536514,
+        "Longitude":-47.8212546,
+        "Area_Urbana_2024":902.9990269653
+    },
+    {
+        "Cod_IBGE":3523701,
+        "Populacao":5779,
+        "Nome_Municipio":"Itirapuã",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.6406814,
+        "Longitude":-47.2193817,
+        "Area_Urbana_2024":114.3843114807
+    },
+    {
+        "Cod_IBGE":3523800,
+        "Populacao":8046,
+        "Nome_Municipio":"Itobi",
+        "Região Intermediária":"Campinas",
+        "Latitude":-21.730853,
+        "Longitude":-46.9743,
+        "Area_Urbana_2024":179.9513390381
+    },
+    {
+        "Cod_IBGE":3523909,
+        "Populacao":168240,
+        "Nome_Municipio":"Itu",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.2637798,
+        "Longitude":-47.2998462,
+        "Area_Urbana_2024":6519.5890495358
+    },
+    {
+        "Cod_IBGE":3524006,
+        "Populacao":70616,
+        "Nome_Municipio":"Itupeva",
+        "Região Intermediária":"Campinas",
+        "Latitude":-23.1531055,
+        "Longitude":-47.0580347,
+        "Area_Urbana_2024":3250.9671244873
+    },
+    {
+        "Cod_IBGE":3524105,
+        "Populacao":37571,
+        "Nome_Municipio":"Ituverava",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.3366604,
+        "Longitude":-47.7797924,
+        "Area_Urbana_2024":1134.8687427002
+    },
+    {
+        "Cod_IBGE":3524204,
+        "Populacao":6221,
+        "Nome_Municipio":"Jaborandi",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.6921079,
+        "Longitude":-48.4144076,
+        "Area_Urbana_2024":162.8508382446
+    },
+    {
+        "Cod_IBGE":3524303,
+        "Populacao":71821,
+        "Nome_Municipio":"Jaboticabal",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.252037,
+        "Longitude":-48.325223,
+        "Area_Urbana_2024":2282.148504602
+    },
+    {
+        "Cod_IBGE":3524402,
+        "Populacao":240275,
+        "Nome_Municipio":"Jacareí",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-23.3050682,
+        "Longitude":-45.9723075,
+        "Area_Urbana_2024":5924.8769220024
+    },
+    {
+        "Cod_IBGE":3524501,
+        "Populacao":7613,
+        "Nome_Municipio":"Jaci",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.8844434,
+        "Longitude":-49.5710544,
+        "Area_Urbana_2024":205.4050733704
+    },
+    {
+        "Cod_IBGE":3524600,
+        "Populacao":16097,
+        "Nome_Municipio":"Jacupiranga",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.6945594,
+        "Longitude":-48.0024027,
+        "Area_Urbana_2024":395.6414149597
+    },
+    {
+        "Cod_IBGE":3524709,
+        "Populacao":59347,
+        "Nome_Municipio":"Jaguariúna",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.70374,
+        "Longitude":-46.985062,
+        "Area_Urbana_2024":1877.3347767945
+    },
+    {
+        "Cod_IBGE":3524808,
+        "Populacao":48776,
+        "Nome_Municipio":"Jales",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.2671767,
+        "Longitude":-50.5492435,
+        "Area_Urbana_2024":1514.6198227295
+    },
+    {
+        "Cod_IBGE":3524907,
+        "Populacao":6397,
+        "Nome_Municipio":"Jambeiro",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-23.2556416,
+        "Longitude":-45.6919926,
+        "Area_Urbana_2024":250.7120483032
+    },
+    {
+        "Cod_IBGE":3525003,
+        "Populacao":118045,
+        "Nome_Municipio":"Jandira",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.5282246,
+        "Longitude":-46.902003,
+        "Area_Urbana_2024":1426.0752826355
+    },
+    {
+        "Cod_IBGE":3525102,
+        "Populacao":45282,
+        "Nome_Municipio":"Jardinópolis",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.0255126,
+        "Longitude":-47.7706807,
+        "Area_Urbana_2024":1356.5980520447
+    },
+    {
+        "Cod_IBGE":3525201,
+        "Populacao":37535,
+        "Nome_Municipio":"Jarinu",
+        "Região Intermediária":"Campinas",
+        "Latitude":-23.0949649,
+        "Longitude":-46.7148565,
+        "Area_Urbana_2024":2050.3110215454
+    },
+    {
+        "Cod_IBGE":3525300,
+        "Populacao":133497,
+        "Nome_Municipio":"Jaú",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.2933031,
+        "Longitude":-48.5593432,
+        "Area_Urbana_2024":3645.4171686037
+    },
+    {
+        "Cod_IBGE":3525409,
+        "Populacao":3863,
+        "Nome_Municipio":"Jeriquara",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.3104773,
+        "Longitude":-47.5915669,
+        "Area_Urbana_2024":89.6013968201
+    },
+    {
+        "Cod_IBGE":3525508,
+        "Populacao":12815,
+        "Nome_Municipio":"Joanópolis",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.930004,
+        "Longitude":-46.275208,
+        "Area_Urbana_2024":334.1971203552
+    },
+    {
+        "Cod_IBGE":3525607,
+        "Populacao":4371,
+        "Nome_Municipio":"João Ramalho",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.2486157,
+        "Longitude":-50.7677114,
+        "Area_Urbana_2024":104.8687934326
+    },
+    {
+        "Cod_IBGE":3525706,
+        "Populacao":36633,
+        "Nome_Municipio":"José Bonifácio",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.055062,
+        "Longitude":-49.689233,
+        "Area_Urbana_2024":1008.2833839966
+    },
+    {
+        "Cod_IBGE":3525805,
+        "Populacao":4254,
+        "Nome_Municipio":"Júlio Mesquita",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.0099839,
+        "Longitude":-49.7889446,
+        "Area_Urbana_2024":102.7172180603
+    },
+    {
+        "Cod_IBGE":3525854,
+        "Populacao":3056,
+        "Nome_Municipio":"Jumirim",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.0843839,
+        "Longitude":-47.7882279,
+        "Area_Urbana_2024":191.9213973084
+    },
+    {
+        "Cod_IBGE":3525904,
+        "Populacao":443221,
+        "Nome_Municipio":"Jundiaí",
+        "Região Intermediária":"Campinas",
+        "Latitude":-23.1887668,
+        "Longitude":-46.884506,
+        "Area_Urbana_2024":10829.6048056747
+    },
+    {
+        "Cod_IBGE":3526001,
+        "Populacao":20448,
+        "Nome_Municipio":"Junqueirópolis",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.5109531,
+        "Longitude":-51.4351505,
+        "Area_Urbana_2024":673.9110633057
+    },
+    {
+        "Cod_IBGE":3526100,
+        "Populacao":17154,
+        "Nome_Municipio":"Juquiá",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.3172209,
+        "Longitude":-47.6355618,
+        "Area_Urbana_2024":364.1476474426
+    },
+    {
+        "Cod_IBGE":3526209,
+        "Populacao":27404,
+        "Nome_Municipio":"Juquitiba",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.932346,
+        "Longitude":-47.0714217,
+        "Area_Urbana_2024":441.9479784546
+    },
+    {
+        "Cod_IBGE":3526308,
+        "Populacao":5083,
+        "Nome_Municipio":"Lagoinha",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-23.0898337,
+        "Longitude":-45.1903825,
+        "Area_Urbana_2024":73.011772467
+    },
+    {
+        "Cod_IBGE":3526407,
+        "Populacao":26261,
+        "Nome_Municipio":"Laranjal Paulista",
+        "Região Intermediária":"Campinas",
+        "Latitude":-23.0514764,
+        "Longitude":-47.8370125,
+        "Area_Urbana_2024":962.6480493897
+    },
+    {
+        "Cod_IBGE":3526506,
+        "Populacao":9689,
+        "Nome_Municipio":"Lavínia",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.1665477,
+        "Longitude":-51.0410539,
+        "Area_Urbana_2024":148.3168158386
+    },
+    {
+        "Cod_IBGE":3526605,
+        "Populacao":7171,
+        "Nome_Municipio":"Lavrinhas",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.5678335,
+        "Longitude":-44.90597,
+        "Area_Urbana_2024":212.5133912842
+    },
+    {
+        "Cod_IBGE":3526704,
+        "Populacao":98161,
+        "Nome_Municipio":"Leme",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.1844807,
+        "Longitude":-47.385295,
+        "Area_Urbana_2024":2633.2363036073
+    },
+    {
+        "Cod_IBGE":3526803,
+        "Populacao":66505,
+        "Nome_Municipio":"Lençóis Paulista",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.6029897,
+        "Longitude":-48.8031367,
+        "Area_Urbana_2024":2084.7561179383
+    },
+    {
+        "Cod_IBGE":3526902,
+        "Populacao":291869,
+        "Nome_Municipio":"Limeira",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.5615068,
+        "Longitude":-47.401766,
+        "Area_Urbana_2024":8172.5149900263
+    },
+    {
+        "Cod_IBGE":3527009,
+        "Populacao":7014,
+        "Nome_Municipio":"Lindóia",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.5229637,
+        "Longitude":-46.6502119,
+        "Area_Urbana_2024":228.8625297729
+    },
+    {
+        "Cod_IBGE":3527108,
+        "Populacao":74779,
+        "Nome_Municipio":"Lins",
+        "Região Intermediária":"Bauru",
+        "Latitude":-21.6741873,
+        "Longitude":-49.7518932,
+        "Area_Urbana_2024":2142.1441114624
+    },
+    {
+        "Cod_IBGE":3527207,
+        "Populacao":84855,
+        "Nome_Municipio":"Lorena",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.7367652,
+        "Longitude":-45.1070876,
+        "Area_Urbana_2024":1805.187510321
+    },
+    {
+        "Cod_IBGE":3527256,
+        "Populacao":1950,
+        "Nome_Municipio":"Lourdes",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-20.9672545,
+        "Longitude":-50.224966,
+        "Area_Urbana_2024":51.0090872986
+    },
+    {
+        "Cod_IBGE":3527306,
+        "Populacao":51847,
+        "Nome_Municipio":"Louveira",
+        "Região Intermediária":"Campinas",
+        "Latitude":-23.08639,
+        "Longitude":-46.95056,
+        "Area_Urbana_2024":1405.0353389587
+    },
+    {
+        "Cod_IBGE":3527405,
+        "Populacao":20061,
+        "Nome_Municipio":"Lucélia",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.7211293,
+        "Longitude":-51.0188,
+        "Area_Urbana_2024":535.6730937317
+    },
+    {
+        "Cod_IBGE":3527504,
+        "Populacao":2372,
+        "Nome_Municipio":"Lucianópolis",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.4310459,
+        "Longitude":-49.5219241,
+        "Area_Urbana_2024":84.4511827148
+    },
+    {
+        "Cod_IBGE":3527603,
+        "Populacao":12265,
+        "Nome_Municipio":"Luís Antônio",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.552463,
+        "Longitude":-47.7033894,
+        "Area_Urbana_2024":514.0408582764
+    },
+    {
+        "Cod_IBGE":3527702,
+        "Populacao":4701,
+        "Nome_Municipio":"Luiziânia",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.6763356,
+        "Longitude":-50.3269863,
+        "Area_Urbana_2024":126.1724736694
+    },
+    {
+        "Cod_IBGE":3527801,
+        "Populacao":3981,
+        "Nome_Municipio":"Lupércio",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.4145801,
+        "Longitude":-49.8183516,
+        "Area_Urbana_2024":80.4081622009
+    },
+    {
+        "Cod_IBGE":3527900,
+        "Populacao":2661,
+        "Nome_Municipio":"Lutécia",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.338378,
+        "Longitude":-50.394007,
+        "Area_Urbana_2024":74.0654708313
+    },
+    {
+        "Cod_IBGE":3528007,
+        "Populacao":16829,
+        "Nome_Municipio":"Macatuba",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.50022,
+        "Longitude":-48.710229,
+        "Area_Urbana_2024":661.6342648743
+    },
+    {
+        "Cod_IBGE":3528106,
+        "Populacao":7481,
+        "Nome_Municipio":"Macaubal",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.8071616,
+        "Longitude":-49.9648439,
+        "Area_Urbana_2024":170.3494397888
+    },
+    {
+        "Cod_IBGE":3528205,
+        "Populacao":3963,
+        "Nome_Municipio":"Macedônia",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.1454034,
+        "Longitude":-50.193911,
+        "Area_Urbana_2024":110.0358543213
+    },
+    {
+        "Cod_IBGE":3528304,
+        "Populacao":3165,
+        "Nome_Municipio":"Magda",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-20.6444651,
+        "Longitude":-50.2260983,
+        "Area_Urbana_2024":108.9377736511
+    },
+    {
+        "Cod_IBGE":3528403,
+        "Populacao":50027,
+        "Nome_Municipio":"Mairinque",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.5401247,
+        "Longitude":-47.1846323,
+        "Area_Urbana_2024":2835.5370097779
+    },
+    {
+        "Cod_IBGE":3528502,
+        "Populacao":93853,
+        "Nome_Municipio":"Mairiporã",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.3190348,
+        "Longitude":-46.5876377,
+        "Area_Urbana_2024":2131.8108570739
+    },
+    {
+        "Cod_IBGE":3528601,
+        "Populacao":9871,
+        "Nome_Municipio":"Manduri",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.0059018,
+        "Longitude":-49.317191,
+        "Area_Urbana_2024":383.406610083
+    },
+    {
+        "Cod_IBGE":3528700,
+        "Populacao":4573,
+        "Nome_Municipio":"Marabá Paulista",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.1069936,
+        "Longitude":-51.9629504,
+        "Area_Urbana_2024":89.8844861511
+    },
+    {
+        "Cod_IBGE":3528809,
+        "Populacao":12673,
+        "Nome_Municipio":"Maracaí",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.6112679,
+        "Longitude":-50.6670685,
+        "Area_Urbana_2024":396.565659436
+    },
+    {
+        "Cod_IBGE":3528858,
+        "Populacao":3292,
+        "Nome_Municipio":"Marapoama",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.2574769,
+        "Longitude":-49.1314719,
+        "Area_Urbana_2024":148.4088583496
+    },
+    {
+        "Cod_IBGE":3528908,
+        "Populacao":3513,
+        "Nome_Municipio":"Mariápolis",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.7966708,
+        "Longitude":-51.1831475,
+        "Area_Urbana_2024":96.7144720764
+    },
+    {
+        "Cod_IBGE":3529005,
+        "Populacao":237627,
+        "Nome_Municipio":"Marília",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.2172002,
+        "Longitude":-49.9500061,
+        "Area_Urbana_2024":5829.6517920527
+    },
+    {
+        "Cod_IBGE":3529104,
+        "Populacao":1860,
+        "Nome_Municipio":"Marinópolis",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.4408333,
+        "Longitude":-50.8227778,
+        "Area_Urbana_2024":49.3362862671
+    },
+    {
+        "Cod_IBGE":3529203,
+        "Populacao":24881,
+        "Nome_Municipio":"Martinópolis",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.146153,
+        "Longitude":-51.170949,
+        "Area_Urbana_2024":645.6235822571
+    },
+    {
+        "Cod_IBGE":3529302,
+        "Populacao":79033,
+        "Nome_Municipio":"Matão",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.6033611,
+        "Longitude":-48.3660603,
+        "Area_Urbana_2024":2548.212586969
+    },
+    {
+        "Cod_IBGE":3529401,
+        "Populacao":418261,
+        "Nome_Municipio":"Mauá",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.6669527,
+        "Longitude":-46.4616922,
+        "Area_Urbana_2024":4230.9161605526
+    },
+    {
+        "Cod_IBGE":3529500,
+        "Populacao":6159,
+        "Nome_Municipio":"Mendonça",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.1838813,
+        "Longitude":-49.579059,
+        "Area_Urbana_2024":253.2512511902
+    },
+    {
+        "Cod_IBGE":3529609,
+        "Populacao":4572,
+        "Nome_Municipio":"Meridiano",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.3547223,
+        "Longitude":-50.172574,
+        "Area_Urbana_2024":224.7536131165
+    },
+    {
+        "Cod_IBGE":3529658,
+        "Populacao":1952,
+        "Nome_Municipio":"Mesópolis",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-19.9662274,
+        "Longitude":-50.6190438,
+        "Area_Urbana_2024":46.453538269
+    },
+    {
+        "Cod_IBGE":3529708,
+        "Populacao":19441,
+        "Nome_Municipio":"Miguelópolis",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.179612,
+        "Longitude":-48.030997,
+        "Area_Urbana_2024":487.7950164246
+    },
+    {
+        "Cod_IBGE":3529807,
+        "Populacao":11230,
+        "Nome_Municipio":"Mineiros do Tietê",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.4133188,
+        "Longitude":-48.450554,
+        "Area_Urbana_2024":428.3579358337
+    },
+    {
+        "Cod_IBGE":3529906,
+        "Populacao":18553,
+        "Nome_Municipio":"Miracatu",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.2839078,
+        "Longitude":-47.4535128,
+        "Area_Urbana_2024":467.8096678528
+    },
+    {
+        "Cod_IBGE":3530003,
+        "Populacao":3126,
+        "Nome_Municipio":"Mira Estrela",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-19.9806298,
+        "Longitude":-50.136873,
+        "Area_Urbana_2024":81.9608259766
+    },
+    {
+        "Cod_IBGE":3530102,
+        "Populacao":27983,
+        "Nome_Municipio":"Mirandópolis",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.1328313,
+        "Longitude":-51.1029422,
+        "Area_Urbana_2024":673.9455019348
+    },
+    {
+        "Cod_IBGE":3530201,
+        "Populacao":15917,
+        "Nome_Municipio":"Mirante do Paranapanema",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.2925861,
+        "Longitude":-51.907143,
+        "Area_Urbana_2024":307.2300373596
+    },
+    {
+        "Cod_IBGE":3530300,
+        "Populacao":63337,
+        "Nome_Municipio":"Mirassol",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.8141411,
+        "Longitude":-49.507449,
+        "Area_Urbana_2024":1932.6450352783
+    },
+    {
+        "Cod_IBGE":3530409,
+        "Populacao":4669,
+        "Nome_Municipio":"Mirassolândia",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.6147204,
+        "Longitude":-49.462817,
+        "Area_Urbana_2024":125.9733192078
+    },
+    {
+        "Cod_IBGE":3530508,
+        "Populacao":67681,
+        "Nome_Municipio":"Mococa",
+        "Região Intermediária":"Campinas",
+        "Latitude":-21.464731,
+        "Longitude":-47.002405,
+        "Area_Urbana_2024":1847.538378595
+    },
+    {
+        "Cod_IBGE":3530607,
+        "Populacao":451505,
+        "Nome_Municipio":"Mogi das Cruzes",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.5234284,
+        "Longitude":-46.1926671,
+        "Area_Urbana_2024":9064.0166378602
+    },
+    {
+        "Cod_IBGE":3530706,
+        "Populacao":153658,
+        "Nome_Municipio":"Mogi Guaçu",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.372222,
+        "Longitude":-46.9425,
+        "Area_Urbana_2024":4155.625407495
+    },
+    {
+        "Cod_IBGE":3530805,
+        "Populacao":92558,
+        "Nome_Municipio":"Mogi Mirim",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.433123,
+        "Longitude":-46.958246,
+        "Area_Urbana_2024":3303.0636764221
+    },
+    {
+        "Cod_IBGE":3530904,
+        "Populacao":3722,
+        "Nome_Municipio":"Mombuca",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.9293093,
+        "Longitude":-47.5650724,
+        "Area_Urbana_2024":168.0491375916
+    },
+    {
+        "Cod_IBGE":3531001,
+        "Populacao":1937,
+        "Nome_Municipio":"Monções",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-20.850949,
+        "Longitude":-50.097537,
+        "Area_Urbana_2024":112.3836190796
+    },
+    {
+        "Cod_IBGE":3531100,
+        "Populacao":61951,
+        "Nome_Municipio":"Mongaguá",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-24.0959454,
+        "Longitude":-46.6234361,
+        "Area_Urbana_2024":1640.8690899047
+    },
+    {
+        "Cod_IBGE":3531209,
+        "Populacao":8627,
+        "Nome_Municipio":"Monte Alegre do Sul",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.681861,
+        "Longitude":-46.6798783,
+        "Area_Urbana_2024":247.8338426575
+    },
+    {
+        "Cod_IBGE":3531308,
+        "Populacao":47574,
+        "Nome_Municipio":"Monte Alto",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.265545,
+        "Longitude":-48.497066,
+        "Area_Urbana_2024":1298.7806074402
+    },
+    {
+        "Cod_IBGE":3531407,
+        "Populacao":22280,
+        "Nome_Municipio":"Monte Aprazível",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.7625702,
+        "Longitude":-49.7088402,
+        "Area_Urbana_2024":633.4977745789
+    },
+    {
+        "Cod_IBGE":3531506,
+        "Populacao":18151,
+        "Nome_Municipio":"Monte Azul Paulista",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.90649,
+        "Longitude":-48.638717,
+        "Area_Urbana_2024":491.5618905334
+    },
+    {
+        "Cod_IBGE":3531605,
+        "Populacao":4222,
+        "Nome_Municipio":"Monte Castelo",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.3006353,
+        "Longitude":-51.5686963,
+        "Area_Urbana_2024":129.9970647095
+    },
+    {
+        "Cod_IBGE":3531704,
+        "Populacao":4138,
+        "Nome_Municipio":"Monteiro Lobato",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.9553542,
+        "Longitude":-45.8387146,
+        "Area_Urbana_2024":27.5507680603
+    },
+    {
+        "Cod_IBGE":3531803,
+        "Populacao":64662,
+        "Nome_Municipio":"Monte Mor",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.945043,
+        "Longitude":-47.312182,
+        "Area_Urbana_2024":1818.6433218384
+    },
+    {
+        "Cod_IBGE":3531902,
+        "Populacao":27933,
+        "Nome_Municipio":"Morro Agudo",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.7276692,
+        "Longitude":-48.052795,
+        "Area_Urbana_2024":749.131156366
+    },
+    {
+        "Cod_IBGE":3532009,
+        "Populacao":13720,
+        "Nome_Municipio":"Morungaba",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.88,
+        "Longitude":-46.79167,
+        "Area_Urbana_2024":314.7729254089
+    },
+    {
+        "Cod_IBGE":3532058,
+        "Populacao":4034,
+        "Nome_Municipio":"Motuca",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.5095864,
+        "Longitude":-48.1503832,
+        "Area_Urbana_2024":158.7188997253
+    },
+    {
+        "Cod_IBGE":3532108,
+        "Populacao":3737,
+        "Nome_Municipio":"Murutinga do Sul",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-20.9913722,
+        "Longitude":-51.2782237,
+        "Area_Urbana_2024":97.9050162781
+    },
+    {
+        "Cod_IBGE":3532157,
+        "Populacao":2660,
+        "Nome_Municipio":"Nantes",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.6191472,
+        "Longitude":-51.2382255,
+        "Area_Urbana_2024":87.056044751
+    },
+    {
+        "Cod_IBGE":3532207,
+        "Populacao":5713,
+        "Nome_Municipio":"Narandiba",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.4080573,
+        "Longitude":-51.5251755,
+        "Area_Urbana_2024":336.3328052551
+    },
+    {
+        "Cod_IBGE":3532306,
+        "Populacao":6999,
+        "Nome_Municipio":"Natividade da Serra",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-23.3783786,
+        "Longitude":-45.4438173,
+        "Area_Urbana_2024":115.1005265381
+    },
+    {
+        "Cod_IBGE":3532405,
+        "Populacao":18217,
+        "Nome_Municipio":"Nazaré Paulista",
+        "Região Intermediária":"Campinas",
+        "Latitude":-23.1819309,
+        "Longitude":-46.3992986,
+        "Area_Urbana_2024":541.0477134888
+    },
+    {
+        "Cod_IBGE":3532504,
+        "Populacao":9699,
+        "Nome_Municipio":"Neves Paulista",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.842992,
+        "Longitude":-49.635767,
+        "Area_Urbana_2024":232.5656930725
+    },
+    {
+        "Cod_IBGE":3532603,
+        "Populacao":9852,
+        "Nome_Municipio":"Nhandeara",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.6943324,
+        "Longitude":-50.0406028,
+        "Area_Urbana_2024":296.1225732605
+    },
+    {
+        "Cod_IBGE":3532702,
+        "Populacao":4750,
+        "Nome_Municipio":"Nipoã",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.9126469,
+        "Longitude":-49.7791476,
+        "Area_Urbana_2024":126.480682312
+    },
+    {
+        "Cod_IBGE":3532801,
+        "Populacao":6693,
+        "Nome_Municipio":"Nova Aliança",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.0163728,
+        "Longitude":-49.4981128,
+        "Area_Urbana_2024":196.5161164368
+    },
+    {
+        "Cod_IBGE":3532827,
+        "Populacao":8497,
+        "Nome_Municipio":"Nova Campina",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.1225305,
+        "Longitude":-48.9054041,
+        "Area_Urbana_2024":265.9349137085
+    },
+    {
+        "Cod_IBGE":3532843,
+        "Populacao":2032,
+        "Nome_Municipio":"Nova Canaã Paulista",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.3872473,
+        "Longitude":-50.9481571,
+        "Area_Urbana_2024":57.0769408325
+    },
+    {
+        "Cod_IBGE":3532868,
+        "Populacao":1062,
+        "Nome_Municipio":"Nova Castilho",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-20.7638386,
+        "Longitude":-50.3427479,
+        "Area_Urbana_2024":36.4234611023
+    },
+    {
+        "Cod_IBGE":3532900,
+        "Populacao":9311,
+        "Nome_Municipio":"Nova Europa",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.7808203,
+        "Longitude":-48.5661712,
+        "Area_Urbana_2024":300.7231410461
+    },
+    {
+        "Cod_IBGE":3533007,
+        "Populacao":19419,
+        "Nome_Municipio":"Nova Granada",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.5345426,
+        "Longitude":-49.3186951,
+        "Area_Urbana_2024":464.0608168823
+    },
+    {
+        "Cod_IBGE":3533106,
+        "Populacao":2156,
+        "Nome_Municipio":"Nova Guataporanga",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.3330061,
+        "Longitude":-51.6465874,
+        "Area_Urbana_2024":74.9111333191
+    },
+    {
+        "Cod_IBGE":3533205,
+        "Populacao":4609,
+        "Nome_Municipio":"Nova Independência",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.1066536,
+        "Longitude":-51.4910804,
+        "Area_Urbana_2024":175.0976203796
+    },
+    {
+        "Cod_IBGE":3533254,
+        "Populacao":4412,
+        "Nome_Municipio":"Novais",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.9941576,
+        "Longitude":-48.9188283,
+        "Area_Urbana_2024":78.9247099854
+    },
+    {
+        "Cod_IBGE":3533304,
+        "Populacao":2837,
+        "Nome_Municipio":"Nova Luzitânia",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-20.8558333,
+        "Longitude":-50.2619444,
+        "Area_Urbana_2024":66.0251336243
+    },
+    {
+        "Cod_IBGE":3533403,
+        "Populacao":62019,
+        "Nome_Municipio":"Nova Odessa",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.7805746,
+        "Longitude":-47.2993805,
+        "Area_Urbana_2024":1976.288503595
+    },
+    {
+        "Cod_IBGE":3533502,
+        "Populacao":38324,
+        "Nome_Municipio":"Novo Horizonte",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.4674564,
+        "Longitude":-49.2235377,
+        "Area_Urbana_2024":1237.7067523499
+    },
+    {
+        "Cod_IBGE":3533601,
+        "Populacao":7391,
+        "Nome_Municipio":"Nuporanga",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.730877,
+        "Longitude":-47.7522561,
+        "Area_Urbana_2024":268.1695595581
+    },
+    {
+        "Cod_IBGE":3533700,
+        "Populacao":4331,
+        "Nome_Municipio":"Ocauçu",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.4396255,
+        "Longitude":-49.9226712,
+        "Area_Urbana_2024":107.0500881958
+    },
+    {
+        "Cod_IBGE":3533809,
+        "Populacao":2512,
+        "Nome_Municipio":"Óleo",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-22.9422754,
+        "Longitude":-49.3408082,
+        "Area_Urbana_2024":120.7460247437
+    },
+    {
+        "Cod_IBGE":3533908,
+        "Populacao":55074,
+        "Nome_Municipio":"Olímpia",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.736634,
+        "Longitude":-48.910625,
+        "Area_Urbana_2024":1856.1826897888
+    },
+    {
+        "Cod_IBGE":3534005,
+        "Populacao":4771,
+        "Nome_Municipio":"Onda Verde",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.6071428,
+        "Longitude":-49.2950997,
+        "Area_Urbana_2024":125.1353649353
+    },
+    {
+        "Cod_IBGE":3534104,
+        "Populacao":6085,
+        "Nome_Municipio":"Oriente",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.1525442,
+        "Longitude":-50.0935645,
+        "Area_Urbana_2024":196.358328302
+    },
+    {
+        "Cod_IBGE":3534203,
+        "Populacao":6024,
+        "Nome_Municipio":"Orindiúva",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.1819444,
+        "Longitude":-49.3508333,
+        "Area_Urbana_2024":168.8223090454
+    },
+    {
+        "Cod_IBGE":3534302,
+        "Populacao":38319,
+        "Nome_Municipio":"Orlândia",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.720278,
+        "Longitude":-47.886667,
+        "Area_Urbana_2024":1169.0014472046
+    },
+    {
+        "Cod_IBGE":3534401,
+        "Populacao":728615,
+        "Nome_Municipio":"Osasco",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.5324859,
+        "Longitude":-46.7916801,
+        "Area_Urbana_2024":5913.6480320007
+    },
+    {
+        "Cod_IBGE":3534500,
+        "Populacao":2470,
+        "Nome_Municipio":"Oscar Bressane",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.314874,
+        "Longitude":-50.281118,
+        "Area_Urbana_2024":65.2952670227
+    },
+    {
+        "Cod_IBGE":3534609,
+        "Populacao":31272,
+        "Nome_Municipio":"Osvaldo Cruz",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.7962773,
+        "Longitude":-50.879119,
+        "Area_Urbana_2024":885.2580268372
+    },
+    {
+        "Cod_IBGE":3534708,
+        "Populacao":103970,
+        "Nome_Municipio":"Ourinhos",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.9777918,
+        "Longitude":-49.868204,
+        "Area_Urbana_2024":3362.2275190491
+    },
+    {
+        "Cod_IBGE":3534757,
+        "Populacao":10294,
+        "Nome_Municipio":"Ouroeste",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.0013584,
+        "Longitude":-50.3736414,
+        "Area_Urbana_2024":442.1187500061
+    },
+    {
+        "Cod_IBGE":3534807,
+        "Populacao":7779,
+        "Nome_Municipio":"Ouro Verde",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.4892638,
+        "Longitude":-51.7025981,
+        "Area_Urbana_2024":259.2492444519
+    },
+    {
+        "Cod_IBGE":3534906,
+        "Populacao":14877,
+        "Nome_Municipio":"Pacaembu",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.566243,
+        "Longitude":-51.2633114,
+        "Area_Urbana_2024":340.5811577393
+    },
+    {
+        "Cod_IBGE":3535002,
+        "Populacao":11476,
+        "Nome_Municipio":"Palestina",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.389344,
+        "Longitude":-49.4320384,
+        "Area_Urbana_2024":348.0967984436
+    },
+    {
+        "Cod_IBGE":3535101,
+        "Populacao":9650,
+        "Nome_Municipio":"Palmares Paulista",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.085369,
+        "Longitude":-48.803656,
+        "Area_Urbana_2024":231.6078175659
+    },
+    {
+        "Cod_IBGE":3535200,
+        "Populacao":8903,
+        "Nome_Municipio":"Palmeira d'Oeste",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.4168187,
+        "Longitude":-50.762159,
+        "Area_Urbana_2024":224.6412670288
+    },
+    {
+        "Cod_IBGE":3535309,
+        "Populacao":19594,
+        "Nome_Municipio":"Palmital",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.786384,
+        "Longitude":-50.2198965,
+        "Area_Urbana_2024":726.2647127624
+    },
+    {
+        "Cod_IBGE":3535408,
+        "Populacao":14964,
+        "Nome_Municipio":"Panorama",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.3611651,
+        "Longitude":-51.8574008,
+        "Area_Urbana_2024":839.3833900757
+    },
+    {
+        "Cod_IBGE":3535507,
+        "Populacao":41120,
+        "Nome_Municipio":"Paraguaçu Paulista",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.4203497,
+        "Longitude":-50.5792099,
+        "Area_Urbana_2024":1184.9994505493
+    },
+    {
+        "Cod_IBGE":3535606,
+        "Populacao":17667,
+        "Nome_Municipio":"Paraibuna",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-23.3864203,
+        "Longitude":-45.6626797,
+        "Area_Urbana_2024":467.961796106
+    },
+    {
+        "Cod_IBGE":3535705,
+        "Populacao":6099,
+        "Nome_Municipio":"Paraíso",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.015911,
+        "Longitude":-48.776105,
+        "Area_Urbana_2024":193.3362854431
+    },
+    {
+        "Cod_IBGE":3535804,
+        "Populacao":19395,
+        "Nome_Municipio":"Paranapanema",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.390161,
+        "Longitude":-48.720868,
+        "Area_Urbana_2024":2100.2428118957
+    },
+    {
+        "Cod_IBGE":3535903,
+        "Populacao":4031,
+        "Nome_Municipio":"Paranapuã",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.1033995,
+        "Longitude":-50.5858761,
+        "Area_Urbana_2024":128.1431876526
+    },
+    {
+        "Cod_IBGE":3536000,
+        "Populacao":10580,
+        "Nome_Municipio":"Parapuã",
+        "Região Intermediária":"Marília",
+        "Latitude":-21.781309,
+        "Longitude":-50.7922396,
+        "Area_Urbana_2024":422.7841934631
+    },
+    {
+        "Cod_IBGE":3536109,
+        "Populacao":7153,
+        "Nome_Municipio":"Pardinho",
+        "Região Intermediária":"Bauru",
+        "Latitude":-23.0810065,
+        "Longitude":-48.3781499,
+        "Area_Urbana_2024":1009.7218160523
+    },
+    {
+        "Cod_IBGE":3536208,
+        "Populacao":19233,
+        "Nome_Municipio":"Pariquera-Açu",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.7146891,
+        "Longitude":-47.8802361,
+        "Area_Urbana_2024":456.1973729004
+    },
+    {
+        "Cod_IBGE":3536257,
+        "Populacao":2892,
+        "Nome_Municipio":"Parisi",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.2588263,
+        "Longitude":-50.0416148,
+        "Area_Urbana_2024":65.2511514221
+    },
+    {
+        "Cod_IBGE":3536307,
+        "Populacao":14512,
+        "Nome_Municipio":"Patrocínio Paulista",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.6383609,
+        "Longitude":-47.2801241,
+        "Area_Urbana_2024":439.1588111755
+    },
+    {
+        "Cod_IBGE":3536406,
+        "Populacao":7955,
+        "Nome_Municipio":"Paulicéia",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.3143975,
+        "Longitude":-51.8316259,
+        "Area_Urbana_2024":552.9983616699
+    },
+    {
+        "Cod_IBGE":3536505,
+        "Populacao":110537,
+        "Nome_Municipio":"Paulínia",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.7630391,
+        "Longitude":-47.1532213,
+        "Area_Urbana_2024":4943.5898153686
+    },
+    {
+        "Cod_IBGE":3536570,
+        "Populacao":2090,
+        "Nome_Municipio":"Paulistânia",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.5730321,
+        "Longitude":-49.3985251,
+        "Area_Urbana_2024":94.7848659546
+    },
+    {
+        "Cod_IBGE":3536604,
+        "Populacao":7400,
+        "Nome_Municipio":"Paulo de Faria",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.029593,
+        "Longitude":-49.3998592,
+        "Area_Urbana_2024":188.089767511
+    },
+    {
+        "Cod_IBGE":3536703,
+        "Populacao":44827,
+        "Nome_Municipio":"Pederneiras",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.351086,
+        "Longitude":-48.778113,
+        "Area_Urbana_2024":1752.0101948547
+    },
+    {
+        "Cod_IBGE":3536802,
+        "Populacao":6557,
+        "Nome_Municipio":"Pedra Bela",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.7950193,
+        "Longitude":-46.4431811,
+        "Area_Urbana_2024":144.6110771118
+    },
+    {
+        "Cod_IBGE":3536901,
+        "Populacao":2787,
+        "Nome_Municipio":"Pedranópolis",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.249177,
+        "Longitude":-50.1102463,
+        "Area_Urbana_2024":61.1645297302
+    },
+    {
+        "Cod_IBGE":3537008,
+        "Populacao":15525,
+        "Nome_Municipio":"Pedregulho",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.25071,
+        "Longitude":-47.4808786,
+        "Area_Urbana_2024":408.8302807007
+    },
+    {
+        "Cod_IBGE":3537107,
+        "Populacao":43112,
+        "Nome_Municipio":"Pedreira",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.741347,
+        "Longitude":-46.894846,
+        "Area_Urbana_2024":932.8207802734
+    },
+    {
+        "Cod_IBGE":3537156,
+        "Populacao":2804,
+        "Nome_Municipio":"Pedrinhas Paulista",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.815725,
+        "Longitude":-50.792359,
+        "Area_Urbana_2024":151.266841156
+    },
+    {
+        "Cod_IBGE":3537206,
+        "Populacao":11281,
+        "Nome_Municipio":"Pedro de Toledo",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-24.2769071,
+        "Longitude":-47.23393,
+        "Area_Urbana_2024":160.5713422852
+    },
+    {
+        "Cod_IBGE":3537305,
+        "Populacao":61679,
+        "Nome_Municipio":"Penápolis",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.4192406,
+        "Longitude":-50.0765588,
+        "Area_Urbana_2024":1863.9314293945
+    },
+    {
+        "Cod_IBGE":3537404,
+        "Populacao":24095,
+        "Nome_Municipio":"Pereira Barreto",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-20.6378509,
+        "Longitude":-51.1052172,
+        "Area_Urbana_2024":883.8583552979
+    },
+    {
+        "Cod_IBGE":3537503,
+        "Populacao":8737,
+        "Nome_Municipio":"Pereiras",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.0743096,
+        "Longitude":-47.9746014,
+        "Area_Urbana_2024":291.0027064026
+    },
+    {
+        "Cod_IBGE":3537602,
+        "Populacao":68352,
+        "Nome_Municipio":"Peruíbe",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-24.3218105,
+        "Longitude":-46.9977452,
+        "Area_Urbana_2024":2858.5322970154
+    },
+    {
+        "Cod_IBGE":3537701,
+        "Populacao":5519,
+        "Nome_Municipio":"Piacatu",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.5901744,
+        "Longitude":-50.5972241,
+        "Area_Urbana_2024":172.2156110229
+    },
+    {
+        "Cod_IBGE":3537800,
+        "Populacao":52970,
+        "Nome_Municipio":"Piedade",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.7074096,
+        "Longitude":-47.4252319,
+        "Area_Urbana_2024":1782.4545229432
+    },
+    {
+        "Cod_IBGE":3537909,
+        "Populacao":27619,
+        "Nome_Municipio":"Pilar do Sul",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.8121684,
+        "Longitude":-47.7201865,
+        "Area_Urbana_2024":1368.1597802429
+    },
+    {
+        "Cod_IBGE":3538006,
+        "Populacao":165428,
+        "Nome_Municipio":"Pindamonhangaba",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.9364,
+        "Longitude":-45.4622602,
+        "Area_Urbana_2024":4463.4217327881
+    },
+    {
+        "Cod_IBGE":3538105,
+        "Populacao":14542,
+        "Nome_Municipio":"Pindorama",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.1853,
+        "Longitude":-48.90861,
+        "Area_Urbana_2024":392.2673836304
+    },
+    {
+        "Cod_IBGE":3538204,
+        "Populacao":15224,
+        "Nome_Municipio":"Pinhalzinho",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.7824349,
+        "Longitude":-46.5901718,
+        "Area_Urbana_2024":505.143834198
+    },
+    {
+        "Cod_IBGE":3538303,
+        "Populacao":3264,
+        "Nome_Municipio":"Piquerobi",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.8856652,
+        "Longitude":-51.7296404,
+        "Area_Urbana_2024":110.4415274475
+    },
+    {
+        "Cod_IBGE":3538501,
+        "Populacao":12490,
+        "Nome_Municipio":"Piquete",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.6138451,
+        "Longitude":-45.1777096,
+        "Area_Urbana_2024":204.2439837952
+    },
+    {
+        "Cod_IBGE":3538600,
+        "Populacao":26029,
+        "Nome_Municipio":"Piracaia",
+        "Região Intermediária":"Campinas",
+        "Latitude":-23.052545,
+        "Longitude":-46.359374,
+        "Area_Urbana_2024":875.7598446167
+    },
+    {
+        "Cod_IBGE":3538709,
+        "Populacao":423323,
+        "Nome_Municipio":"Piracicaba",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.725165,
+        "Longitude":-47.6493269,
+        "Area_Urbana_2024":10881.3046573662
+    },
+    {
+        "Cod_IBGE":3538808,
+        "Populacao":29436,
+        "Nome_Municipio":"Piraju",
+        "Região Intermediária":"Marília",
+        "Latitude":-23.1938491,
+        "Longitude":-49.3842588,
+        "Area_Urbana_2024":838.0109671875
+    },
+    {
+        "Cod_IBGE":3538907,
+        "Populacao":22431,
+        "Nome_Municipio":"Pirajuí",
+        "Região Intermediária":"Bauru",
+        "Latitude":-21.9957877,
+        "Longitude":-49.4549675,
+        "Area_Urbana_2024":726.3495920715
+    },
+    {
+        "Cod_IBGE":3539004,
+        "Populacao":10885,
+        "Nome_Municipio":"Pirangi",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.0969623,
+        "Longitude":-48.6652131,
+        "Area_Urbana_2024":314.570326886
+    },
+    {
+        "Cod_IBGE":3539103,
+        "Populacao":18370,
+        "Nome_Municipio":"Pirapora do Bom Jesus",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.3972146,
+        "Longitude":-47.0025661,
+        "Area_Urbana_2024":363.8909466064
+    },
+    {
+        "Cod_IBGE":3539202,
+        "Populacao":25348,
+        "Nome_Municipio":"Pirapozinho",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.2738742,
+        "Longitude":-51.4998867,
+        "Area_Urbana_2024":688.509953418
+    },
+    {
+        "Cod_IBGE":3539301,
+        "Populacao":73545,
+        "Nome_Municipio":"Pirassununga",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.9980468,
+        "Longitude":-47.4280861,
+        "Area_Urbana_2024":2547.4122089539
+    },
+    {
+        "Cod_IBGE":3539400,
+        "Populacao":15108,
+        "Nome_Municipio":"Piratininga",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.4136363,
+        "Longitude":-49.1351479,
+        "Area_Urbana_2024":612.6260947754
+    },
+    {
+        "Cod_IBGE":3539509,
+        "Populacao":33674,
+        "Nome_Municipio":"Pitangueiras",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.013203,
+        "Longitude":-48.220951,
+        "Area_Urbana_2024":908.1350291443
+    },
+    {
+        "Cod_IBGE":3539608,
+        "Populacao":4389,
+        "Nome_Municipio":"Planalto",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.0336277,
+        "Longitude":-49.9284517,
+        "Area_Urbana_2024":145.9436051331
+    },
+    {
+        "Cod_IBGE":3539707,
+        "Populacao":3025,
+        "Nome_Municipio":"Platina",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.6328334,
+        "Longitude":-50.2049642,
+        "Area_Urbana_2024":94.578623822
+    },
+    {
+        "Cod_IBGE":3539806,
+        "Populacao":103765,
+        "Nome_Municipio":"Poá",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.5249082,
+        "Longitude":-46.3445663,
+        "Area_Urbana_2024":1445.4321798157
+    },
+    {
+        "Cod_IBGE":3539905,
+        "Populacao":5592,
+        "Nome_Municipio":"Poloni",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.7836955,
+        "Longitude":-49.8149752,
+        "Area_Urbana_2024":155.805326178
+    },
+    {
+        "Cod_IBGE":3540002,
+        "Populacao":20196,
+        "Nome_Municipio":"Pompéia",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.1088293,
+        "Longitude":-50.1720753,
+        "Area_Urbana_2024":706.7397369263
+    },
+    {
+        "Cod_IBGE":3540101,
+        "Populacao":3395,
+        "Nome_Municipio":"Pongaí",
+        "Região Intermediária":"Bauru",
+        "Latitude":-21.7379814,
+        "Longitude":-49.3584449,
+        "Area_Urbana_2024":107.1587377869
+    },
+    {
+        "Cod_IBGE":3540200,
+        "Populacao":37607,
+        "Nome_Municipio":"Pontal",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.0239714,
+        "Longitude":-48.0393457,
+        "Area_Urbana_2024":728.5437139282
+    },
+    {
+        "Cod_IBGE":3540259,
+        "Populacao":4127,
+        "Nome_Municipio":"Pontalinda",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.44071,
+        "Longitude":-50.5235329,
+        "Area_Urbana_2024":78.7031670044
+    },
+    {
+        "Cod_IBGE":3540309,
+        "Populacao":2387,
+        "Nome_Municipio":"Pontes Gestal",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.1833464,
+        "Longitude":-49.7031406,
+        "Area_Urbana_2024":185.1012156067
+    },
+    {
+        "Cod_IBGE":3540408,
+        "Populacao":4127,
+        "Nome_Municipio":"Populina",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-19.9427771,
+        "Longitude":-50.5372875,
+        "Area_Urbana_2024":132.3090349792
+    },
+    {
+        "Cod_IBGE":3540507,
+        "Populacao":10451,
+        "Nome_Municipio":"Porangaba",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.17615,
+        "Longitude":-48.119464,
+        "Area_Urbana_2024":503.9695206482
+    },
+    {
+        "Cod_IBGE":3540606,
+        "Populacao":56497,
+        "Nome_Municipio":"Porto Feliz",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.2110713,
+        "Longitude":-47.5247163,
+        "Area_Urbana_2024":2604.6581845215
+    },
+    {
+        "Cod_IBGE":3540705,
+        "Populacao":52649,
+        "Nome_Municipio":"Porto Ferreira",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.8529134,
+        "Longitude":-47.4794943,
+        "Area_Urbana_2024":1753.7833221496
+    },
+    {
+        "Cod_IBGE":3540754,
+        "Populacao":20392,
+        "Nome_Municipio":"Potim",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.8377227,
+        "Longitude":-45.2565239,
+        "Area_Urbana_2024":293.1636714722
+    },
+    {
+        "Cod_IBGE":3540804,
+        "Populacao":18496,
+        "Nome_Municipio":"Potirendaba",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.0457369,
+        "Longitude":-49.3767154,
+        "Area_Urbana_2024":540.0528446716
+    },
+    {
+        "Cod_IBGE":3540853,
+        "Populacao":2578,
+        "Nome_Municipio":"Pracinha",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.8537103,
+        "Longitude":-51.0862052,
+        "Area_Urbana_2024":55.1134448914
+    },
+    {
+        "Cod_IBGE":3540903,
+        "Populacao":17078,
+        "Nome_Municipio":"Pradópolis",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.3597815,
+        "Longitude":-48.0746603,
+        "Area_Urbana_2024":624.517590332
+    },
+    {
+        "Cod_IBGE":3541000,
+        "Populacao":349935,
+        "Nome_Municipio":"Praia Grande",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-24.008979,
+        "Longitude":-46.4144939,
+        "Area_Urbana_2024":4020.4699885377
+    },
+    {
+        "Cod_IBGE":3541059,
+        "Populacao":5126,
+        "Nome_Municipio":"Pratânia",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.809027,
+        "Longitude":-48.6656779,
+        "Area_Urbana_2024":135.1710765869
+    },
+    {
+        "Cod_IBGE":3541109,
+        "Populacao":3804,
+        "Nome_Municipio":"Presidente Alves",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.09991,
+        "Longitude":-49.438133,
+        "Area_Urbana_2024":144.0805716675
+    },
+    {
+        "Cod_IBGE":3541208,
+        "Populacao":14490,
+        "Nome_Municipio":"Presidente Bernardes",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.0064609,
+        "Longitude":-51.5542973,
+        "Area_Urbana_2024":402.4860953918
+    },
+    {
+        "Cod_IBGE":3541307,
+        "Populacao":39505,
+        "Nome_Municipio":"Presidente Epitácio",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.765074,
+        "Longitude":-52.11114,
+        "Area_Urbana_2024":1657.5280648255
+    },
+    {
+        "Cod_IBGE":3541406,
+        "Populacao":225668,
+        "Nome_Municipio":"Presidente Prudente",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.1225167,
+        "Longitude":-51.3882528,
+        "Area_Urbana_2024":5991.3007083676
+    },
+    {
+        "Cod_IBGE":3541505,
+        "Populacao":35201,
+        "Nome_Municipio":"Presidente Venceslau",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.877116,
+        "Longitude":-51.8451047,
+        "Area_Urbana_2024":1123.4460693482
+    },
+    {
+        "Cod_IBGE":3541604,
+        "Populacao":35131,
+        "Nome_Municipio":"Promissão",
+        "Região Intermediária":"Bauru",
+        "Latitude":-21.5404913,
+        "Longitude":-49.8574709,
+        "Area_Urbana_2024":768.5046486084
+    },
+    {
+        "Cod_IBGE":3541653,
+        "Populacao":3405,
+        "Nome_Municipio":"Quadra",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.299332,
+        "Longitude":-48.054657,
+        "Area_Urbana_2024":293.0004888611
+    },
+    {
+        "Cod_IBGE":3541703,
+        "Populacao":13163,
+        "Nome_Municipio":"Quatá",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.2470977,
+        "Longitude":-50.7003624,
+        "Area_Urbana_2024":458.4525164429
+    },
+    {
+        "Cod_IBGE":3541802,
+        "Populacao":3265,
+        "Nome_Municipio":"Queiroz",
+        "Região Intermediária":"Marília",
+        "Latitude":-21.7991405,
+        "Longitude":-50.2392786,
+        "Area_Urbana_2024":185.105558783
+    },
+    {
+        "Cod_IBGE":3541901,
+        "Populacao":9159,
+        "Nome_Municipio":"Queluz",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.5371881,
+        "Longitude":-44.7752585,
+        "Area_Urbana_2024":253.6604767273
+    },
+    {
+        "Cod_IBGE":3542008,
+        "Populacao":7038,
+        "Nome_Municipio":"Quintana",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.0705513,
+        "Longitude":-50.308652,
+        "Area_Urbana_2024":262.2910057861
+    },
+    {
+        "Cod_IBGE":3542107,
+        "Populacao":8965,
+        "Nome_Municipio":"Rafard",
+        "Região Intermediária":"Campinas",
+        "Latitude":-23.0143559,
+        "Longitude":-47.5306721,
+        "Area_Urbana_2024":344.7873143372
+    },
+    {
+        "Cod_IBGE":3542206,
+        "Populacao":28588,
+        "Nome_Municipio":"Rancharia",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.2294981,
+        "Longitude":-50.8922333,
+        "Area_Urbana_2024":857.7559982666
+    },
+    {
+        "Cod_IBGE":3542305,
+        "Populacao":4494,
+        "Nome_Municipio":"Redenção da Serra",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-23.2803652,
+        "Longitude":-45.5345747,
+        "Area_Urbana_2024":47.1541953918
+    },
+    {
+        "Cod_IBGE":3542404,
+        "Populacao":20145,
+        "Nome_Municipio":"Regente Feijó",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.2191056,
+        "Longitude":-51.3034558,
+        "Area_Urbana_2024":764.0845499207
+    },
+    {
+        "Cod_IBGE":3542503,
+        "Populacao":7662,
+        "Nome_Municipio":"Reginópolis",
+        "Região Intermediária":"Bauru",
+        "Latitude":-21.8884118,
+        "Longitude":-49.22273,
+        "Area_Urbana_2024":163.5610936279
+    },
+    {
+        "Cod_IBGE":3542602,
+        "Populacao":59947,
+        "Nome_Municipio":"Registro",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.497942,
+        "Longitude":-47.844895,
+        "Area_Urbana_2024":1575.0938564453
+    },
+    {
+        "Cod_IBGE":3542701,
+        "Populacao":6404,
+        "Nome_Municipio":"Restinga",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.6032343,
+        "Longitude":-47.4830912,
+        "Area_Urbana_2024":173.3462347839
+    },
+    {
+        "Cod_IBGE":3542800,
+        "Populacao":3132,
+        "Nome_Municipio":"Ribeira",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.6577435,
+        "Longitude":-49.0086372,
+        "Area_Urbana_2024":32.9028531128
+    },
+    {
+        "Cod_IBGE":3542909,
+        "Populacao":10989,
+        "Nome_Municipio":"Ribeirão Bonito",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-22.0692867,
+        "Longitude":-48.1781765,
+        "Area_Urbana_2024":317.1063857483
+    },
+    {
+        "Cod_IBGE":3543006,
+        "Populacao":18627,
+        "Nome_Municipio":"Ribeirão Branco",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.2211495,
+        "Longitude":-48.7678322,
+        "Area_Urbana_2024":377.8420686951
+    },
+    {
+        "Cod_IBGE":3543105,
+        "Populacao":4608,
+        "Nome_Municipio":"Ribeirão Corrente",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.457872,
+        "Longitude":-47.590394,
+        "Area_Urbana_2024":95.8914626587
+    },
+    {
+        "Cod_IBGE":3543204,
+        "Populacao":4677,
+        "Nome_Municipio":"Ribeirão do Sul",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.7861813,
+        "Longitude":-49.9285258,
+        "Area_Urbana_2024":125.697487384
+    },
+    {
+        "Cod_IBGE":3543238,
+        "Populacao":2025,
+        "Nome_Municipio":"Ribeirão dos Índios",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.8378246,
+        "Longitude":-51.602158,
+        "Area_Urbana_2024":43.646219989
+    },
+    {
+        "Cod_IBGE":3543253,
+        "Populacao":7450,
+        "Nome_Municipio":"Ribeirão Grande",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.10114,
+        "Longitude":-48.367931,
+        "Area_Urbana_2024":253.6624221252
+    },
+    {
+        "Cod_IBGE":3543303,
+        "Populacao":115559,
+        "Nome_Municipio":"Ribeirão Pires",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.7134177,
+        "Longitude":-46.4160929,
+        "Area_Urbana_2024":2181.5580937683
+    },
+    {
+        "Cod_IBGE":3543402,
+        "Populacao":698642,
+        "Nome_Municipio":"Ribeirão Preto",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.1776315,
+        "Longitude":-47.8100983,
+        "Area_Urbana_2024":15318.9349473572
+    },
+    {
+        "Cod_IBGE":3543501,
+        "Populacao":5599,
+        "Nome_Municipio":"Riversul",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.8303603,
+        "Longitude":-49.4340558,
+        "Area_Urbana_2024":148.5766431091
+    },
+    {
+        "Cod_IBGE":3543600,
+        "Populacao":4049,
+        "Nome_Municipio":"Rifaina",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.0811589,
+        "Longitude":-47.4210736,
+        "Area_Urbana_2024":253.5530285461
+    },
+    {
+        "Cod_IBGE":3543709,
+        "Populacao":9098,
+        "Nome_Municipio":"Rincão",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.5881095,
+        "Longitude":-48.0724258,
+        "Area_Urbana_2024":262.1506875671
+    },
+    {
+        "Cod_IBGE":3543808,
+        "Populacao":9259,
+        "Nome_Municipio":"Rinópolis",
+        "Região Intermediária":"Marília",
+        "Latitude":-21.728308,
+        "Longitude":-50.7226134,
+        "Area_Urbana_2024":270.7356849854
+    },
+    {
+        "Cod_IBGE":3543907,
+        "Populacao":201418,
+        "Nome_Municipio":"Rio Claro",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.4100108,
+        "Longitude":-47.5603933,
+        "Area_Urbana_2024":4924.6709389894
+    },
+    {
+        "Cod_IBGE":3544004,
+        "Populacao":31328,
+        "Nome_Municipio":"Rio das Pedras",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.8441256,
+        "Longitude":-47.6065667,
+        "Area_Urbana_2024":1044.0140218384
+    },
+    {
+        "Cod_IBGE":3544103,
+        "Populacao":44170,
+        "Nome_Municipio":"Rio Grande da Serra",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.7441905,
+        "Longitude":-46.3924746,
+        "Area_Urbana_2024":485.2313879394
+    },
+    {
+        "Cod_IBGE":3544202,
+        "Populacao":10309,
+        "Nome_Municipio":"Riolândia",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-19.980944,
+        "Longitude":-49.6814309,
+        "Area_Urbana_2024":196.4846699158
+    },
+    {
+        "Cod_IBGE":3544251,
+        "Populacao":17440,
+        "Nome_Municipio":"Rosana",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.578587,
+        "Longitude":-53.0547967,
+        "Area_Urbana_2024":662.2509811218
+    },
+    {
+        "Cod_IBGE":3544301,
+        "Populacao":10832,
+        "Nome_Municipio":"Roseira",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.8980898,
+        "Longitude":-45.3093218,
+        "Area_Urbana_2024":348.9888507202
+    },
+    {
+        "Cod_IBGE":3544400,
+        "Populacao":2700,
+        "Nome_Municipio":"Rubiácea",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.2996334,
+        "Longitude":-50.7298698,
+        "Area_Urbana_2024":78.4146350952
+    },
+    {
+        "Cod_IBGE":3544509,
+        "Populacao":3833,
+        "Nome_Municipio":"Rubinéia",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.1718325,
+        "Longitude":-50.9995571,
+        "Area_Urbana_2024":281.227457135
+    },
+    {
+        "Cod_IBGE":3544608,
+        "Populacao":5112,
+        "Nome_Municipio":"Sabino",
+        "Região Intermediária":"Bauru",
+        "Latitude":-21.4598472,
+        "Longitude":-49.5776811,
+        "Area_Urbana_2024":159.2832836426
+    },
+    {
+        "Cod_IBGE":3544707,
+        "Populacao":2474,
+        "Nome_Municipio":"Sagres",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.8840628,
+        "Longitude":-50.9574608,
+        "Area_Urbana_2024":64.659906543
+    },
+    {
+        "Cod_IBGE":3544806,
+        "Populacao":6437,
+        "Nome_Municipio":"Sales",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.3418263,
+        "Longitude":-49.4999228,
+        "Area_Urbana_2024":316.3676079834
+    },
+    {
+        "Cod_IBGE":3544905,
+        "Populacao":11411,
+        "Nome_Municipio":"Sales Oliveira",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.769612,
+        "Longitude":-47.836873,
+        "Area_Urbana_2024":450.5450973328
+    },
+    {
+        "Cod_IBGE":3545001,
+        "Populacao":15202,
+        "Nome_Municipio":"Salesópolis",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.528805,
+        "Longitude":-45.84653,
+        "Area_Urbana_2024":289.6957559204
+    },
+    {
+        "Cod_IBGE":3545100,
+        "Populacao":4808,
+        "Nome_Municipio":"Salmourão",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.625096,
+        "Longitude":-50.8605656,
+        "Area_Urbana_2024":108.1512288025
+    },
+    {
+        "Cod_IBGE":3545159,
+        "Populacao":8161,
+        "Nome_Municipio":"Saltinho",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.8446614,
+        "Longitude":-47.675489,
+        "Area_Urbana_2024":366.6150071899
+    },
+    {
+        "Cod_IBGE":3545209,
+        "Populacao":134319,
+        "Nome_Municipio":"Salto",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.1989983,
+        "Longitude":-47.2913682,
+        "Area_Urbana_2024":3834.0152239809
+    },
+    {
+        "Cod_IBGE":3545308,
+        "Populacao":43748,
+        "Nome_Municipio":"Salto de Pirapora",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.6492502,
+        "Longitude":-47.5729465,
+        "Area_Urbana_2024":2199.7394448547
+    },
+    {
+        "Cod_IBGE":3545407,
+        "Populacao":9050,
+        "Nome_Municipio":"Salto Grande",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.8878776,
+        "Longitude":-49.9837107,
+        "Area_Urbana_2024":399.025363562
+    },
+    {
+        "Cod_IBGE":3545506,
+        "Populacao":3645,
+        "Nome_Municipio":"Sandovalina",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.4560782,
+        "Longitude":-51.7634004,
+        "Area_Urbana_2024":96.5179943481
+    },
+    {
+        "Cod_IBGE":3545605,
+        "Populacao":14018,
+        "Nome_Municipio":"Santa Adélia",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.2432992,
+        "Longitude":-48.8061481,
+        "Area_Urbana_2024":504.5135462707
+    },
+    {
+        "Cod_IBGE":3545704,
+        "Populacao":6393,
+        "Nome_Municipio":"Santa Albertina",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.0323485,
+        "Longitude":-50.7278392,
+        "Area_Urbana_2024":252.0256922302
+    },
+    {
+        "Cod_IBGE":3545803,
+        "Populacao":183347,
+        "Nome_Municipio":"Santa Bárbara d'Oeste",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.7542539,
+        "Longitude":-47.4137884,
+        "Area_Urbana_2024":4221.351351953
+    },
+    {
+        "Cod_IBGE":3546009,
+        "Populacao":13975,
+        "Nome_Municipio":"Santa Branca",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-23.3974353,
+        "Longitude":-45.8842294,
+        "Area_Urbana_2024":352.599928949
+    },
+    {
+        "Cod_IBGE":3546108,
+        "Populacao":2598,
+        "Nome_Municipio":"Santa Clara d'Oeste",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.0938889,
+        "Longitude":-50.9263889,
+        "Area_Urbana_2024":85.7729531006
+    },
+    {
+        "Cod_IBGE":3546207,
+        "Populacao":4277,
+        "Nome_Municipio":"Santa Cruz da Conceição",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.1378975,
+        "Longitude":-47.4555647,
+        "Area_Urbana_2024":227.2598817078
+    },
+    {
+        "Cod_IBGE":3546256,
+        "Populacao":2116,
+        "Nome_Municipio":"Santa Cruz da Esperança",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.2918648,
+        "Longitude":-47.4309885,
+        "Area_Urbana_2024":67.4207852539
+    },
+    {
+        "Cod_IBGE":3546306,
+        "Populacao":28864,
+        "Nome_Municipio":"Santa Cruz das Palmeiras",
+        "Região Intermediária":"Campinas",
+        "Latitude":-21.823475,
+        "Longitude":-47.248023,
+        "Area_Urbana_2024":628.3966831421
+    },
+    {
+        "Cod_IBGE":3546405,
+        "Populacao":46442,
+        "Nome_Municipio":"Santa Cruz do Rio Pardo",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.9060715,
+        "Longitude":-49.6277378,
+        "Area_Urbana_2024":1538.7470244507
+    },
+    {
+        "Cod_IBGE":3546504,
+        "Populacao":6118,
+        "Nome_Municipio":"Santa Ernestina",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.4634463,
+        "Longitude":-48.3912139,
+        "Area_Urbana_2024":158.1961862366
+    },
+    {
+        "Cod_IBGE":3546603,
+        "Populacao":34794,
+        "Nome_Municipio":"Santa Fé do Sul",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.2106188,
+        "Longitude":-50.9270837,
+        "Area_Urbana_2024":1094.4061221985
+    },
+    {
+        "Cod_IBGE":3546702,
+        "Populacao":23611,
+        "Nome_Municipio":"Santa Gertrudes",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.4590897,
+        "Longitude":-47.532034,
+        "Area_Urbana_2024":837.5534132385
+    },
+    {
+        "Cod_IBGE":3546801,
+        "Populacao":53174,
+        "Nome_Municipio":"Santa Isabel",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.3194222,
+        "Longitude":-46.2271903,
+        "Area_Urbana_2024":1332.4192017578
+    },
+    {
+        "Cod_IBGE":3546900,
+        "Populacao":7149,
+        "Nome_Municipio":"Santa Lúcia",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.6861811,
+        "Longitude":-48.0836814,
+        "Area_Urbana_2024":162.3651384705
+    },
+    {
+        "Cod_IBGE":3547007,
+        "Populacao":5243,
+        "Nome_Municipio":"Santa Maria da Serra",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.5691072,
+        "Longitude":-48.157095,
+        "Area_Urbana_2024":196.5190613403
+    },
+    {
+        "Cod_IBGE":3547106,
+        "Populacao":2956,
+        "Nome_Municipio":"Santa Mercedes",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.3513258,
+        "Longitude":-51.7534,
+        "Area_Urbana_2024":207.2926526672
+    },
+    {
+        "Cod_IBGE":3547205,
+        "Populacao":1670,
+        "Nome_Municipio":"Santana da Ponte Pensa",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.2543758,
+        "Longitude":-50.7975649,
+        "Area_Urbana_2024":50.5719199707
+    },
+    {
+        "Cod_IBGE":3547304,
+        "Populacao":154105,
+        "Nome_Municipio":"Santana de Parnaíba",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.4446715,
+        "Longitude":-46.9167722,
+        "Area_Urbana_2024":3895.4954906741
+    },
+    {
+        "Cod_IBGE":3547403,
+        "Populacao":2733,
+        "Nome_Municipio":"Santa Rita d'Oeste",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.1448079,
+        "Longitude":-50.8317569,
+        "Area_Urbana_2024":60.7782990295
+    },
+    {
+        "Cod_IBGE":3547502,
+        "Populacao":24833,
+        "Nome_Municipio":"Santa Rita do Passa Quatro",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.7103738,
+        "Longitude":-47.4777943,
+        "Area_Urbana_2024":1036.8947421936
+    },
+    {
+        "Cod_IBGE":3547601,
+        "Populacao":23411,
+        "Nome_Municipio":"Santa Rosa de Viterbo",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.4869452,
+        "Longitude":-47.3654908,
+        "Area_Urbana_2024":804.1075868591
+    },
+    {
+        "Cod_IBGE":3547650,
+        "Populacao":1645,
+        "Nome_Municipio":"Santa Salete",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.2451795,
+        "Longitude":-50.6889625,
+        "Area_Urbana_2024":62.1691568237
+    },
+    {
+        "Cod_IBGE":3547700,
+        "Populacao":17963,
+        "Nome_Municipio":"Santo Anastácio",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.974662,
+        "Longitude":-51.652662,
+        "Area_Urbana_2024":515.364685791
+    },
+    {
+        "Cod_IBGE":3547809,
+        "Populacao":748919,
+        "Nome_Municipio":"Santo André",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.6533509,
+        "Longitude":-46.5279039,
+        "Area_Urbana_2024":6898.2711720517
+    },
+    {
+        "Cod_IBGE":3547908,
+        "Populacao":6775,
+        "Nome_Municipio":"Santo Antônio da Alegria",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.0893048,
+        "Longitude":-47.1523426,
+        "Area_Urbana_2024":165.017401062
+    },
+    {
+        "Cod_IBGE":3548005,
+        "Populacao":23244,
+        "Nome_Municipio":"Santo Antônio de Posse",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.6053304,
+        "Longitude":-46.9197291,
+        "Area_Urbana_2024":918.7211783875
+    },
+    {
+        "Cod_IBGE":3548054,
+        "Populacao":8379,
+        "Nome_Municipio":"Santo Antônio do Aracanguá",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-20.9361894,
+        "Longitude":-50.4959965,
+        "Area_Urbana_2024":353.5323008179
+    },
+    {
+        "Cod_IBGE":3548104,
+        "Populacao":6126,
+        "Nome_Municipio":"Santo Antônio do Jardim",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.1158536,
+        "Longitude":-46.6839541,
+        "Area_Urbana_2024":155.911649054
+    },
+    {
+        "Cod_IBGE":3548203,
+        "Populacao":7133,
+        "Nome_Municipio":"Santo Antônio do Pinhal",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.8250504,
+        "Longitude":-45.6674063,
+        "Area_Urbana_2024":52.0148814209
+    },
+    {
+        "Cod_IBGE":3548302,
+        "Populacao":3000,
+        "Nome_Municipio":"Santo Expedito",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.8508736,
+        "Longitude":-51.3925315,
+        "Area_Urbana_2024":95.2658362
+    },
+    {
+        "Cod_IBGE":3548401,
+        "Populacao":3899,
+        "Nome_Municipio":"Santópolis do Aguapeí",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.6379556,
+        "Longitude":-50.5008527,
+        "Area_Urbana_2024":98.4844889893
+    },
+    {
+        "Cod_IBGE":3548500,
+        "Populacao":418608,
+        "Nome_Municipio":"Santos",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.9609448,
+        "Longitude":-46.3166316,
+        "Area_Urbana_2024":3852.0808803529
+    },
+    {
+        "Cod_IBGE":3548609,
+        "Populacao":11674,
+        "Nome_Municipio":"São Bento do Sapucaí",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.6884605,
+        "Longitude":-45.7329767,
+        "Area_Urbana_2024":141.7326782043
+    },
+    {
+        "Cod_IBGE":3548708,
+        "Populacao":810729,
+        "Nome_Municipio":"São Bernardo do Campo",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.7080345,
+        "Longitude":-46.5506747,
+        "Area_Urbana_2024":8398.6895673029
+    },
+    {
+        "Cod_IBGE":3548807,
+        "Populacao":165655,
+        "Nome_Municipio":"São Caetano do Sul",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.6195923,
+        "Longitude":-46.5688323,
+        "Area_Urbana_2024":1532.1168843628
+    },
+    {
+        "Cod_IBGE":3548906,
+        "Populacao":254857,
+        "Nome_Municipio":"São Carlos",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-22.0180395,
+        "Longitude":-47.891154,
+        "Area_Urbana_2024":6800.9963990236
+    },
+    {
+        "Cod_IBGE":3549003,
+        "Populacao":2602,
+        "Nome_Municipio":"São Francisco",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.3604438,
+        "Longitude":-50.696603,
+        "Area_Urbana_2024":67.4947003235
+    },
+    {
+        "Cod_IBGE":3549102,
+        "Populacao":92547,
+        "Nome_Municipio":"São João da Boa Vista",
+        "Região Intermediária":"Campinas",
+        "Latitude":-21.9687099,
+        "Longitude":-46.7969216,
+        "Area_Urbana_2024":2681.0176664368
+    },
+    {
+        "Cod_IBGE":3549201,
+        "Populacao":2580,
+        "Nome_Municipio":"São João das Duas Pontes",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.3878223,
+        "Longitude":-50.378858,
+        "Area_Urbana_2024":60.3471638184
+    },
+    {
+        "Cod_IBGE":3549250,
+        "Populacao":1846,
+        "Nome_Municipio":"São João de Iracema",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.5134345,
+        "Longitude":-50.352595,
+        "Area_Urbana_2024":48.1390000488
+    },
+    {
+        "Cod_IBGE":3549300,
+        "Populacao":2242,
+        "Nome_Municipio":"São João do Pau d'Alho",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.2701055,
+        "Longitude":-51.6654978,
+        "Area_Urbana_2024":64.8445192078
+    },
+    {
+        "Cod_IBGE":3549409,
+        "Populacao":48558,
+        "Nome_Municipio":"São Joaquim da Barra",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.5814993,
+        "Longitude":-47.8608238,
+        "Area_Urbana_2024":1432.4410658691
+    },
+    {
+        "Cod_IBGE":3549508,
+        "Populacao":7626,
+        "Nome_Municipio":"São José da Bela Vista",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.5934194,
+        "Longitude":-47.6416942,
+        "Area_Urbana_2024":166.899293042
+    },
+    {
+        "Cod_IBGE":3549607,
+        "Populacao":3853,
+        "Nome_Municipio":"São José do Barreiro",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.6452376,
+        "Longitude":-44.5805246,
+        "Area_Urbana_2024":56.9594164795
+    },
+    {
+        "Cod_IBGE":3549706,
+        "Populacao":52205,
+        "Nome_Municipio":"São José do Rio Pardo",
+        "Região Intermediária":"Campinas",
+        "Latitude":-21.595288,
+        "Longitude":-46.887303,
+        "Area_Urbana_2024":1444.3902509765
+    },
+    {
+        "Cod_IBGE":3549805,
+        "Populacao":480393,
+        "Nome_Municipio":"São José do Rio Preto",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.8125851,
+        "Longitude":-49.3804212,
+        "Area_Urbana_2024":11813.4958625179
+    },
+    {
+        "Cod_IBGE":3549904,
+        "Populacao":697054,
+        "Nome_Municipio":"São José dos Campos",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-23.1867782,
+        "Longitude":-45.8854538,
+        "Area_Urbana_2024":13719.1457423886
+    },
+    {
+        "Cod_IBGE":3549953,
+        "Populacao":16067,
+        "Nome_Municipio":"São Lourenço da Serra",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.8535923,
+        "Longitude":-46.9440587,
+        "Area_Urbana_2024":259.8351115479
+    },
+    {
+        "Cod_IBGE":3550001,
+        "Populacao":10337,
+        "Nome_Municipio":"São Luiz do Paraitinga",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-23.2220531,
+        "Longitude":-45.3108444,
+        "Area_Urbana_2024":134.2713182434
+    },
+    {
+        "Cod_IBGE":3550100,
+        "Populacao":37289,
+        "Nome_Municipio":"São Manuel",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.732081,
+        "Longitude":-48.572316,
+        "Area_Urbana_2024":1378.5591705444
+    },
+    {
+        "Cod_IBGE":3550209,
+        "Populacao":32039,
+        "Nome_Municipio":"São Miguel Arcanjo",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.8807771,
+        "Longitude":-47.9963492,
+        "Area_Urbana_2024":853.4795063965
+    },
+    {
+        "Cod_IBGE":3550308,
+        "Populacao":11451999,
+        "Nome_Municipio":"São Paulo",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.5506507,
+        "Longitude":-46.6333824,
+        "Area_Urbana_2024":90518.6059822252
+    },
+    {
+        "Cod_IBGE":3550407,
+        "Populacao":38256,
+        "Nome_Municipio":"São Pedro",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.5512765,
+        "Longitude":-47.9072359,
+        "Area_Urbana_2024":1849.852324176
+    },
+    {
+        "Cod_IBGE":3550506,
+        "Populacao":7217,
+        "Nome_Municipio":"São Pedro do Turvo",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.745286,
+        "Longitude":-49.742829,
+        "Area_Urbana_2024":156.7844288696
+    },
+    {
+        "Cod_IBGE":3550605,
+        "Populacao":79484,
+        "Nome_Municipio":"São Roque",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.5304843,
+        "Longitude":-47.1355473,
+        "Area_Urbana_2024":2391.0901170471
+    },
+    {
+        "Cod_IBGE":3550704,
+        "Populacao":81595,
+        "Nome_Municipio":"São Sebastião",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-23.8027866,
+        "Longitude":-45.4070527,
+        "Area_Urbana_2024":2326.0339872681
+    },
+    {
+        "Cod_IBGE":3550803,
+        "Populacao":10441,
+        "Nome_Municipio":"São Sebastião da Grama",
+        "Região Intermediária":"Campinas",
+        "Latitude":-21.7118854,
+        "Longitude":-46.8284162,
+        "Area_Urbana_2024":278.0756428345
+    },
+    {
+        "Cod_IBGE":3550902,
+        "Populacao":13442,
+        "Nome_Municipio":"São Simão",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.4800208,
+        "Longitude":-47.5531095,
+        "Area_Urbana_2024":510.541519104
+    },
+    {
+        "Cod_IBGE":3551009,
+        "Populacao":329911,
+        "Nome_Municipio":"São Vicente",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.9664177,
+        "Longitude":-46.3861401,
+        "Area_Urbana_2024":2773.0879832154
+    },
+    {
+        "Cod_IBGE":3551108,
+        "Populacao":10369,
+        "Nome_Municipio":"Sarapuí",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.63974,
+        "Longitude":-47.824863,
+        "Area_Urbana_2024":483.3265190247
+    },
+    {
+        "Cod_IBGE":3551207,
+        "Populacao":3704,
+        "Nome_Municipio":"Sarutaiá",
+        "Região Intermediária":"Marília",
+        "Latitude":-23.2747217,
+        "Longitude":-49.477186,
+        "Area_Urbana_2024":143.6025588806
+    },
+    {
+        "Cod_IBGE":3551306,
+        "Populacao":3130,
+        "Nome_Municipio":"Sebastianópolis do Sul",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.6581669,
+        "Longitude":-49.9229043,
+        "Area_Urbana_2024":204.666060675
+    },
+    {
+        "Cod_IBGE":3551405,
+        "Populacao":12746,
+        "Nome_Municipio":"Serra Azul",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.3132591,
+        "Longitude":-47.5635821,
+        "Area_Urbana_2024":345.2663556885
+    },
+    {
+        "Cod_IBGE":3551504,
+        "Populacao":43909,
+        "Nome_Municipio":"Serrana",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.2066883,
+        "Longitude":-47.6053774,
+        "Area_Urbana_2024":958.8022595459
+    },
+    {
+        "Cod_IBGE":3551603,
+        "Populacao":29894,
+        "Nome_Municipio":"Serra Negra",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.6126459,
+        "Longitude":-46.699986,
+        "Area_Urbana_2024":863.0978782288
+    },
+    {
+        "Cod_IBGE":3551702,
+        "Populacao":126887,
+        "Nome_Municipio":"Sertãozinho",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.1375782,
+        "Longitude":-47.9913741,
+        "Area_Urbana_2024":3547.2358769837
+    },
+    {
+        "Cod_IBGE":3551801,
+        "Populacao":12730,
+        "Nome_Municipio":"Sete Barras",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-24.3878438,
+        "Longitude":-47.9265798,
+        "Area_Urbana_2024":177.3424547974
+    },
+    {
+        "Cod_IBGE":3551900,
+        "Populacao":14576,
+        "Nome_Municipio":"Severínia",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.810753,
+        "Longitude":-48.80538,
+        "Area_Urbana_2024":302.0203835083
+    },
+    {
+        "Cod_IBGE":3552007,
+        "Populacao":6186,
+        "Nome_Municipio":"Silveiras",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.66384,
+        "Longitude":-44.852157,
+        "Area_Urbana_2024":92.6335836975
+    },
+    {
+        "Cod_IBGE":3552106,
+        "Populacao":40122,
+        "Nome_Municipio":"Socorro",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.5902619,
+        "Longitude":-46.5249112,
+        "Area_Urbana_2024":795.0036226379
+    },
+    {
+        "Cod_IBGE":3552205,
+        "Populacao":723682,
+        "Nome_Municipio":"Sorocaba",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.5003451,
+        "Longitude":-47.4582864,
+        "Area_Urbana_2024":15850.7376210097
+    },
+    {
+        "Cod_IBGE":3552304,
+        "Populacao":7355,
+        "Nome_Municipio":"Sud Mennucci",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-20.6906175,
+        "Longitude":-50.9240834,
+        "Area_Urbana_2024":229.1255393982
+    },
+    {
+        "Cod_IBGE":3552403,
+        "Populacao":279545,
+        "Nome_Municipio":"Sumaré",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.8217964,
+        "Longitude":-47.267105,
+        "Area_Urbana_2024":5315.7438350035
+    },
+    {
+        "Cod_IBGE":3552502,
+        "Populacao":307429,
+        "Nome_Municipio":"Suzano",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.5427842,
+        "Longitude":-46.3108391,
+        "Area_Urbana_2024":5821.2113457887
+    },
+    {
+        "Cod_IBGE":3552551,
+        "Populacao":3408,
+        "Nome_Municipio":"Suzanápolis",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.5011185,
+        "Longitude":-51.0246771,
+        "Area_Urbana_2024":170.2297853943
+    },
+    {
+        "Cod_IBGE":3552601,
+        "Populacao":11323,
+        "Nome_Municipio":"Tabapuã",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.9648397,
+        "Longitude":-49.0332398,
+        "Area_Urbana_2024":291.2614443298
+    },
+    {
+        "Cod_IBGE":3552700,
+        "Populacao":14769,
+        "Nome_Municipio":"Tabatinga",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.7373768,
+        "Longitude":-48.6880522,
+        "Area_Urbana_2024":423.5361184204
+    },
+    {
+        "Cod_IBGE":3552809,
+        "Populacao":273542,
+        "Nome_Municipio":"Taboão da Serra",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.6121912,
+        "Longitude":-46.7790539,
+        "Area_Urbana_2024":1833.6603744995
+    },
+    {
+        "Cod_IBGE":3552908,
+        "Populacao":6260,
+        "Nome_Municipio":"Taciba",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.3893943,
+        "Longitude":-51.2888486,
+        "Area_Urbana_2024":118.679577771
+    },
+    {
+        "Cod_IBGE":3553005,
+        "Populacao":12669,
+        "Nome_Municipio":"Taguaí",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.4534312,
+        "Longitude":-49.4054454,
+        "Area_Urbana_2024":264.1434527771
+    },
+    {
+        "Cod_IBGE":3553104,
+        "Populacao":5677,
+        "Nome_Municipio":"Taiaçu",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.143144,
+        "Longitude":-48.511203,
+        "Area_Urbana_2024":124.6185265198
+    },
+    {
+        "Cod_IBGE":3553203,
+        "Populacao":6548,
+        "Nome_Municipio":"Taiúva",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.1238184,
+        "Longitude":-48.4512476,
+        "Area_Urbana_2024":160.2198306335
+    },
+    {
+        "Cod_IBGE":3553302,
+        "Populacao":21435,
+        "Nome_Municipio":"Tambaú",
+        "Região Intermediária":"Campinas",
+        "Latitude":-21.70292,
+        "Longitude":-47.270344,
+        "Area_Urbana_2024":800.5834534607
+    },
+    {
+        "Cod_IBGE":3553401,
+        "Populacao":25265,
+        "Nome_Municipio":"Tanabi",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.6251635,
+        "Longitude":-49.6519879,
+        "Area_Urbana_2024":835.5862887695
+    },
+    {
+        "Cod_IBGE":3553500,
+        "Populacao":7996,
+        "Nome_Municipio":"Tapiraí",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.9638345,
+        "Longitude":-47.5067136,
+        "Area_Urbana_2024":179.9986238037
+    },
+    {
+        "Cod_IBGE":3553609,
+        "Populacao":11816,
+        "Nome_Municipio":"Tapiratiba",
+        "Região Intermediária":"Campinas",
+        "Latitude":-21.46824,
+        "Longitude":-46.7493221,
+        "Area_Urbana_2024":330.0315204285
+    },
+    {
+        "Cod_IBGE":3553658,
+        "Populacao":2619,
+        "Nome_Municipio":"Taquaral",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-21.07373,
+        "Longitude":-48.412553,
+        "Area_Urbana_2024":68.2715237976
+    },
+    {
+        "Cod_IBGE":3553708,
+        "Populacao":52260,
+        "Nome_Municipio":"Taquaritinga",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-21.4064327,
+        "Longitude":-48.5056132,
+        "Area_Urbana_2024":1479.9668022705
+    },
+    {
+        "Cod_IBGE":3553807,
+        "Populacao":24350,
+        "Nome_Municipio":"Taquarituba",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.5337307,
+        "Longitude":-49.2452541,
+        "Area_Urbana_2024":665.5826329895
+    },
+    {
+        "Cod_IBGE":3553856,
+        "Populacao":6876,
+        "Nome_Municipio":"Taquarivaí",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.9257829,
+        "Longitude":-48.7005328,
+        "Area_Urbana_2024":261.5277617371
+    },
+    {
+        "Cod_IBGE":3553906,
+        "Populacao":6536,
+        "Nome_Municipio":"Tarabai",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.3038726,
+        "Longitude":-51.5628675,
+        "Area_Urbana_2024":163.0014944519
+    },
+    {
+        "Cod_IBGE":3553955,
+        "Populacao":14882,
+        "Nome_Municipio":"Tarumã",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.7474736,
+        "Longitude":-50.5783374,
+        "Area_Urbana_2024":480.5913479126
+    },
+    {
+        "Cod_IBGE":3554003,
+        "Populacao":123942,
+        "Nome_Municipio":"Tatuí",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.3489848,
+        "Longitude":-47.8490165,
+        "Area_Urbana_2024":4109.2670180785
+    },
+    {
+        "Cod_IBGE":3554102,
+        "Populacao":310739,
+        "Nome_Municipio":"Taubaté",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-23.031448,
+        "Longitude":-45.5612792,
+        "Area_Urbana_2024":7689.7054248476
+    },
+    {
+        "Cod_IBGE":3554201,
+        "Populacao":4127,
+        "Nome_Municipio":"Tejupá",
+        "Região Intermediária":"Marília",
+        "Latitude":-23.3437238,
+        "Longitude":-49.3772468,
+        "Area_Urbana_2024":75.1643125671
+    },
+    {
+        "Cod_IBGE":3554300,
+        "Populacao":22173,
+        "Nome_Municipio":"Teodoro Sampaio",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-22.435,
+        "Longitude":-52.3353654,
+        "Area_Urbana_2024":677.7615388611
+    },
+    {
+        "Cod_IBGE":3554409,
+        "Populacao":7904,
+        "Nome_Municipio":"Terra Roxa",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.787015,
+        "Longitude":-48.331442,
+        "Area_Urbana_2024":172.9618785156
+    },
+    {
+        "Cod_IBGE":3554508,
+        "Populacao":37663,
+        "Nome_Municipio":"Tietê",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.1030302,
+        "Longitude":-47.7147937,
+        "Area_Urbana_2024":1460.5257580933
+    },
+    {
+        "Cod_IBGE":3554607,
+        "Populacao":2464,
+        "Nome_Municipio":"Timburi",
+        "Região Intermediária":"Marília",
+        "Latitude":-23.2064076,
+        "Longitude":-49.6045576,
+        "Area_Urbana_2024":85.8769642395
+    },
+    {
+        "Cod_IBGE":3554656,
+        "Populacao":2046,
+        "Nome_Municipio":"Torre de Pedra",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.2478026,
+        "Longitude":-48.1941034,
+        "Area_Urbana_2024":53.0904397034
+    },
+    {
+        "Cod_IBGE":3554706,
+        "Populacao":9335,
+        "Nome_Municipio":"Torrinha",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.4302536,
+        "Longitude":-48.1690653,
+        "Area_Urbana_2024":263.0381931335
+    },
+    {
+        "Cod_IBGE":3554755,
+        "Populacao":1682,
+        "Nome_Municipio":"Trabiju",
+        "Região Intermediária":"Araraquara",
+        "Latitude":-22.0410733,
+        "Longitude":-48.3350302,
+        "Area_Urbana_2024":46.4915695679
+    },
+    {
+        "Cod_IBGE":3554805,
+        "Populacao":51173,
+        "Nome_Municipio":"Tremembé",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-22.9641763,
+        "Longitude":-45.5489548,
+        "Area_Urbana_2024":1222.7906496033
+    },
+    {
+        "Cod_IBGE":3554904,
+        "Populacao":6804,
+        "Nome_Municipio":"Três Fronteiras",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.234355,
+        "Longitude":-50.890528,
+        "Area_Urbana_2024":212.3029977539
+    },
+    {
+        "Cod_IBGE":3554953,
+        "Populacao":6778,
+        "Nome_Municipio":"Tuiuti",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.8129751,
+        "Longitude":-46.6936447,
+        "Area_Urbana_2024":153.5643355896
+    },
+    {
+        "Cod_IBGE":3555000,
+        "Populacao":63928,
+        "Nome_Municipio":"Tupã",
+        "Região Intermediária":"Marília",
+        "Latitude":-21.9349129,
+        "Longitude":-50.5141255,
+        "Area_Urbana_2024":1876.0806345704
+    },
+    {
+        "Cod_IBGE":3555109,
+        "Populacao":15854,
+        "Nome_Municipio":"Tupi Paulista",
+        "Região Intermediária":"Presidente Prudente",
+        "Latitude":-21.3860829,
+        "Longitude":-51.5762374,
+        "Area_Urbana_2024":422.6180286865
+    },
+    {
+        "Cod_IBGE":3555208,
+        "Populacao":1818,
+        "Nome_Municipio":"Turiúba",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-20.9491284,
+        "Longitude":-50.1082011,
+        "Area_Urbana_2024":61.9710226807
+    },
+    {
+        "Cod_IBGE":3555307,
+        "Populacao":1669,
+        "Nome_Municipio":"Turmalina",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.0530658,
+        "Longitude":-50.4763212,
+        "Area_Urbana_2024":44.5760081543
+    },
+    {
+        "Cod_IBGE":3555356,
+        "Populacao":5365,
+        "Nome_Municipio":"Ubarana",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.1637674,
+        "Longitude":-49.7167796,
+        "Area_Urbana_2024":164.1757554565
+    },
+    {
+        "Cod_IBGE":3555406,
+        "Populacao":92981,
+        "Nome_Municipio":"Ubatuba",
+        "Região Intermediária":"São José dos Campos",
+        "Latitude":-23.433162,
+        "Longitude":-45.083415,
+        "Area_Urbana_2024":2530.9073650207
+    },
+    {
+        "Cod_IBGE":3555505,
+        "Populacao":5132,
+        "Nome_Municipio":"Ubirajara",
+        "Região Intermediária":"Bauru",
+        "Latitude":-22.5261054,
+        "Longitude":-49.6635412,
+        "Area_Urbana_2024":110.364640332
+    },
+    {
+        "Cod_IBGE":3555604,
+        "Populacao":10394,
+        "Nome_Municipio":"Uchoa",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.951106,
+        "Longitude":-49.171295,
+        "Area_Urbana_2024":290.6839709717
+    },
+    {
+        "Cod_IBGE":3555703,
+        "Populacao":1603,
+        "Nome_Municipio":"União Paulista",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.8877642,
+        "Longitude":-49.8976558,
+        "Area_Urbana_2024":43.6729002869
+    },
+    {
+        "Cod_IBGE":3555802,
+        "Populacao":8833,
+        "Nome_Municipio":"Urânia",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.244491,
+        "Longitude":-50.6450868,
+        "Area_Urbana_2024":271.3490519714
+    },
+    {
+        "Cod_IBGE":3555901,
+        "Populacao":1387,
+        "Nome_Municipio":"Uru",
+        "Região Intermediária":"Bauru",
+        "Latitude":-21.7846064,
+        "Longitude":-49.2819702,
+        "Area_Urbana_2024":51.9874613586
+    },
+    {
+        "Cod_IBGE":3556008,
+        "Populacao":13744,
+        "Nome_Municipio":"Urupês",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.2027026,
+        "Longitude":-49.2921996,
+        "Area_Urbana_2024":386.9880480652
+    },
+    {
+        "Cod_IBGE":3556107,
+        "Populacao":14098,
+        "Nome_Municipio":"Valentim Gentil",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.4226107,
+        "Longitude":-50.0861511,
+        "Area_Urbana_2024":393.9939786133
+    },
+    {
+        "Cod_IBGE":3556206,
+        "Populacao":126373,
+        "Nome_Municipio":"Valinhos",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.97056,
+        "Longitude":-46.99583,
+        "Area_Urbana_2024":3795.8814229919
+    },
+    {
+        "Cod_IBGE":3556305,
+        "Populacao":24241,
+        "Nome_Municipio":"Valparaíso",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.2230369,
+        "Longitude":-50.8666375,
+        "Area_Urbana_2024":662.369688031
+    },
+    {
+        "Cod_IBGE":3556354,
+        "Populacao":10512,
+        "Nome_Municipio":"Vargem",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.8902379,
+        "Longitude":-46.4145366,
+        "Area_Urbana_2024":414.9071002014
+    },
+    {
+        "Cod_IBGE":3556404,
+        "Populacao":40133,
+        "Nome_Municipio":"Vargem Grande do Sul",
+        "Região Intermediária":"Campinas",
+        "Latitude":-21.8310636,
+        "Longitude":-46.893303,
+        "Area_Urbana_2024":1169.8158538696
+    },
+    {
+        "Cod_IBGE":3556453,
+        "Populacao":50415,
+        "Nome_Municipio":"Vargem Grande Paulista",
+        "Região Intermediária":"São Paulo",
+        "Latitude":-23.599338,
+        "Longitude":-47.022038,
+        "Area_Urbana_2024":1642.4966987427
+    },
+    {
+        "Cod_IBGE":3556503,
+        "Populacao":115771,
+        "Nome_Municipio":"Várzea Paulista",
+        "Região Intermediária":"Campinas",
+        "Latitude":-23.2113889,
+        "Longitude":-46.8283333,
+        "Area_Urbana_2024":1873.2971063659
+    },
+    {
+        "Cod_IBGE":3556602,
+        "Populacao":10176,
+        "Nome_Municipio":"Vera Cruz",
+        "Região Intermediária":"Marília",
+        "Latitude":-22.2212638,
+        "Longitude":-49.8243021,
+        "Area_Urbana_2024":326.7641194275
+    },
+    {
+        "Cod_IBGE":3556701,
+        "Populacao":76540,
+        "Nome_Municipio":"Vinhedo",
+        "Região Intermediária":"Campinas",
+        "Latitude":-23.0298535,
+        "Longitude":-46.9749847,
+        "Area_Urbana_2024":2971.049400775
+    },
+    {
+        "Cod_IBGE":3556800,
+        "Populacao":17414,
+        "Nome_Municipio":"Viradouro",
+        "Região Intermediária":"Ribeirão Preto",
+        "Latitude":-20.8726051,
+        "Longitude":-48.2968122,
+        "Area_Urbana_2024":440.8007973511
+    },
+    {
+        "Cod_IBGE":3556909,
+        "Populacao":8109,
+        "Nome_Municipio":"Vista Alegre do Alto",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-21.171293,
+        "Longitude":-48.6299172,
+        "Area_Urbana_2024":268.3074148743
+    },
+    {
+        "Cod_IBGE":3556958,
+        "Populacao":1794,
+        "Nome_Municipio":"Vitória Brasil",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.1978821,
+        "Longitude":-50.4847947,
+        "Area_Urbana_2024":45.5464718933
+    },
+    {
+        "Cod_IBGE":3557006,
+        "Populacao":127923,
+        "Nome_Municipio":"Votorantim",
+        "Região Intermediária":"Sorocaba",
+        "Latitude":-23.5380539,
+        "Longitude":-47.4422137,
+        "Area_Urbana_2024":2944.4960788879
+    },
+    {
+        "Cod_IBGE":3557105,
+        "Populacao":96634,
+        "Nome_Municipio":"Votuporanga",
+        "Região Intermediária":"São José do Rio Preto",
+        "Latitude":-20.4252908,
+        "Longitude":-49.972028,
+        "Area_Urbana_2024":2903.5262405822
+    },
+    {
+        "Cod_IBGE":3557154,
+        "Populacao":2692,
+        "Nome_Municipio":"Zacarias",
+        "Região Intermediária":"Araçatuba",
+        "Latitude":-21.0523649,
+        "Longitude":-50.0514502,
+        "Area_Urbana_2024":90.2578575256
+    },
+    {
+        "Cod_IBGE":3557204,
+        "Populacao":12211,
+        "Nome_Municipio":"Chavantes",
+        "Região Intermediária":"Marília",
+        "Latitude":-23.0406405,
+        "Longitude":-49.7071698,
+        "Area_Urbana_2024":360.0648232178
+    },
+    {
+        "Cod_IBGE":3557303,
+        "Populacao":11295,
+        "Nome_Municipio":"Estiva Gerbi",
+        "Região Intermediária":"Campinas",
+        "Latitude":-22.2742719,
+        "Longitude":-46.9523302,
+        "Area_Urbana_2024":377.7947205322
+    }
+]

@@ -1,0 +1,79 @@
+[
+    {
+        "Região Intermediária":"São Paulo",
+        "Pop_Total":22564260,
+        "Latitude_Centroide":-23.5913971666,
+        "Longitude_Centroide":-46.6051582848,
+        "Area_Urbana_Total":241734.2261255762
+    },
+    {
+        "Região Intermediária":"Campinas",
+        "Pop_Total":6923591,
+        "Latitude_Centroide":-22.7528380054,
+        "Longitude_Centroide":-47.116399745,
+        "Area_Urbana_Total":188820.2917093213
+    },
+    {
+        "Região Intermediária":"Sorocaba",
+        "Pop_Total":3074450,
+        "Latitude_Centroide":-23.5968424068,
+        "Longitude_Centroide":-47.8294742774,
+        "Area_Urbana_Total":99213.956346595
+    },
+    {
+        "Região Intermediária":"Ribeirão Preto",
+        "Pop_Total":2546824,
+        "Latitude_Centroide":-20.9203625189,
+        "Longitude_Centroide":-47.9059969501,
+        "Area_Urbana_Total":67063.9252091297
+    },
+    {
+        "Região Intermediária":"São José dos Campos",
+        "Pop_Total":2505723,
+        "Latitude_Centroide":-23.1262326122,
+        "Longitude_Centroide":-45.5726673255,
+        "Area_Urbana_Total":59195.9687861688
+    },
+    {
+        "Região Intermediária":"São José do Rio Preto",
+        "Pop_Total":1633645,
+        "Latitude_Centroide":-20.7396604348,
+        "Longitude_Centroide":-49.594624983,
+        "Area_Urbana_Total":47248.855927978
+    },
+    {
+        "Região Intermediária":"Bauru",
+        "Pop_Total":1384044,
+        "Latitude_Centroide":-22.3585086731,
+        "Longitude_Centroide":-48.8889949686,
+        "Area_Urbana_Total":42536.0528510324
+    },
+    {
+        "Região Intermediária":"Araraquara",
+        "Pop_Total":1100714,
+        "Latitude_Centroide":-21.8280926154,
+        "Longitude_Centroide":-48.0999494082,
+        "Area_Urbana_Total":33545.3222165405
+    },
+    {
+        "Região Intermediária":"Marília",
+        "Pop_Total":1023235,
+        "Latitude_Centroide":-22.4906689776,
+        "Longitude_Centroide":-50.067661405,
+        "Area_Urbana_Total":30398.4969966794
+    },
+    {
+        "Região Intermediária":"Presidente Prudente",
+        "Pop_Total":877245,
+        "Latitude_Centroide":-21.9711709512,
+        "Longitude_Centroide":-51.4792156426,
+        "Area_Urbana_Total":26511.2233226194
+    },
+    {
+        "Região Intermediária":"Araçatuba",
+        "Pop_Total":777507,
+        "Latitude_Centroide":-21.139304002,
+        "Longitude_Centroide":-50.603119617,
+        "Area_Urbana_Total":22146.1145467892
+    }
+]
