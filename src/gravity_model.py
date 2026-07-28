@@ -1,7 +1,9 @@
 import os
-import pandas as pd
+from math import atan2, cos, radians, sin, sqrt
+
 import numpy as np
-from math import radians, sin, cos, sqrt, atan2
+import pandas as pd
+import paths
 
 # --- FUNÇÕES MATEMÁTICAS ---
 
@@ -91,15 +93,12 @@ def escrever_arquivo_instancia(df_dados, arquivo_saida):
             f.write(f"{linha_formatada}\n")
 
 if __name__ == "__main__":
-    # Configurações de pastas
-    pasta_src = os.path.dirname(os.path.abspath(__file__))
-    pasta_output = os.path.join(pasta_src, "..", "output")
     # Agora lendo os centroides populacionais gerados no script anterior
-    arquivo_entrada = os.path.join(pasta_output, "regioes_sp.json")
-    
+    arquivo_entrada = paths.ARQUIVO_REGIOES_SP
+
     # Nome do arquivo da instância
-    arquivo_instancia = os.path.join(pasta_output, "sp11_flow_only.txt")
-    
+    arquivo_instancia = paths.ARQUIVO_INSTANCIA_GRAVIDADE
+
     if not os.path.exists(arquivo_entrada):
         print(f"Erro: Arquivo base {arquivo_entrada} não encontrado.")
         exit()
