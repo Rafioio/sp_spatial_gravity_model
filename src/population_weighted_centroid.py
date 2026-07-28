@@ -1,8 +1,16 @@
 import os
+import time
+
 import pandas as pd
 import requests
-import time
 from geopy.geocoders import Nominatim
+
+from paths import (
+    ARQUIVO_BASE_MUNICIPIOS,
+    ARQUIVO_MUNICIPIOS_SP,
+    ARQUIVO_REGIOES_SP,
+    ensure_output_dir,
+)
 
 
 def buscar_coordenadas_municipios(df_mun, arquivo_cache):
@@ -83,15 +91,12 @@ def calcular_centroide_ponderado(df_mun):
     return df_final
 
 if __name__ == "__main__":
-    # --- CONFIGURAÇÃO DE PASTAS ---
-    pasta_src = os.path.dirname(os.path.abspath(__file__))
-    pasta_output = os.path.join(pasta_src, "..", "output")
-    os.makedirs(pasta_output, exist_ok=True)
-    
-    arquivo_base_mun = os.path.join(pasta_output, "municipios_sp_base.json")
-    arquivo_cache_coord = os.path.join(pasta_output, "municipios_sp.json")
-    arquivo_saida = os.path.join(pasta_output, "regioes_sp.json")
-    
+    ensure_output_dir()
+
+    arquivo_base_mun = ARQUIVO_BASE_MUNICIPIOS
+    arquivo_cache_coord = ARQUIVO_MUNICIPIOS_SP
+    arquivo_saida = ARQUIVO_REGIOES_SP
+
     headers = {"User-Agent": "modelo_gravitacional_sp"}
 
     print("1. Coletando Base de Municípios e População do IBGE...")
@@ -104,8 +109,18 @@ if __name__ == "__main__":
     df_pop['Populacao'] = pd.to_numeric(df_pop['Populacao'], errors='coerce').fillna(0).astype(int)
 
     # Puxando Malha e Nomes
-    resp_local = requests.get("https://servicodados.ibge.gov.br/api/v1/localidades/estados/35/municipios", headers=headers).json()
-    lista_mun = [{'Cod_IBGE': str(m['id']), 'Nome_Municipio': m['nome'], 'Região Intermediária': m['regiao-imediata']['regiao-intermediaria']['nome']} for m in resp_local]
+    resp_local = requests.get(
+        "https://servicodados.ibge.gov.br/api/v1/localidades/estados/35/municipios",
+        headers=headers,
+    ).json()
+    lista_mun = [
+        {
+            "Cod_IBGE": str(m["id"]),
+            "Nome_Municipio": m["nome"],
+            "Região Intermediária": m["regiao-imediata"]["regiao-intermediaria"]["nome"],
+        }
+        for m in resp_local
+    ]
     df_local = pd.DataFrame(lista_mun)
 
     # Juntando Dados do Município

@@ -1,17 +1,10 @@
 import os
 import unicodedata
-import requests
+
 import pandas as pd
+import requests
 
-# --- CONFIGURAÇÃO DE ARQUIVOS (ajuste os caminhos/nomes se necessário) ---
-
-pasta_src = os.path.dirname(os.path.abspath(__file__))
-pasta_output = os.path.join(pasta_src, "..", "output")
-pasta_dados = os.path.join(pasta_src, "..", "data")
-
-ARQUIVO_PLANILHA_AREA = os.path.join(pasta_dados, "area_urbana_municipios_sp_2024.xlsx")
-ARQUIVO_MUNICIPIOS_SP = os.path.join(pasta_output, "municipios_sp.json")   # lista por município
-ARQUIVO_REGIOES_SP = os.path.join(pasta_output, "regioes_sp.json")        # lista por região intermediária
+from paths import ARQUIVO_MUNICIPIOS_SP, ARQUIVO_PLANILHA_AREA, ARQUIVO_REGIOES_SP
 
 # Nome do campo que será adicionado nos JSONs.
 # ATENÇÃO: confirme a unidade da planilha do IBGE (km² ou ha) antes de usar

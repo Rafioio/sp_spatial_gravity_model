@@ -1,9 +1,10 @@
 import subprocess
 import sys
-from pathlib import Path
+
+from src.paths import ROOT_DIR
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = ROOT_DIR
 
 
 def run_step(script_name: str) -> None:

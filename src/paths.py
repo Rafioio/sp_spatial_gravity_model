@@ -1,0 +1,22 @@
+from pathlib import Path
+
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+SRC_DIR = ROOT_DIR / "src"
+DATA_DIR = ROOT_DIR / "data"
+OUTPUT_DIR = ROOT_DIR / "output"
+ASSETS_DIR = ROOT_DIR / "assets"
+
+# Arquivos de entrada
+ARQUIVO_PLANILHA_AREA = DATA_DIR / "area_urbana_municipios_sp_2024.xlsx"
+
+# Arquivos intermediários e de saída
+ARQUIVO_MUNICIPIOS_SP = OUTPUT_DIR / "municipios_sp.json"
+ARQUIVO_REGIOES_SP = OUTPUT_DIR / "regioes_sp.json"
+ARQUIVO_BASE_MUNICIPIOS = OUTPUT_DIR / "municipios_sp_base.json"
+ARQUIVO_INSTANCIA_GRAVIDADE = OUTPUT_DIR / "sp11_flow_only.txt"
+
+
+def ensure_output_dir() -> Path:
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    return OUTPUT_DIR
