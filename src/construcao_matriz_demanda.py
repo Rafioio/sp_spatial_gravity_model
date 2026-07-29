@@ -3,7 +3,9 @@ from math import atan2, cos, radians, sin, sqrt
 
 import numpy as np
 import pandas as pd
+import configs.params as params
 import configs.paths as paths
+
 
 # --- FUNÇÕES MATEMÁTICAS ---
 
@@ -16,7 +18,7 @@ def calcular_distancia(lat1, lon1, lat2, lon2):
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
     return 6371.0 * c
 
-def gerar_matriz_fluxo(df_dados, gamma=0.01, T=100000):
+def gerar_matriz_fluxo(df_dados, gamma, T):
     """
     Gera uma matriz N x N com os fluxos normalizados baseados no modelo gravitacional exponencial.
     
@@ -75,7 +77,7 @@ def gerar_matriz_fluxo(df_dados, gamma=0.01, T=100000):
 def escrever_arquivo_instancia(df_dados, arquivo_saida):
     n_nos = len(df_dados)
     # Aqui pode ajustar o valor de T (pacotes diários) e gamma (penalidade da distância)
-    matriz_fluxo = gerar_matriz_fluxo(df_dados, gamma=0.01, T=100000)
+    matriz_fluxo = gerar_matriz_fluxo(df_dados, params.GAMMA, params.T)
     
     print(f"Escrevendo instância em: {arquivo_saida}")
     

@@ -15,7 +15,8 @@ ARQUIVO_MUNICIPIOS_SP = OUTPUT_DIR / "municipios_sp.json"
 ARQUIVO_REGIOES_SP = OUTPUT_DIR / "regioes_sp.json"
 ARQUIVO_BASE_MUNICIPIOS = OUTPUT_DIR / "municipios_sp_base.json"
 ARQUIVO_INSTANCIA_GRAVIDADE = OUTPUT_DIR / "sp11_flow_only.txt"
-
+ARQUIVO_SAIDA_CUSTO_COLETA = OUTPUT_DIR / "custo_coleta_sp.json"
+ARQUIVO_SAIDA_DETALHADO = OUTPUT_DIR / "custo_coleta_sp_detalhado.csv"
 
 def ensure_output_dir() -> Path:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
