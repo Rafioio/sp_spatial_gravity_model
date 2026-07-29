@@ -3,15 +3,11 @@ import unicodedata
 
 import pandas as pd
 import requests
-import paths
+import configs.paths as paths
 
-# Nome do campo que será adicionado nos JSONs.
-# ATENÇÃO: confirme a unidade da planilha do IBGE (km² ou ha) antes de usar
-# nos passos de aproximação contínua — o campo é gravado com o valor bruto
-# da planilha, sem conversão.
+
 CAMPO_AREA_MUNICIPIO = "Area_Urbana_2024"
 CAMPO_AREA_REGIAO = "Area_Urbana_Total"
-
 
 def normalizar_nome(nome):
     """Remove acentos e caixa para permitir casamento robusto de nomes de município."""
@@ -71,8 +67,7 @@ def atualizar_municipios_sp(df_area, df_mapa):
     df_municipios = pd.read_json(paths.ARQUIVO_MUNICIPIOS_SP)
     df_municipios["Nome_Normalizado"] = df_municipios["Nome_Municipio"].apply(normalizar_nome)
 
-    # --- A CORREÇÃO ESTÁ AQUI ---
-    # Se a coluna de área já existir no arquivo JSON antigo, remove-a antes de cruzar
+
     if CAMPO_AREA_MUNICIPIO in df_municipios.columns:
         df_municipios = df_municipios.drop(columns=[CAMPO_AREA_MUNICIPIO])
     # ----------------------------
@@ -100,8 +95,7 @@ def atualizar_regioes_sp(df_area, df_mapa):
         print(f"Aviso: {paths.ARQUIVO_REGIOES_SP} não encontrado, pulando atualização de regiões.")
         return None
 
-    # Junta planilha de área (por município) com o mapa Município -> Região
-    # vindo da API do IBGE, depois agrupa por Região Intermediária.
+    # 1. Faz o cruzamento com o mapa e agrupa as áreas
     df_join = df_area.merge(df_mapa, on="Nome_Normalizado", how="left")
 
     faltantes = df_join[df_join["Região Intermediária"].isna()]
@@ -116,7 +110,14 @@ def atualizar_regioes_sp(df_area, df_mapa):
         .reset_index()
     )
 
+    # 2. LÊ o arquivo antigo PRIMEIRO
     df_regioes = pd.read_json(paths.ARQUIVO_REGIOES_SP)
+
+    # 3. DEPOIS de ler, apaga a coluna antiga se ela já existir
+    if CAMPO_AREA_REGIAO in df_regioes.columns:
+        df_regioes = df_regioes.drop(columns=[CAMPO_AREA_REGIAO])
+
+    # 4. Faz o merge seguro com os novos dados
     df_regioes = df_regioes.merge(df_area_por_regiao, on="Região Intermediária", how="left")
 
     faltantes_regiao = df_regioes[df_regioes[CAMPO_AREA_REGIAO].isna()]
@@ -124,12 +125,15 @@ def atualizar_regioes_sp(df_area, df_mapa):
         print(f"Atenção: {len(faltantes_regiao)} região(ões) sem área urbana total:")
         print(faltantes_regiao["Região Intermediária"].tolist())
 
+    # 5. Salva o arquivo atualizado
     df_regioes.to_json(paths.ARQUIVO_REGIOES_SP, orient="records", force_ascii=False, indent=4)
     print(f"Atualizado: {paths.ARQUIVO_REGIOES_SP}")
+    
     return df_regioes
 
 
-if __name__ == "__main__":
+def main():
+
     df_area = ler_planilha_area(paths.ARQUIVO_PLANILHA_AREA)
     df_mapa = buscar_mapa_municipio_regiao()
 

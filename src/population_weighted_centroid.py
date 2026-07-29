@@ -1,10 +1,11 @@
 import os
 import time
+import sys
 
 import pandas as pd
 import requests
 from geopy.geocoders import Nominatim
-import paths
+from configs import paths
 
 
 def buscar_coordenadas_municipios(df_mun, arquivo_cache):
@@ -84,7 +85,8 @@ def calcular_centroide_ponderado(df_mun):
     
     return df_final
 
-if __name__ == "__main__":
+def main():
+
     paths.ensure_output_dir()
 
     arquivo_base_mun = paths.ARQUIVO_BASE_MUNICIPIOS
@@ -93,44 +95,62 @@ if __name__ == "__main__":
 
     headers = {"User-Agent": "modelo_gravitacional_sp"}
 
-    print("1. Coletando Base de Municípios e População do IBGE...")
-    # Puxando População (Tabela 4709 - Censo 2022)
-    resp_pop = requests.get("https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2035/p/last/v/93", headers=headers).json()
-    chave_mun_cod = [k for k, v in resp_pop[0].items() if 'MUNICÍPIO (CÓDIGO)' in v.upper()][0]
-    
-    df_pop = pd.DataFrame(resp_pop[1:])
-    df_pop = df_pop[[chave_mun_cod, 'V']].rename(columns={chave_mun_cod: 'Cod_IBGE', 'V': 'Populacao'})
-    df_pop['Populacao'] = pd.to_numeric(df_pop['Populacao'], errors='coerce').fillna(0).astype(int)
+    try:
+        print("1. Coletando Base de Municípios e População do IBGE...")
+        # Puxando População (Tabela 4709 - Censo 2022)
+        resp_pop = requests.get("https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2035/p/last/v/93", headers=headers).json()
+        chave_mun_cod = [k for k, v in resp_pop[0].items() if 'MUNICÍPIO (CÓDIGO)' in v.upper()][0]
+        
+        df_pop = pd.DataFrame(resp_pop[1:])
+        df_pop = df_pop[[chave_mun_cod, 'V']].rename(columns={chave_mun_cod: 'Cod_IBGE', 'V': 'Populacao'})
+        df_pop['Populacao'] = pd.to_numeric(df_pop['Populacao'], errors='coerce').fillna(0).astype(int)
 
-    # Puxando Malha e Nomes
-    resp_local = requests.get(
-        "https://servicodados.ibge.gov.br/api/v1/localidades/estados/35/municipios",
-        headers=headers,
-    ).json()
-    lista_mun = [
-        {
-            "Cod_IBGE": str(m["id"]),
-            "Nome_Municipio": m["nome"],
-            "Região Intermediária": m["regiao-imediata"]["regiao-intermediaria"]["nome"],
-        }
-        for m in resp_local
-    ]
-    df_local = pd.DataFrame(lista_mun)
+        # Puxando Malha e Nomes
+        resp_local = requests.get(
+            "https://servicodados.ibge.gov.br/api/v1/localidades/estados/35/municipios",
+            headers=headers,
+        ).json()
+        lista_mun = [
+            {
+                "Cod_IBGE": str(m["id"]),
+                "Nome_Municipio": m["nome"],
+                "Região Intermediária": m["regiao-imediata"]["regiao-intermediaria"]["nome"],
+            }
+            for m in resp_local
+        ]
 
-    # Juntando Dados do Município
-    df_completo_mun = pd.merge(df_pop, df_local, on='Cod_IBGE', how='inner')
+    except requests.exceptions.ConnectionError as e:
+        print("\n[ERRO FATAL DE CONEXÃO]")
+        print("Ocorreu uma falha de DNS ou o computador está sem Internet.")
+        print(f"Detalhes técnicos: {e}")
+        sys.exit(1) # Encerra o programa de forma limpa
 
-    print("\n2. Iniciando Motor de Geocodificação (Nominatim)...")
-    # Busca as coordenadas de cada município (usa cache se já existir)
-    df_com_coordenadas = buscar_coordenadas_municipios(df_completo_mun, arquivo_cache_coord)
+    except requests.exceptions.Timeout:
+        print("\n[ERRO DE TEMPO LIMITE]")
+        print("O servidor do IBGE demorou mais de 10 segundos a responder.")
+        print("O site pode estar em manutenção. Tente novamente mais tarde.")
+        sys.exit(1)
 
-    print("\n3. Aplicando Modelagem Matemática...")
+    except requests.exceptions.RequestException as e:
+        print("\n[ERRO NA API DO IBGE]")
+        print(f"Ocorreu um problema ao comunicar com o servidor: {e}")
+        sys.exit(1)
 
-    df_centroides = calcular_centroide_ponderado(df_com_coordenadas)
+        df_local = pd.DataFrame(lista_mun)
+        # Juntando Dados do Município
+        df_completo_mun = pd.merge(df_pop, df_local, on='Cod_IBGE', how='inner')
 
-    print("\n--- RESULTADO FINAL: CENTROIDES PONDERADOS (CENTRO DE MASSA) ---")
-    print(df_centroides.to_string(index=False))
+        print("\n2. Iniciando Motor de Geocodificação (Nominatim)...")
+        # Busca as coordenadas de cada município (usa cache se já existir)
+        df_com_coordenadas = buscar_coordenadas_municipios(df_completo_mun, arquivo_cache_coord)
 
-    # 4. Salva o JSON final
-    df_centroides.to_json(arquivo_saida, orient="records", force_ascii=False, indent=4)
-    print(f"\nSucesso! Arquivo completo salvo em: {arquivo_saida}")
+        print("\n3. Aplicando Modelagem Matemática...")
+
+        df_centroides = calcular_centroide_ponderado(df_com_coordenadas)
+
+        print("\n--- RESULTADO FINAL: CENTROIDES PONDERADOS (CENTRO DE MASSA) ---")
+        print(df_centroides.to_string(index=False))
+
+        # 4. Salva o JSON final
+        df_centroides.to_json(arquivo_saida, orient="records", force_ascii=False, indent=4)
+        print(f"\nSucesso! Arquivo completo salvo em: {arquivo_saida}")

@@ -3,7 +3,7 @@ from math import atan2, cos, radians, sin, sqrt
 
 import numpy as np
 import pandas as pd
-import paths
+import configs.paths as paths
 
 # --- FUNÇÕES MATEMÁTICAS ---
 
@@ -92,7 +92,8 @@ def escrever_arquivo_instancia(df_dados, arquivo_saida):
             linha_formatada = " ".join([f"{valor:.6f}" for valor in matriz_fluxo[i]])
             f.write(f"{linha_formatada}\n")
 
-if __name__ == "__main__":
+def main():
+    
     # Agora lendo os centroides populacionais gerados no script anterior
     arquivo_entrada = paths.ARQUIVO_REGIOES_SP
 
