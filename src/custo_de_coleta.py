@@ -100,19 +100,15 @@ def calcular_custo_coleta(df_regioes, matriz_wij):
                 continue
  
             # Passo 4: distância de acesso (ida e volta hub k <-> região i)
-            # L_acesso_col_ik = 2 * dik * Rcol_i
             L_acesso_col_ik = 2 * dist[i][k] * R_col_i
  
             # Passo 6: distância total de coleta
-            # Dist_col_ik = L_acesso_col_ik + L_interno_col_i
             Dist_col_ik = L_acesso_col_ik + L_interno_col_i
  
             # Passo 7: custo total diário de coleta
-            # TC_col_ik = c_col * Dist_col_ik
             TC_col_ik = params.C_COL * Dist_col_ik
  
             # Passo 8: custo unitário de coleta
-            # C_col_ik = TC_col_ik / Oi
             C_col_ik = TC_col_ik / O[i]
  
             custo_coleta[i][k] = C_col_ik
@@ -152,7 +148,7 @@ def salvar_resultado(df_regioes, custo_coleta):
  
 def main():
     df_regioes = ler_regioes(paths.ARQUIVO_REGIOES_SP)
-    matriz_wij = ler_matriz_wij(paths.ARQUIVO_INSTANCIA_GRAVIDADE, len(df_regioes))
+    matriz_wij = ler_matriz_wij(paths.ARQUIVO_MATRIZ_DEMANDA, len(df_regioes))
  
     custo_coleta, df_detalhes = calcular_custo_coleta(df_regioes, matriz_wij)
  
