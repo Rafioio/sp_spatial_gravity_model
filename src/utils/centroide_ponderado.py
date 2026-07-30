@@ -153,3 +153,4 @@ def main():
     # 4. Salva o JSON final
     df_centroides.to_json(arquivo_saida, orient="records", force_ascii=False, indent=4)
     print(f"\nSucesso! Arquivo completo salvo em: {arquivo_saida}")
+    return True
