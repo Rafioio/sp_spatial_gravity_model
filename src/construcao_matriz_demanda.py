@@ -68,7 +68,7 @@ def main():
     arquivo_entrada = paths.ARQUIVO_REGIOES_SP
 
     # Nome do arquivo da instância
-    arquivo_instancia = paths.ARQUIVO_INSTANCIA_GRAVIDADE
+    arquivo_instancia = paths.ARQUIVO_MATRIZ_DEMANDA
 
     if not os.path.exists(arquivo_entrada):
         print(f"Erro: Arquivo base {arquivo_entrada} não encontrado.")
@@ -78,7 +78,10 @@ def main():
     df_dados = pd.read_json(arquivo_entrada)
 
     # Gera a instância limpa
-    escrever_arquivo_instancia(df_dados, arquivo_instancia)
-    
+    matriz_fluxo = gerar_matriz_fluxo(df_dados, params.GAMMA, params.T)
+
+    # Salva a matriz de demanda normalizada
+    pd.DataFrame(matriz_fluxo).to_json(arquivo_instancia, orient="values", force_ascii=False, indent=4)
+
     print("\nInstância gerada com sucesso! Matriz normalizada para 100.000 pacotes.")
     return True
