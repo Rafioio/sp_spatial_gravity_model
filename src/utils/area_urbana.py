@@ -144,4 +144,5 @@ def main():
     atualizar_regioes_sp(df_area, df_mapa)
 
     print("\nConcluído.")
+    return True
 
