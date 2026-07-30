@@ -97,7 +97,7 @@ def calcular_custo_coleta(df_regioes, matriz_wij):
         N_col_i = O[i] / params.RHO_COL
  
         # Passo 3: número de rotas de coleta (Rcol_i = ceil(Oi / Qcol))
-        R_col_i = math.ceil(O[i] / params.Q_COL)
+        R_col_i = ceil(O[i] / params.Q_COL)
  
         # Passo 5: distância interna de coleta (aproximação contínua)
         # L_interno_col_i = beta_col * sqrt(Ai * Ncol_i)
@@ -178,3 +178,4 @@ def main():
  
     df_detalhes.to_csv(paths.ARQUIVO_SAIDA_DETALHADO, index=False)
     print(f"Detalhamento linha a linha salvo em: {paths.ARQUIVO_SAIDA_DETALHADO}")
+    return True

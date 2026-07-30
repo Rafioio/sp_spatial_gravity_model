@@ -101,3 +101,4 @@ def main():
     escrever_arquivo_instancia(df_dados, arquivo_instancia)
     
     print("\nInstância gerada com sucesso! Matriz normalizada para 100.000 pacotes.")
+    return True
