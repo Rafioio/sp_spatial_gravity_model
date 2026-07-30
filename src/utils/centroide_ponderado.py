@@ -89,7 +89,6 @@ def main():
 
     paths.ensure_output_dir()
 
-    arquivo_base_mun = paths.ARQUIVO_BASE_MUNICIPIOS
     arquivo_cache_coord = paths.ARQUIVO_MUNICIPIOS_SP
     arquivo_saida = paths.ARQUIVO_REGIOES_SP
 
@@ -136,21 +135,21 @@ def main():
         print(f"Ocorreu um problema ao comunicar com o servidor: {e}")
         sys.exit(1)
 
-        df_local = pd.DataFrame(lista_mun)
-        # Juntando Dados do Município
-        df_completo_mun = pd.merge(df_pop, df_local, on='Cod_IBGE', how='inner')
+    df_local = pd.DataFrame(lista_mun)
+    # Juntando Dados do Município
+    df_completo_mun = pd.merge(df_pop, df_local, on='Cod_IBGE', how='inner')
 
-        print("\n2. Iniciando Motor de Geocodificação (Nominatim)...")
-        # Busca as coordenadas de cada município (usa cache se já existir)
-        df_com_coordenadas = buscar_coordenadas_municipios(df_completo_mun, arquivo_cache_coord)
+    print("\n2. Iniciando Motor de Geocodificação (Nominatim)...")
+    # Busca as coordenadas de cada município (usa cache se já existir)
+    df_com_coordenadas = buscar_coordenadas_municipios(df_completo_mun, arquivo_cache_coord)
 
-        print("\n3. Aplicando Modelagem Matemática...")
+    print("\n3. Aplicando Modelagem Matemática...")
 
-        df_centroides = calcular_centroide_ponderado(df_com_coordenadas)
+    df_centroides = calcular_centroide_ponderado(df_com_coordenadas)
 
-        print("\n--- RESULTADO FINAL: CENTROIDES PONDERADOS (CENTRO DE MASSA) ---")
-        print(df_centroides.to_string(index=False))
+    print("\n--- RESULTADO FINAL: CENTROIDES PONDERADOS (CENTRO DE MASSA) ---")
+    print(df_centroides.to_string(index=False))
 
-        # 4. Salva o JSON final
-        df_centroides.to_json(arquivo_saida, orient="records", force_ascii=False, indent=4)
-        print(f"\nSucesso! Arquivo completo salvo em: {arquivo_saida}")
+    # 4. Salva o JSON final
+    df_centroides.to_json(arquivo_saida, orient="records", force_ascii=False, indent=4)
+    print(f"\nSucesso! Arquivo completo salvo em: {arquivo_saida}")
