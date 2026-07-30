@@ -1,3 +1,4 @@
+import json
 import os
 import numpy as np
 import pandas as pd
@@ -58,30 +59,34 @@ def gerar_matriz_fluxo(df_dados, gamma, T):
                     # w_ij = T * (g_ij / sum(g_ab))
                     matriz_fluxo_normalizada[i][j] = T * (matriz_forca_bruta[i][j] / soma_fluxo_bruto)
                     
-    return matriz_fluxo_normalizada.tolist()
+    return matriz_fluxo_normalizada
 
-
+def salvar_resultado(df_regioes, demanda):
+    nomes = df_regioes["Região Intermediária"].tolist()
+    resultado = {
+        "regioes": nomes,
+        "parametros": {
+            "gamma": params.GAMMA,
+            "T": params.T,
+        },
+        "matriz_demanda_Wij": demanda.tolist(),
+    }
+    with open(paths.ARQUIVO_MATRIZ_DEMANDA, "w", encoding="utf-8") as f:
+        json.dump(resultado, f, ensure_ascii=False, indent=4)
+    print(f"Matriz de demanda salva em: {paths.ARQUIVO_MATRIZ_DEMANDA}")
 
 def main():
     
-    # Agora lendo os centroides populacionais gerados no script anterior
-    arquivo_entrada = paths.ARQUIVO_REGIOES_SP
-
-    # Nome do arquivo da instância
-    arquivo_instancia = paths.ARQUIVO_MATRIZ_DEMANDA
-
-    if not os.path.exists(arquivo_entrada):
-        print(f"Erro: Arquivo base {arquivo_entrada} não encontrado.")
+    if not os.path.exists(paths.ARQUIVO_REGIOES_SP):
+        print(f"Erro: Arquivo base {paths.ARQUIVO_REGIOES_SP} não encontrado.")
         exit()
 
     # Lê os dados processados
-    df_dados = pd.read_json(arquivo_entrada)
+    df_regioes = pd.read_json(paths.ARQUIVO_REGIOES_SP)
 
     # Gera a instância limpa
-    matriz_fluxo = gerar_matriz_fluxo(df_dados, params.GAMMA, params.T)
+    matriz_fluxo = gerar_matriz_fluxo(df_regioes, params.GAMMA, params.T)
 
-    # Salva a matriz de demanda normalizada
-    pd.DataFrame(matriz_fluxo).to_json(arquivo_instancia, orient="values", force_ascii=False, indent=4)
+    salvar_resultado(df_regioes, matriz_fluxo)
 
-    print("\nInstância gerada com sucesso! Matriz normalizada para 100.000 pacotes.")
     return True
