@@ -32,27 +32,18 @@ def ler_regioes(arquivo_regioes):
     return df
  
  
-def ler_matriz_wij(arquivo_instancia, n_esperado):
-    """
-    Lê a matriz wij do arquivo de instância no formato escrito pelo gravity_model.py:
-      linha 1:      n
-      linhas 2..n+1: lat lon (por região)
-      linhas seguintes: matriz wij (n x n)
-    """
-    with open(arquivo_instancia, "r", encoding="utf-8") as f:
-        linhas = f.readlines()
- 
-    n = int(linhas[0].strip())
-    if n != n_esperado:
-        print(
-            f"Aviso: a instância tem n={n} regiões, mas regioes_sp.json tem "
-            f"{n_esperado}. Confira se os dois arquivos estão na mesma ordem/versão."
+def ler_matriz_wij(arquivo_json, n_esperado):
+    with open(arquivo_json, "r", encoding="utf-8") as f:
+        matriz = json.load(f)
+
+    matriz_wij = np.array(matriz, dtype=float)
+
+    if matriz_wij.shape != (n_esperado, n_esperado):
+        raise ValueError(
+            f"A matriz possui dimensão {matriz_wij.shape}, "
+            f"mas era esperado ({n_esperado}, {n_esperado})."
         )
- 
-    linhas_matriz = linhas[1 + n: 1 + n + n]
-    matriz_wij = np.array(
-        [[float(valor) for valor in linha.split()] for linha in linhas_matriz]
-    )
+
     return matriz_wij
  
  
