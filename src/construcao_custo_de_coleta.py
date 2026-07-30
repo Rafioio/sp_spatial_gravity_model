@@ -34,14 +34,14 @@ def ler_regioes(arquivo_regioes):
  
 def ler_matriz_wij(arquivo_json, n_esperado):
     with open(arquivo_json, "r", encoding="utf-8") as f:
-        matriz = json.load(f)
+        dados = json.load(f)
 
-    matriz_wij = np.array(matriz, dtype=float)
+    matriz_wij = np.array(dados["matriz_demanda_Wij"], dtype=float)
 
     if matriz_wij.shape != (n_esperado, n_esperado):
         raise ValueError(
-            f"A matriz possui dimensão {matriz_wij.shape}, "
-            f"mas era esperado ({n_esperado}, {n_esperado})."
+            f"Esperava uma matriz {n_esperado}x{n_esperado}, "
+            f"mas encontrei {matriz_wij.shape}."
         )
 
     return matriz_wij
