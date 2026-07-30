@@ -1,22 +1,10 @@
 import os
-from math import atan2, cos, radians, sin, sqrt
-
 import numpy as np
 import pandas as pd
 import configs.params as params
 import configs.paths as paths
+from src.utils.calcular_distancia import calcular_distancia
 
-
-# --- FUNÇÕES MATEMÁTICAS ---
-
-def calcular_distancia(lat1, lon1, lat2, lon2):
-    lat1_rad, lon1_rad = radians(lat1), radians(lon1)
-    lat2_rad, lon2_rad = radians(lat2), radians(lon2)
-    dlon = lon2_rad - lon1_rad
-    dlat = lat2_rad - lat1_rad
-    a = sin(dlat / 2)**2 + cos(lat1_rad) * cos(lat2_rad) * sin(dlon / 2)**2
-    c = 2 * atan2(sqrt(a), sqrt(1 - a))
-    return 6371.0 * c
 
 def gerar_matriz_fluxo(df_dados, gamma, T):
     """
