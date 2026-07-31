@@ -15,8 +15,9 @@ ARQUIVO_MUNICIPIOS_SP = OUTPUT_DIR / "municipios_sp.json"
 ARQUIVO_REGIOES_SP = OUTPUT_DIR / "regioes_sp.json"
 ARQUIVO_BASE_MUNICIPIOS = OUTPUT_DIR / "municipios_sp_base.json"
 ARQUIVO_MATRIZ_DEMANDA = OUTPUT_DIR / "matriz_demanda.json"
-ARQUIVO_SAIDA_CUSTO_COLETA = OUTPUT_DIR / "custo_coleta_sp.json"
-ARQUIVO_SAIDA_DETALHADO = OUTPUT_DIR / "custo_coleta_sp_detalhado.csv"
+ARQUIVO_MATRIZ_CUSTO_COLETA = OUTPUT_DIR / "matriz_custo_coleta_sp.json"
+ARQUIVO_CUSTO_COLETA_DETALHADO = OUTPUT_DIR / "custo_coleta_sp_detalhado.csv"
+ARQUIVO_SAIDA_INSTANCIA = OUTPUT_DIR / "sp11_instancia_completa.txt"
 
 def ensure_output_dir() -> Path:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
