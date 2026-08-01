@@ -159,6 +159,6 @@ def main():
  
     salvar_resultado(df_regioes, custo_coleta)
  
-    df_detalhes.to_csv(paths.ARQUIVO_CUSTO_COLETA_DETALHADO, index=False)
-    print(f"Detalhamento linha a linha salvo em: {paths.ARQUIVO_CUSTO_COLETA_DETALHADO}")
+    df_detalhes.to_csv(paths.ARQUIVO_CUSTO_COLETA_CSV, index=False)
+    print(f"Detalhamento linha a linha salvo em: {paths.ARQUIVO_CUSTO_COLETA_CSV}")
     return True
