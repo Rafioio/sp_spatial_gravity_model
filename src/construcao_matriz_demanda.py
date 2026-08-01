@@ -88,5 +88,10 @@ def main():
     matriz_fluxo = gerar_matriz_fluxo(df_regioes, params.GAMMA, params.T)
 
     salvar_resultado(df_regioes, matriz_fluxo)
+    regiões = df_regioes["Região Intermediária"].tolist()
 
+    pd.DataFrame(matriz_fluxo, columns=regiões, index=regiões).to_csv(
+        paths.ARQUIVO_MATRIZ_DEMANDA_CSV,
+    )
+    print(f"Matriz de demanda detalhada salva em: {paths.ARQUIVO_MATRIZ_DEMANDA_CSV}")
     return True
