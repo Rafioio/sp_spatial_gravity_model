@@ -87,7 +87,7 @@ def calcular_centroide_ponderado(df_mun):
 
 def main():
 
-    paths.ensure_output_dir()
+    paths.ensure_directories()
 
     arquivo_cache_coord = paths.ARQUIVO_MUNICIPIOS_SP
     arquivo_saida = paths.ARQUIVO_REGIOES_SP
