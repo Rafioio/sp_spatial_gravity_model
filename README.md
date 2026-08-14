@@ -1,65 +1,81 @@
 # Modelo gravitacional espacial para as regiões intermediárias de São Paulo
 
-Este projeto monta uma instância de modelo gravitacional espacial para as regiões intermediárias de São Paulo a partir de dados de população municipal, geocodificação de municípios e dados de área urbana. O fluxo principal cria:
+Este repositório cria uma instância do modelo gravitacional para as 11 regiões intermediárias de São Paulo, gerando centroides populacionais, uma matriz origem-destino (OD) e matrizes de custo para uso em modelos de localização de hubs.
 
-- centroides populacionais ponderados por município;
-- uma matriz de demanda normalizada via modelo gravitacional exponencial;
-- uma matriz de custo de coleta por região;
-- uma instância completa em formato texto para uso em solver.
+Resumo conciso do modelo (contexto útil):
 
-## O que o projeto faz
+- Construção da matriz de demanda (W_ij):
+  - Calcular população por região (soma das populações municipais).
+  - Estimar área atendida por região (soma das áreas urbanizadas municipais).
+  - Calcular centroide populacional ponderado por população.
+  - Definir produção e atratividade simples como população: Prodi = Popi, Atraj = Popj.
+  - Propensão bruta de fluxo: gij = Prodi * Atraj * exp(-γ · dij), com γ penalizando distância.
+  - Normalizar os fluxos para um total T (por exemplo, T = 100000) para obter wij.
 
-A pipeline é executada por [main.py](main.py) e segue estes passos:
+- Cálculo de custos por caminho i → k → m → j (resumo):
+  - Coleta (i ← k): inclui distância de acesso (ida e volta: 2·d_ik por rota) e distância interna aproximada na região (com termo contínuo β_col · sqrt(A_i · N_col_i)). O custo unitário de coleta é obtido dividindo o custo total diário pelo volume O_i gerado em i.
+  - Transporte inter-hub (k → m): custo por km por unidade de carga C_hub_km = c_hub · d_km, normalmente com fator de desconto 0 < α ≤ 1 (economia de escala).
+  - Entrega (m → j): análogo à coleta, considerando acesso do hub m à região j.
+  - Custo unitário total do caminho: c_ijkm = C_col_ik + α · C_hub_km + C_ent_mj.
 
-1. coleta população municipal e informações de localização do IBGE;
-2. geocodifica os municípios de São Paulo com o Nominatim;
-3. calcula centroides ponderados por população para cada região intermediária;
-4. gera a matriz de demanda `W_ij` a partir do modelo gravitacional;
-5. calcula o custo unitário de coleta `C_col_ik`;
-6. escreve a instância final em um arquivo de texto.
+Esses custos unitários são multiplicados pelos fluxos wij e usados na função objetivo de minimização do custo total.
 
-## Estrutura do repositório
+Principais scripts e estrutura
 
-- [main.py](main.py) - executa o pipeline completo em sequência.
-- [src/construcao_matriz_demanda.py](src/construcao_matriz_demanda.py) - gera a matriz de demanda normalizada.
-- [src/construcao_matriz_custo_de_coleta.py](src/construcao_matriz_custo_de_coleta.py) - calcula os custos de coleta.
-- [src/utils/centroide_ponderado.py](src/utils/centroide_ponderado.py) - busca população e coordenadas e calcula os centroides.
-- [src/utils/area_urbana.py](src/utils/area_urbana.py) - integra a área urbana dos municípios à base de regiões.
-- [src/utils/gerador_instancia.py](src/utils/gerador_instancia.py) - consolida as matrizes e gera a instância final.
-- [configs/params.py](configs/params.py) - parâmetros do modelo gravitacional e do custo de coleta.
-- [configs/paths.py](configs/paths.py) - caminhos dos arquivos de entrada, intermediários e saída.
-- [data/](data/) - dados de entrada, como a planilha de área urbana.
-- [output/](output/) - arquivos gerados pela execução.
+- [main.py](</home/rafael/Área de trabalho/SIDRA/main.py>) - pipeline que executa todo o processo.
+- [src/construcao_matriz_demanda.py](</home/rafael/Área de trabalho/SIDRA/src/construcao_matriz_demanda.py>)
+- [src/construcao_matriz_custo_de_coleta.py](</home/rafael/Área de trabalho/SIDRA/src/construcao_matriz_custo_de_coleta.py>)
+- [src/utils/centroide_ponderado.py](</home/rafael/Área de trabalho/SIDRA/src/utils/centroide_ponderado.py>)
+- [configs/params.py](</home/rafael/Área de trabalho/SIDRA/configs/params.py>) - parâmetros (γ, β_col, c_col, c_hub, Qcol, ρ_col, T, α, etc.).
+- [data/](</home/rafael/Área de trabalho/SIDRA/data/>) - entradas (área urbana, populações).
+- [output/](</home/rafael/Área de trabalho/SIDRA/output/>) - resultados gerados.
 
-## Requisitos
+Como executar (rápido)
 
-Instale as dependências com:
+1. Criar/ativar um ambiente virtual (recomendado) e instalar dependências (exemplo para Linux/macOS):
 
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Como executar
+No Windows (PowerShell):
 
-Rode o pipeline completo com:
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
+2. Executar a pipeline:
 
 ```bash
 python main.py
 ```
 
-O comando cria automaticamente a pasta [output/](output/) e gera os arquivos abaixo.
+Saídas principais (geradas em [output/](</home/rafael/Área de trabalho/SIDRA/output/>)):
 
-## Arquivos de saída
+- [output/municipios_sp.json](</home/rafael/Área de trabalho/SIDRA/output/municipios_sp.json>)
+- [output/regioes_sp.json](</home/rafael/Área de trabalho/SIDRA/output/regioes_sp.json>)
+- [output/matriz_demanda.json](</home/rafael/Área de trabalho/SIDRA/output/matriz_demanda.json>)
+- [output/matriz_custo_coleta_sp.json](</home/rafael/Área de trabalho/SIDRA/output/matriz_custo_coleta_sp.json>)
+- [output/sp11_instancia_completa.txt](</home/rafael/Área de trabalho/SIDRA/output/sp11_instancia_completa.txt>)
 
-- [output/municipios_sp.json](output/municipios_sp.json) - cache dos municípios com população e coordenadas geocodificadas.
-- [output/regioes_sp.json](output/regioes_sp.json) - centroides ponderados por região intermediária.
-- [output/matriz_demanda.json](output/matriz_demanda.json) - matriz de demanda `W_ij`.
-- [output/matriz_custo_coleta_sp.json](output/matriz_custo_coleta_sp.json) - matriz de custo de coleta `C_col_ik`.
-- [output/custo_coleta_sp_detalhado.csv](output/custo_coleta_sp_detalhado.csv) - detalhes linha a linha do cálculo de coleta.
-- [output/sp11_instancia_completa.txt](output/sp11_instancia_completa.txt) - instância final completa em formato texto.
+Observações e boas práticas
 
-## Observações importantes
+- O projeto consulta APIs externas (IBGE, Nominatim); internet é necessária na primeira execução. O arquivo de municípios funciona como cache para evitar repetição da geocodificação.
+- Recomenda-se criar o ambiente virtual no diretório do projeto com nome `.venv` e adicioná-lo ao `.gitignore` para não versionar dependências geradas.
 
-- A execução depende de conexão com a internet, pois o projeto consulta APIs do IBGE e do Nominatim.
-- A primeira execução pode levar alguns minutos, principalmente na geocodificação dos municípios.
-- O arquivo [output/municipios_sp.json](output/municipios_sp.json) funciona como cache para evitar refazer a geocodificação em execuções subsequentes.
+Adicionar a venv ao .gitignore (exemplo)
+
+```bash
+# adiciona .venv/ ao .gitignore se ainda não existir
+grep -qxF ".venv/" .gitignore || echo ".venv/" >> .gitignore
+git add .gitignore
+git commit -m "Add .venv to .gitignore" || true
+```
+
+Notas finais
+
+O conteúdo deste README é intencionalmente conciso. Para detalhes matemáticos e fórmulas completas, consulte as funções em [src/construcao_matriz_demanda.py](</home/rafael/Área de trabalho/SIDRA/src/construcao_matriz_demanda.py>) e [src/construcao_matriz_custo_de_coleta.py](</home/rafael/Área de trabalho/SIDRA/src/construcao_matriz_custo_de_coleta.py>).

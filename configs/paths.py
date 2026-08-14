@@ -25,8 +25,10 @@ ARQUIVO_REGIOES_SP = DATA_INTERMEDIARIA_DIR / "regioes_sp.json"
 # Arquivos de saída
 ARQUIVO_MATRIZ_DEMANDA = OUTPUT_DIR / "matriz_demanda.json"
 ARQUIVO_MATRIZ_CUSTO_COLETA = OUTPUT_DIR / "matriz_custo_coleta_sp.json"
+ARQUIVO_MATRIZ_CUSTO_ENTREGA = OUTPUT_DIR / "matriz_custo_entrega_sp.json"
 
 ARQUIVO_CUSTO_COLETA_CSV = OUTPUT_DIR / "custo_coleta_sp_detalhado.csv"
+ARQUIVO_CUSTO_ENTREGA_CSV = OUTPUT_DIR / "custo_entrega_sp_detalhado.csv"
 ARQUIVO_MATRIZ_DEMANDA_CSV = OUTPUT_DIR / "demanda_sp_detalhada.csv"
 
 ARQUIVO_SAIDA_INSTANCIA = INSTANCIAS_DIR / "sp11_instancia_completa.txt"
