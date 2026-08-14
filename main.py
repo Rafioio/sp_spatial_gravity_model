@@ -1,29 +1,16 @@
-import subprocess
-import sys
-from pathlib import Path
+from src.utils.centroide_ponderado import main as centroide_ponderado
+from src.construcao_matriz_demanda import main as construcao_matriz_demanda
+from src.utils.area_urbana import main as area_urbana
+from src.construcao_matriz_custo_de_coleta import main as construcao_custo_de_coleta
+from src.utils.gerador_instancia import main as gerar_instancia
 
-
-ROOT = Path(__file__).resolve().parent
-
-
-def run_step(script_name: str) -> None:
-    script_path = ROOT / "src" / script_name
-    print(f"\n=== Executando {script_name} ===")
-    completed = subprocess.run(
-        [sys.executable, str(script_path)],
-        cwd=ROOT,
-        check=False,
-    )
-    if completed.returncode != 0:
-        raise SystemExit(f"Falha ao executar {script_name} (código {completed.returncode}).")
-
-
-def main() -> None:
-    run_step("sidra_data.py")
-    run_step("economic_center.py")
-    run_step("population_weighted_centroid.py")
-    run_step("gravity_model.py")
-    print("\nFluxo concluído com sucesso!")
+def main():
+    centroide_ponderado()
+    construcao_matriz_demanda()
+    area_urbana()
+    construcao_custo_de_coleta()
+    gerar_instancia()
+    print("Fluxo concluído com sucesso!")
 
 
 if __name__ == "__main__":

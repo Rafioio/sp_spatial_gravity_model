@@ -1,20 +1,13 @@
+import json
 import os
-import pandas as pd
 import numpy as np
-from math import radians, sin, cos, sqrt, atan2
+import pandas as pd
+import configs.params as params
+import configs.paths as paths
+from src.utils.calcular_distancia import calcular_distancia
 
-# --- FUNÇÕES MATEMÁTICAS ---
 
-def calcular_distancia(lat1, lon1, lat2, lon2):
-    lat1_rad, lon1_rad = radians(lat1), radians(lon1)
-    lat2_rad, lon2_rad = radians(lat2), radians(lon2)
-    dlon = lon2_rad - lon1_rad
-    dlat = lat2_rad - lat1_rad
-    a = sin(dlat / 2)**2 + cos(lat1_rad) * cos(lat2_rad) * sin(dlon / 2)**2
-    c = 2 * atan2(sqrt(a), sqrt(1 - a))
-    return 6371.0 * c
-
-def gerar_matriz_fluxo(df_dados, gamma=0.01, T=100000):
+def gerar_matriz_fluxo(df_dados, gamma, T):
     """
     Gera uma matriz N x N com os fluxos normalizados baseados no modelo gravitacional exponencial.
     
@@ -66,48 +59,39 @@ def gerar_matriz_fluxo(df_dados, gamma=0.01, T=100000):
                     # w_ij = T * (g_ij / sum(g_ab))
                     matriz_fluxo_normalizada[i][j] = T * (matriz_forca_bruta[i][j] / soma_fluxo_bruto)
                     
-    return matriz_fluxo_normalizada.tolist()
+    return matriz_fluxo_normalizada
 
-# --- GERADOR DA INSTÂNCIA ---
+def salvar_resultado(df_regioes, demanda):
+    nomes = df_regioes["Região Intermediária"].tolist()
+    resultado = {
+        "regioes": nomes,
+        "parametros": {
+            "gamma": params.GAMMA,
+            "T": params.T,
+        },
+        "matriz_demanda_Wij": demanda.tolist(),
+    }
+    with open(paths.ARQUIVO_MATRIZ_DEMANDA, "w", encoding="utf-8") as f:
+        json.dump(resultado, f, ensure_ascii=False, indent=4)
+    print(f"Matriz de demanda salva em: {paths.ARQUIVO_MATRIZ_DEMANDA}")
 
-def escrever_arquivo_instancia(df_dados, arquivo_saida):
-    n_nos = len(df_dados)
-    # Aqui pode ajustar o valor de T (pacotes diários) e gamma (penalidade da distância)
-    matriz_fluxo = gerar_matriz_fluxo(df_dados, gamma=0.01, T=100000)
+def main():
     
-    print(f"Escrevendo instância em: {arquivo_saida}")
-    
-    with open(arquivo_saida, 'w', encoding='utf-8') as f:
-        # 1. Tamanho da rede (n)
-        f.write(f"{n_nos}\n")
-        
-        # 2. Coordenadas (Lat e Lon) - Atualize para 'Latitude_Centroide' se for a saída do script anterior
-        for _, row in df_dados.iterrows():
-            f.write(f"{row['Latitude_Centroide']:.6f} {row['Longitude_Centroide']:.6f}\n")
-            
-        # 3. Matriz de Fluxo Normalizada (n x n)
-        for i in range(n_nos):
-            linha_formatada = " ".join([f"{valor:.6f}" for valor in matriz_fluxo[i]])
-            f.write(f"{linha_formatada}\n")
-
-if __name__ == "__main__":
-    # Configurações de pastas
-    pasta_src = os.path.dirname(os.path.abspath(__file__))
-    pasta_output = os.path.join(pasta_src, "..", "output")
-    # Agora lendo os centroides populacionais gerados no script anterior
-    arquivo_entrada = os.path.join(pasta_output, "centroides_populacionais_sp.json")
-    
-    # Nome do arquivo da instância
-    arquivo_instancia = os.path.join(pasta_output, "sp11_flow_only.txt")
-    
-    if not os.path.exists(arquivo_entrada):
-        print(f"Erro: Arquivo base {arquivo_entrada} não encontrado.")
+    if not os.path.exists(paths.ARQUIVO_REGIOES_SP):
+        print(f"Erro: Arquivo base {paths.ARQUIVO_REGIOES_SP} não encontrado.")
         exit()
 
     # Lê os dados processados
-    df_dados = pd.read_json(arquivo_entrada)
+    df_regioes = pd.read_json(paths.ARQUIVO_REGIOES_SP)
 
     # Gera a instância limpa
-    escrever_arquivo_instancia(df_dados, arquivo_instancia)
-    
-    print("\nInstância gerada com sucesso! Matriz normalizada para 100.000 pacotes.")
+    matriz_fluxo = gerar_matriz_fluxo(df_regioes, params.GAMMA, params.T)
+
+    salvar_resultado(df_regioes, matriz_fluxo)
+    regiões = df_regioes["Região Intermediária"].tolist()
+
+    pd.DataFrame(matriz_fluxo, columns=regiões, index=regiões).to_csv(
+        paths.ARQUIVO_MATRIZ_DEMANDA_CSV,
+    )
+    print(f"Matriz de demanda detalhada salva em: {paths.ARQUIVO_MATRIZ_DEMANDA_CSV}")
+    return True
