@@ -8,6 +8,7 @@ import configs.paths as paths
 
 CAMPO_AREA_MUNICIPIO = "Area_Urbana_2024"
 CAMPO_AREA_REGIAO = "Area_Urbana_Total"
+HECTARES_POR_KM2 = 100.0
 
 def normalizar_nome(nome):
     """Remove acentos e caixa para permitir casamento robusto de nomes de município."""
@@ -55,6 +56,13 @@ def ler_planilha_area(arquivo_planilha):
         }
     )
     df_area = df_area.dropna(subset=["Nome_Municipio_Planilha"])
+    # A planilha fornece a area urbana em hectares, mas a aproximacao
+    # continua combina a area com distancias em km. Portanto, Ai precisa
+    # estar em km2: 1 km2 = 100 hectares.
+    df_area[CAMPO_AREA_MUNICIPIO] = (
+        pd.to_numeric(df_area[CAMPO_AREA_MUNICIPIO], errors="coerce")
+        / HECTARES_POR_KM2
+    )
     df_area["Nome_Normalizado"] = df_area["Nome_Municipio_Planilha"].apply(normalizar_nome)
     return df_area
 
