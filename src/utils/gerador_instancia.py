@@ -1,5 +1,6 @@
 import json
 import configs.paths as paths
+import configs.params as params
 
 def carregar_jsons():
     with open(paths.ARQUIVO_REGIOES_SP, "r", encoding="utf-8") as f:
@@ -83,14 +84,18 @@ def escrever_instancia(regioes, demanda, coleta, entrega, arquivo_saida):
         f.write(f"Q_ent {params_entrega['Q_ent']}\n")
         f.write(f"beta_ent {params_entrega['beta_ent']}\n")
         f.write(f"c_ent {params_entrega['c_ent']}\n")
+        f.write(f"Q_hub {params.Q_HUB}\n")
+        f.write(f"ckm_hub {params.CKM_HUB}\n")
+        f.write(f"c_hub {params.C_HUB}\n")
+
 
     print(f"Instância completa escrita em: {arquivo_saida}")
     print(f"  - {n} regiões")
     print(f"  - matriz de demanda {n}x{n}")
     print(f"  - matriz de custo de coleta {n}x{n}")
-    print(f"  - 6 parâmetros (gamma, T, rho_col, Q_col, beta_col, c_col)")
- 
- 
+    print(f"  - 7 parâmetros (gamma, T, rho_col, Q_col, beta_col, c_col, C_hub)")
+
+
 def main():
     regioes, demanda, coleta, entrega = carregar_jsons()
     escrever_instancia(regioes, demanda, coleta, entrega, paths.ARQUIVO_SAIDA_INSTANCIA)
