@@ -43,8 +43,12 @@ def escrever_instancia(regioes, demanda, coleta, entrega, arquivo_saida):
  
     matriz_demanda = demanda["matriz_demanda_Wij"]
     matriz_coleta = coleta["matriz_custo_coleta_C_col_ik"]
+    matriz_acesso_coleta = coleta["L_acesso_coleta_ik_km"]
+    matriz_interno_coleta = coleta["L_interno_coleta_ik_km"]
     matriz_entrega = entrega["matriz_custo_entrega_C_ent_ik"]
- 
+    matriz_acesso_entrega = entrega["L_acesso_entrega_jk_km"]
+    matriz_interno_entrega = entrega["L_interno_entrega_jk_km"]
+
     with open(arquivo_saida, "w", encoding="utf-8") as f:
         # 1. Tamanho da rede (n)
         f.write(f"{n}\n")
@@ -59,12 +63,23 @@ def escrever_instancia(regioes, demanda, coleta, entrega, arquivo_saida):
         # 3. Matriz de demanda (wij) — n x n
         for linha in matriz_demanda:
             f.write(" ".join(f"{v:.6f}" for v in linha) + "\n")
- 
-        # 4. Matriz de custo de coleta (C_col_ik) — n x n
+
         for linha in matriz_coleta:
             f.write(" ".join(f"{v:.6f}" for v in linha) + "\n")
 
+        for linha in matriz_acesso_coleta:
+            f.write(" ".join(f"{v:.6f}" for v in linha) + "\n")
+
+        for linha in matriz_interno_coleta:
+            f.write(" ".join(f"{v:.6f}" for v in linha) + "\n")
+
         for linha in matriz_entrega:
+            f.write(" ".join(f"{v:.6f}" for v in linha) + "\n")
+
+        for linha in matriz_acesso_entrega:
+            f.write(" ".join(f"{v:.6f}" for v in linha) + "\n")
+
+        for linha in matriz_interno_entrega:
             f.write(" ".join(f"{v:.6f}" for v in linha) + "\n")
 
         # 5. Parâmetros usados para gerar as duas matrizes acima
@@ -93,6 +108,9 @@ def escrever_instancia(regioes, demanda, coleta, entrega, arquivo_saida):
     print(f"  - {n} regiões")
     print(f"  - matriz de demanda {n}x{n}")
     print(f"  - matriz de custo de coleta {n}x{n}")
+    print(f"  - matriz de custo de entrega {n}x{n}")
+    print(f"  - matriz de custo interno de coleta {n}x{n}")
+    print(f"  - matriz de custo interno de entrega {n}x{n}")
     print(f"  - 7 parâmetros (gamma, T, rho_col, Q_col, beta_col, c_col, C_hub)")
 
 

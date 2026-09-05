@@ -1,10 +1,8 @@
 import os
 import unicodedata
-
 import pandas as pd
 import requests
 import configs.paths as paths
-
 
 CAMPO_AREA_MUNICIPIO = "Area_Urbana_2024"
 CAMPO_AREA_REGIAO = "Area_Urbana_Total"
