@@ -239,7 +239,30 @@ def calcular_custos(df_regioes, matriz_wij):
 
 def salvar_resultado(df_regioes, coleta, entrega):
     nomes = df_regioes["Região Intermediária"].tolist()
+    ordem_desejada = [
+    "São Paulo",
+    "Campinas",
+    "Sorocaba",
+    "Ribeirão Preto",
+    "São José dos Campos",
+    "São José do Rio Preto",
+    "Bauru",
+    "Araraquara",
+    "Marília",
+    "Presidente Prudente",
+    "Araçatuba",
+    ]
 
+    # Reordena o DataFrame segundo a lista
+    df_regioes["Região Intermediária"] = pd.Categorical(
+    df_regioes["Região Intermediária"],
+    categories=ordem_desejada,
+    ordered=True,
+    )
+    df_regioes = df_regioes.sort_values("Região Intermediária").reset_index(
+    drop=True
+    )
+    
     # Converte listas de dicionários em DataFrames
     df_col = pd.DataFrame(coleta)
     df_ent = pd.DataFrame(entrega)
