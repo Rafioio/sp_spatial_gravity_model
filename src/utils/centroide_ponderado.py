@@ -6,7 +6,9 @@ import pandas as pd
 import requests
 from geopy.geocoders import Nominatim
 from configs import paths
+import cloudscraper
 
+scraper = cloudscraper.create_scraper()
 
 def buscar_coordenadas_municipios(df_mun, arquivo_cache):
     """
@@ -85,6 +87,22 @@ def calcular_centroide_ponderado(df_mun):
     
     return df_final
 
+def buscar_json_com_diagnostico(url, headers, tentativas=3, timeout=15):
+    ultima_excecao = None
+    for tentativa in range(1, tentativas + 1):
+        try:
+            resp = scraper.get(url, headers=headers, timeout=timeout)
+            resp.raise_for_status()
+            if not resp.text.strip():
+                raise ValueError(f"Resposta vazia do servidor (status {resp.status_code})")
+            return resp.json()
+        except (Exception) as e:
+            ultima_excecao = e
+            print(f"[Tentativa {tentativa}/{tentativas}] Falha em {url}: {e}")
+            if tentativa < tentativas:
+                time.sleep(3)
+    raise ultima_excecao
+
 def main():
 
     paths.ensure_directories()
@@ -92,23 +110,27 @@ def main():
     arquivo_cache_coord = paths.ARQUIVO_MUNICIPIOS_SP
     arquivo_saida = paths.ARQUIVO_REGIOES_SP
 
-    headers = {"User-Agent": "modelo_gravitacional_sp"}
+    headers = {
+        "User-Agent": "Mozilla/5.0 (compatible; modelo_gravitacional_sp/1.0)",
+        "Accept": "application/json",
+    }
 
     try:
         print("1. Coletando Base de Municípios e População do IBGE...")
-        # Puxando População (Tabela 4709 - Censo 2022)
-        resp_pop = requests.get("https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2035/p/last/v/93", headers=headers).json()
+        resp_pop = buscar_json_com_diagnostico(
+            "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2035/p/last/v/93",
+            headers,
+        )
         chave_mun_cod = [k for k, v in resp_pop[0].items() if 'MUNICÍPIO (CÓDIGO)' in v.upper()][0]
-        
+
         df_pop = pd.DataFrame(resp_pop[1:])
         df_pop = df_pop[[chave_mun_cod, 'V']].rename(columns={chave_mun_cod: 'Cod_IBGE', 'V': 'Populacao'})
         df_pop['Populacao'] = pd.to_numeric(df_pop['Populacao'], errors='coerce').fillna(0).astype(int)
 
-        # Puxando Malha e Nomes
-        resp_local = requests.get(
+        resp_local = buscar_json_com_diagnostico(
             "https://servicodados.ibge.gov.br/api/v1/localidades/estados/35/municipios",
-            headers=headers,
-        ).json()
+            headers,
+        )
         lista_mun = [
             {
                 "Cod_IBGE": str(m["id"]),
@@ -120,19 +142,14 @@ def main():
 
     except requests.exceptions.ConnectionError as e:
         print("\n[ERRO FATAL DE CONEXÃO]")
-        print("Ocorreu uma falha de DNS ou o computador está sem Internet.")
         print(f"Detalhes técnicos: {e}")
-        sys.exit(1) # Encerra o programa de forma limpa
-
+        sys.exit(1)
     except requests.exceptions.Timeout:
         print("\n[ERRO DE TEMPO LIMITE]")
-        print("O servidor do IBGE demorou mais de 10 segundos a responder.")
-        print("O site pode estar em manutenção. Tente novamente mais tarde.")
         sys.exit(1)
-
-    except requests.exceptions.RequestException as e:
+    except (requests.exceptions.RequestException, ValueError) as e:
         print("\n[ERRO NA API DO IBGE]")
-        print(f"Ocorreu um problema ao comunicar com o servidor: {e}")
+        print(f"Ocorreu um problema ao comunicar com o servidor após várias tentativas: {e}")
         sys.exit(1)
 
     df_local = pd.DataFrame(lista_mun)
