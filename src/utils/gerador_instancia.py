@@ -67,16 +67,16 @@ def escrever_instancia(regioes, demanda, coleta, entrega, arquivo_saida):
         for linha in matriz_coleta:
             f.write(" ".join(f"{v:.6f}" for v in linha) + "\n")
 
-        for linha in matriz_acesso_coleta:
-            f.write(" ".join(f"{v:.6f}" for v in linha) + "\n")
-
-        for linha in matriz_interno_coleta:
-            f.write(" ".join(f"{v:.6f}" for v in linha) + "\n")
-
         for linha in matriz_entrega:
             f.write(" ".join(f"{v:.6f}" for v in linha) + "\n")
 
+        for linha in matriz_acesso_coleta:
+            f.write(" ".join(f"{v:.6f}" for v in linha) + "\n")
+
         for linha in matriz_acesso_entrega:
+            f.write(" ".join(f"{v:.6f}" for v in linha) + "\n")
+
+        for linha in matriz_interno_coleta:
             f.write(" ".join(f"{v:.6f}" for v in linha) + "\n")
 
         for linha in matriz_interno_entrega:
