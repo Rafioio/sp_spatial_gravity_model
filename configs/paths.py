@@ -16,6 +16,7 @@ INSTANCIAS_DIR = ROOT_DIR / "output" / "instancias"
 
 # Arquivos de entrada
 ARQUIVO_PLANILHA_AREA = DATA_DIR / "area_urbana_municipios_sp_2024.xlsx"
+ARQUIVO_PLANILHA_POPULACAO = DATA_DIR / "populacao_municipios_sp.csv"
 ARQUIVO_CENARIOS = INPUT_DIR / "cenarios.json"
 
 # Arquivos intermediários
