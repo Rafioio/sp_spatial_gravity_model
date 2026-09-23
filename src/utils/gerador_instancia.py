@@ -42,6 +42,7 @@ def escrever_instancia(regioes, demanda, coleta, entrega, arquivo_saida):
     n = len(nomes)
  
     matriz_demanda = demanda["matriz_demanda_Wij"]
+    
     matriz_coleta = coleta["matriz_custo_coleta_C_col_ik"]
     matriz_acesso_coleta = coleta["L_acesso_coleta_ik_km"]
     matriz_interno_coleta = coleta["L_interno_coleta_ik_km"]

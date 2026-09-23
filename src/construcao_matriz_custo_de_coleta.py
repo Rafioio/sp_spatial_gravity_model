@@ -238,41 +238,41 @@ def calcular_custos(df_regioes, matriz_wij):
     )
 
 def salvar_resultado(df_regioes, coleta, entrega):
-    nomes = df_regioes["Região Intermediária"].tolist()
     ordem_desejada = [
-    "São Paulo",
-    "Campinas",
-    "Sorocaba",
-    "Ribeirão Preto",
-    "São José dos Campos",
-    "São José do Rio Preto",
-    "Bauru",
-    "Araraquara",
-    "Marília",
-    "Presidente Prudente",
-    "Araçatuba",
+        "São Paulo", "Campinas", "Sorocaba", "Ribeirão Preto",
+        "São José dos Campos", "São José do Rio Preto", "Bauru",
+        "Araraquara", "Marília", "Presidente Prudente", "Araçatuba",
     ]
 
-    # Reordena o DataFrame segundo a lista
+    df_regioes = df_regioes.copy()
     df_regioes["Região Intermediária"] = pd.Categorical(
-    df_regioes["Região Intermediária"],
-    categories=ordem_desejada,
-    ordered=True,
+        df_regioes["Região Intermediária"], categories=ordem_desejada, ordered=True
     )
-    df_regioes = df_regioes.sort_values("Região Intermediária").reset_index(
-    drop=True
-    )
-    
-    # Converte listas de dicionários em DataFrames
+    df_regioes = df_regioes.sort_values("Região Intermediária").reset_index(drop=True)
+
+    nomes = df_regioes["Região Intermediária"].tolist()  # AGORA capturado depois de reordenar
+
     df_col = pd.DataFrame(coleta)
     df_ent = pd.DataFrame(entrega)
 
     # ============================================================
-    # 1. PROCESSAMENTO DE COLETA (Mapeamento correto de chaves_ik)
+    # 1. COLETA — pivot + reindex explícito na ordem de `nomes`
     # ============================================================
-    matriz_c_col = df_col.pivot(index="Regiao_i", columns="Hub_k", values="C_col_ik_reais_por_pacote").values.tolist()
-    matriz_l_int_col = df_col.pivot(index="Regiao_i", columns="Hub_k", values="L_interno_col_i_km").values.tolist()
-    matriz_l_ace_col = df_col.pivot(index="Regiao_i", columns="Hub_k", values="L_acesso_col_ik_km").values.tolist()
+    matriz_c_col = (
+        df_col.pivot(index="Regiao_i", columns="Hub_k", values="C_col_ik_reais_por_pacote")
+        .reindex(index=nomes, columns=nomes)
+        .values.tolist()
+    )
+    matriz_l_int_col = (
+        df_col.pivot(index="Regiao_i", columns="Hub_k", values="L_interno_col_i_km")
+        .reindex(index=nomes, columns=nomes)
+        .values.tolist()
+    )
+    matriz_l_ace_col = (
+        df_col.pivot(index="Regiao_i", columns="Hub_k", values="L_acesso_col_ik_km")
+        .reindex(index=nomes, columns=nomes)
+        .values.tolist()
+    )
 
     resultado_coleta = {
         "regioes": nomes,
@@ -292,11 +292,23 @@ def salvar_resultado(df_regioes, coleta, entrega):
     print(f"Matriz de custo de coleta salva em: {paths.ARQUIVO_MATRIZ_CUSTO_COLETA}")
 
     # ============================================================
-    # 2. PROCESSAMENTO DE ENTREGA (Mapeamento correto de chaves_jk)
+    # 2. ENTREGA — mesma correção
     # ============================================================
-    matriz_c_ent = df_ent.pivot(index="Regiao_j", columns="Hub_k", values="C_ent_kj_reais_por_pacote").values.tolist()
-    matriz_l_int_ent = df_ent.pivot(index="Regiao_j", columns="Hub_k", values="L_interno_ent_j_km").values.tolist()
-    matriz_l_ace_ent = df_ent.pivot(index="Regiao_j", columns="Hub_k", values="L_acesso_ent_kj_km").values.tolist()
+    matriz_c_ent = (
+        df_ent.pivot(index="Regiao_j", columns="Hub_k", values="C_ent_kj_reais_por_pacote")
+        .reindex(index=nomes, columns=nomes)
+        .values.tolist()
+    )
+    matriz_l_int_ent = (
+        df_ent.pivot(index="Regiao_j", columns="Hub_k", values="L_interno_ent_j_km")
+        .reindex(index=nomes, columns=nomes)
+        .values.tolist()
+    )
+    matriz_l_ace_ent = (
+        df_ent.pivot(index="Regiao_j", columns="Hub_k", values="L_acesso_ent_kj_km")
+        .reindex(index=nomes, columns=nomes)
+        .values.tolist()
+    )
 
     resultado_entrega = {
         "regioes": nomes,
@@ -314,7 +326,7 @@ def salvar_resultado(df_regioes, coleta, entrega):
     with open(paths.ARQUIVO_MATRIZ_CUSTO_ENTREGA, "w", encoding="utf-8") as f:
         json.dump(resultado_entrega, f, ensure_ascii=False, indent=4)
     print(f"Matriz de custo de entrega salva em: {paths.ARQUIVO_MATRIZ_CUSTO_ENTREGA}")
-
+    
 def main():
     df_regioes = ler_regioes(paths.ARQUIVO_REGIOES_SP)
     matriz_wij = ler_matriz_wij(paths.ARQUIVO_MATRIZ_DEMANDA, len(df_regioes))
