@@ -2,44 +2,45 @@ import json
 import configs.paths as paths
 import configs.params as params
 
-def carregar_jsons():
-    with open(paths.ARQUIVO_REGIOES_SP, "r", encoding="utf-8") as f:
+def carregar_jsons(nivel):
+    cfg = paths.NIVEIS_REGIOES[nivel]
+    saidas = paths.caminhos_saida(nivel)
+
+    with open(cfg["arquivo"], "r", encoding="utf-8") as f:
         regioes = json.load(f)
-    with open(paths.ARQUIVO_MATRIZ_DEMANDA, "r", encoding="utf-8") as f:
+    with open(saidas["demanda_json"], "r", encoding="utf-8") as f:
         demanda = json.load(f)
-    with open(paths.ARQUIVO_MATRIZ_CUSTO_COLETA, "r", encoding="utf-8") as f:
+    with open(saidas["coleta_json"], "r", encoding="utf-8") as f:
         coleta = json.load(f)
-    with open(paths.ARQUIVO_MATRIZ_CUSTO_ENTREGA, "r", encoding="utf-8") as f:
+    with open(saidas["entrega_json"], "r", encoding="utf-8") as f:
         entrega = json.load(f)
     return regioes, demanda, coleta, entrega
- 
- 
-def validar_consistencia(regioes, demanda, coleta, entrega):
-    """
-    Garante que os 4 arquivos se referem às mesmas 11 regiões, na mesma
-    ordem — senão a instância sairia com coordenadas e matrizes desalinhadas.
-    """
-    nomes_regioes = [r["Região Intermediária"] for r in regioes]
-    nomes_demanda = demanda["regioes"]
-    nomes_coleta = coleta["regioes"]
-    nomes_entrega = entrega["regioes"]
 
-    if nomes_regioes != nomes_demanda:
-        raise ValueError(
-            "A ordem/lista de regiões de regioes_sp.json não bate com "
-            "matriz_demanda.json. Confira se são da mesma execução do pipeline."
-        )
-    if nomes_regioes != nomes_coleta:
-        raise ValueError(
-            "A ordem/lista de regiões de regioes_sp.json não bate com "
-            "custo_coleta_sp.json. Confira se são da mesma execução do pipeline."
-        )
+
+def validar_consistencia(regioes, demanda, coleta, entrega, coluna_nome):
+    """
+    Garante que os 4 arquivos se referem às mesmas regiões, na mesma
+    ordem, senão a instância sairia com coordenadas e matrizes desalinhadas.
+    """
+    nomes_regioes = [r[coluna_nome] for r in regioes]
+
+    for rotulo, nomes in [
+        ("matriz_demanda", demanda["regioes"]),
+        ("matriz_custo_coleta", coleta["regioes"]),
+        ("matriz_custo_entrega", entrega["regioes"]),
+    ]:
+        if nomes_regioes != nomes:
+            raise ValueError(
+                f"A ordem/lista de regiões do arquivo de regiões não bate com "
+                f"{rotulo}. Confira se são da mesma execução do pipeline."
+            )
     return nomes_regioes
  
  
-def escrever_instancia(regioes, demanda, coleta, entrega, arquivo_saida):
-    nomes = validar_consistencia(regioes, demanda, coleta, entrega)
+def escrever_instancia(regioes, demanda, coleta, entrega, arquivo_saida, coluna_nome):
+    nomes = validar_consistencia(regioes, demanda, coleta, entrega, coluna_nome)
     n = len(nomes)
+    arquivo_saida.parent.mkdir(parents=True, exist_ok=True)
  
     matriz_demanda = demanda["matriz_demanda_Wij"]
     
@@ -115,7 +116,12 @@ def escrever_instancia(regioes, demanda, coleta, entrega, arquivo_saida):
     print(f"  - 7 parâmetros (gamma, T, rho_col, Q_col, beta_col, c_col, C_hub)")
 
 
-def main():
-    regioes, demanda, coleta, entrega = carregar_jsons()
-    escrever_instancia(regioes, demanda, coleta, entrega, paths.ARQUIVO_SAIDA_INSTANCIA)
+def main(nivel="intermediarias"):
+    cfg = paths.NIVEIS_REGIOES[nivel]
+
+    regioes, demanda, coleta, entrega = carregar_jsons(nivel)
+    n = len(regioes)
+    arquivo_saida = paths.INSTANCIAS_DIR / f"sp{n}_{nivel}_instancia_completa.txt"
+
+    escrever_instancia(regioes, demanda, coleta, entrega, arquivo_saida, cfg["coluna_nome"])
     return True
