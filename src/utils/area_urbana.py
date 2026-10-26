@@ -8,6 +8,17 @@ CAMPO_AREA_MUNICIPIO = "Area_Urbana_2024"
 CAMPO_AREA_REGIAO = "Area_Urbana_Total"
 HECTARES_POR_KM2 = 100.0
 
+NIVEIS = {
+    "intermediarias": {
+        "arquivo": paths.ARQUIVO_REGIOES_INTERMEDIARIAS_SP,
+        "chave": "Região Intermediária",
+    },
+    "imediatas": {
+        "arquivo": paths.ARQUIVO_REGIOES_IMEDIATAS_SP,
+        "chave": "Cod_Regiao_Imediata",
+    },
+}
+
 def normalizar_nome(nome):
     """Remove acentos e caixa para permitir casamento robusto de nomes de município."""
     if nome is None:
@@ -33,6 +44,8 @@ def buscar_mapa_municipio_regiao():
         {
             "Cod_IBGE": str(m["id"]),
             "Nome_Municipio": m["nome"],
+            "Cod_Regiao_Imediata": str(m["regiao-imediata"]["id"]),
+            "Região Imediata": m["regiao-imediata"]["nome"],
             "Região Intermediária": m["regiao-imediata"]["regiao-intermediaria"]["nome"],
         }
         for m in resp_local
@@ -95,60 +108,65 @@ def atualizar_municipios_sp(df_area, df_mapa):
     print(f"Atualizado: {paths.ARQUIVO_MUNICIPIOS_SP}")
     return df_municipios
 
+def atualizar_regioes_sp(df_area, df_mapa, nivel):
+    cfg = NIVEIS[nivel]
+    arquivo = cfg["arquivo"]
+    chave = cfg["chave"]
 
-def atualizar_regioes_sp(df_area, df_mapa):
-    if not os.path.exists(paths.ARQUIVO_REGIOES_SP):
-        print(f"Aviso: {paths.ARQUIVO_REGIOES_SP} não encontrado, pulando atualização de regiões.")
+    if not os.path.exists(arquivo):
+        print(f"Aviso: {arquivo} não encontrado, pulando atualização de regiões ({nivel}).")
         return None
 
-    # 1. Faz o cruzamento com o mapa e agrupa as áreas
+    # 1. Cruza a planilha com o mapa e agrupa as áreas pela chave do nível
     df_join = df_area.merge(df_mapa, on="Nome_Normalizado", how="left")
 
-    faltantes = df_join[df_join["Região Intermediária"].isna()]
+    faltantes = df_join[df_join[chave].isna()]
     if len(faltantes) > 0:
         print(f"Atenção: {len(faltantes)} município(s) da planilha não encontrados na API do IBGE:")
         print(faltantes["Nome_Municipio_Planilha"].tolist())
 
     df_area_por_regiao = (
-        df_join.dropna(subset=["Região Intermediária"])
-        .groupby("Região Intermediária")
+        df_join.dropna(subset=[chave])
+        .groupby(chave)
         .agg(**{CAMPO_AREA_REGIAO: (CAMPO_AREA_MUNICIPIO, "sum")})
         .reset_index()
     )
 
-    # 2. LÊ o arquivo antigo PRIMEIRO
-    df_regioes = pd.read_json(paths.ARQUIVO_REGIOES_SP)
+    # 2. Lê o arquivo de regiões
+    df_regioes = pd.read_json(arquivo)
 
-    # 3. DEPOIS de ler, apaga a coluna antiga se ela já existir
+    # 3. Remove a coluna antiga, se existir
     if CAMPO_AREA_REGIAO in df_regioes.columns:
         df_regioes = df_regioes.drop(columns=[CAMPO_AREA_REGIAO])
 
-    # 4. Faz o merge seguro com os novos dados
-    df_regioes = df_regioes.merge(df_area_por_regiao, on="Região Intermediária", how="left")
+    # 4. Garante o mesmo tipo na chave (read_json converte código para int)
+    df_regioes[chave] = df_regioes[chave].astype(str)
+    df_area_por_regiao[chave] = df_area_por_regiao[chave].astype(str)
+
+    df_regioes = df_regioes.merge(df_area_por_regiao, on=chave, how="left")
 
     faltantes_regiao = df_regioes[df_regioes[CAMPO_AREA_REGIAO].isna()]
     if len(faltantes_regiao) > 0:
         print(f"Atenção: {len(faltantes_regiao)} região(ões) sem área urbana total:")
-        print(faltantes_regiao["Região Intermediária"].tolist())
+        print(faltantes_regiao[chave].tolist())
 
-    # 5. Salva o arquivo atualizado
-    df_regioes.to_json(paths.ARQUIVO_REGIOES_SP, orient="records", force_ascii=False, indent=4)
-    print(f"Atualizado: {paths.ARQUIVO_REGIOES_SP}")
-    
+    # 5. Salva
+    df_regioes.to_json(arquivo, orient="records", force_ascii=False, indent=4)
+    print(f"Atualizado: {arquivo}")
+
     return df_regioes
 
 
 def main():
-
     df_area = ler_planilha_area(paths.ARQUIVO_PLANILHA_AREA)
     df_mapa = buscar_mapa_municipio_regiao()
 
     print("\n--- Atualizando municipios_sp.json ---")
     atualizar_municipios_sp(df_area, df_mapa)
 
-    print("\n--- Atualizando regioes_sp.json ---")
-    atualizar_regioes_sp(df_area, df_mapa)
+    for nivel in NIVEIS:
+        print(f"\n--- Atualizando regiões ({nivel}) ---")
+        atualizar_regioes_sp(df_area, df_mapa, nivel)
 
     print("\nConcluído.")
-    return True
-
+    return True 
