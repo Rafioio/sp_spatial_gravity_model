@@ -5,8 +5,7 @@ import pandas as pd
 from src.utils.calcular_distancia import calcular_distancia
 import configs.paths as paths
 import configs.params as params
- 
- 
+
 def ler_regioes(arquivo_regioes):
     """
     Lê o JSON de regiões. Espera as colunas:
@@ -46,7 +45,7 @@ def ler_matriz_wij(arquivo_json, n_esperado):
 
     return matriz_wij
  
-def calcular_custos(df_regioes, matriz_wij):
+def calcular_custos(df_regioes, matriz_wij, nome_coluna):
     """
     Calcula os custos unitários de coleta e entrega.
 
@@ -69,7 +68,7 @@ def calcular_custos(df_regioes, matriz_wij):
     Ai = df_regioes["Ai"].values
     lats = df_regioes["Latitude_Centroide"].values
     lons = df_regioes["Longitude_Centroide"].values
-    nomes = df_regioes["Região Intermediária"].values
+    nomes = df_regioes[nome_coluna].values
 
     # ============================================================
     # DISTÂNCIAS ENTRE TODAS AS REGIÕES
@@ -236,43 +235,18 @@ def calcular_custos(df_regioes, matriz_wij):
         pd.DataFrame(detalhes_coleta),
         pd.DataFrame(detalhes_entrega)
     )
-
-def salvar_resultado(df_regioes, coleta, entrega):
-    ordem_desejada = [
-        "São Paulo", "Campinas", "Sorocaba", "Ribeirão Preto",
-        "São José dos Campos", "São José do Rio Preto", "Bauru",
-        "Araraquara", "Marília", "Presidente Prudente", "Araçatuba",
-    ]
-
-    df_regioes = df_regioes.copy()
-    df_regioes["Região Intermediária"] = pd.Categorical(
-        df_regioes["Região Intermediária"], categories=ordem_desejada, ordered=True
+def _matriz(df, indice, valor, nomes):
+    return (
+        df.pivot(index=indice, columns="Hub_k", values=valor)
+        .reindex(index=nomes, columns=nomes)
+        .values.tolist()
     )
-    df_regioes = df_regioes.sort_values("Região Intermediária").reset_index(drop=True)
 
-    nomes = df_regioes["Região Intermediária"].tolist()  # AGORA capturado depois de reordenar
 
+def salvar_resultado(nomes, coleta, entrega, saidas):
+    saidas["pasta"].mkdir(parents=True, exist_ok=True)
     df_col = pd.DataFrame(coleta)
     df_ent = pd.DataFrame(entrega)
-
-    # ============================================================
-    # 1. COLETA — pivot + reindex explícito na ordem de `nomes`
-    # ============================================================
-    matriz_c_col = (
-        df_col.pivot(index="Regiao_i", columns="Hub_k", values="C_col_ik_reais_por_pacote")
-        .reindex(index=nomes, columns=nomes)
-        .values.tolist()
-    )
-    matriz_l_int_col = (
-        df_col.pivot(index="Regiao_i", columns="Hub_k", values="L_interno_col_i_km")
-        .reindex(index=nomes, columns=nomes)
-        .values.tolist()
-    )
-    matriz_l_ace_col = (
-        df_col.pivot(index="Regiao_i", columns="Hub_k", values="L_acesso_col_ik_km")
-        .reindex(index=nomes, columns=nomes)
-        .values.tolist()
-    )
 
     resultado_coleta = {
         "regioes": nomes,
@@ -282,33 +256,13 @@ def salvar_resultado(df_regioes, coleta, entrega):
             "beta_col": params.BETA_COL,
             "c_col": params.C_COL,
         },
-        "matriz_custo_coleta_C_col_ik": matriz_c_col,
-        "L_interno_coleta_ik_km": matriz_l_int_col,
-        "L_acesso_coleta_ik_km": matriz_l_ace_col,
+        "matriz_custo_coleta_C_col_ik": _matriz(df_col, "Regiao_i", "C_col_ik_reais_por_pacote", nomes),
+        "L_interno_coleta_ik_km": _matriz(df_col, "Regiao_i", "L_interno_col_i_km", nomes),
+        "L_acesso_coleta_ik_km": _matriz(df_col, "Regiao_i", "L_acesso_col_ik_km", nomes),
     }
-
-    with open(paths.ARQUIVO_MATRIZ_CUSTO_COLETA, "w", encoding="utf-8") as f:
+    with open(saidas["coleta_json"], "w", encoding="utf-8") as f:
         json.dump(resultado_coleta, f, ensure_ascii=False, indent=4)
-    print(f"Matriz de custo de coleta salva em: {paths.ARQUIVO_MATRIZ_CUSTO_COLETA}")
-
-    # ============================================================
-    # 2. ENTREGA — mesma correção
-    # ============================================================
-    matriz_c_ent = (
-        df_ent.pivot(index="Regiao_j", columns="Hub_k", values="C_ent_kj_reais_por_pacote")
-        .reindex(index=nomes, columns=nomes)
-        .values.tolist()
-    )
-    matriz_l_int_ent = (
-        df_ent.pivot(index="Regiao_j", columns="Hub_k", values="L_interno_ent_j_km")
-        .reindex(index=nomes, columns=nomes)
-        .values.tolist()
-    )
-    matriz_l_ace_ent = (
-        df_ent.pivot(index="Regiao_j", columns="Hub_k", values="L_acesso_ent_kj_km")
-        .reindex(index=nomes, columns=nomes)
-        .values.tolist()
-    )
+    print(f"Matriz de custo de coleta salva em: {saidas['coleta_json']}")
 
     resultado_entrega = {
         "regioes": nomes,
@@ -318,37 +272,36 @@ def salvar_resultado(df_regioes, coleta, entrega):
             "beta_ent": params.BETA_ENT,
             "c_ent": params.C_ENT,
         },
-        "matriz_custo_entrega_C_ent_ik": matriz_c_ent,
-        "L_interno_entrega_jk_km": matriz_l_int_ent,
-        "L_acesso_entrega_jk_km": matriz_l_ace_ent,
+        "matriz_custo_entrega_C_ent_ik": _matriz(df_ent, "Regiao_j", "C_ent_kj_reais_por_pacote", nomes),
+        "L_interno_entrega_jk_km": _matriz(df_ent, "Regiao_j", "L_interno_ent_j_km", nomes),
+        "L_acesso_entrega_jk_km": _matriz(df_ent, "Regiao_j", "L_acesso_ent_kj_km", nomes),
     }
-
-    with open(paths.ARQUIVO_MATRIZ_CUSTO_ENTREGA, "w", encoding="utf-8") as f:
+    with open(saidas["entrega_json"], "w", encoding="utf-8") as f:
         json.dump(resultado_entrega, f, ensure_ascii=False, indent=4)
-    print(f"Matriz de custo de entrega salva em: {paths.ARQUIVO_MATRIZ_CUSTO_ENTREGA}")
+    print(f"Matriz de custo de entrega salva em: {saidas['entrega_json']}")
     
-def main():
-    df_regioes = ler_regioes(paths.ARQUIVO_REGIOES_SP)
-    matriz_wij = ler_matriz_wij(paths.ARQUIVO_MATRIZ_DEMANDA, len(df_regioes))
- 
-    coleta, entrega, df_detalhes_coleta, df_detalhes_entrega = calcular_custos(df_regioes, matriz_wij)
- 
-    df_coleta = pd.DataFrame(coleta)
+def main(nivel="intermediarias"):
+    cfg = paths.NIVEIS_REGIOES[nivel]
+    saidas = paths.caminhos_saida(nivel)
+    coluna_nome = cfg["coluna_nome"]
 
-    # Cria a matriz 2D (Regiao_i x Hub_k) a partir das colunas da tabela
-    df_matriz = df_coleta.pivot(
-        index="Regiao_i", 
-        columns="Hub_k", 
-        values="C_col_ik_reais_por_pacote"
-    ).round(4)
+    df_regioes = ler_regioes(cfg["arquivo"])
+    nomes = df_regioes[coluna_nome].tolist()          # mesma ordem da matriz de demanda
+    matriz_wij = ler_matriz_wij(saidas["demanda_json"], len(df_regioes))
 
+    coleta, entrega, df_detalhes_coleta, df_detalhes_entrega = calcular_custos(
+        df_regioes, matriz_wij, coluna_nome
+    )
+
+    df_matriz = pd.DataFrame(coleta).pivot(
+        index="Regiao_i", columns="Hub_k", values="C_col_ik_reais_por_pacote"
+    ).reindex(index=nomes, columns=nomes).round(4)
     print("\n--- RESUMO: Custo unitário de coleta C^col_ik (R$/pacote) ---")
     print(df_matriz)
-    
-    salvar_resultado(df_regioes, coleta, entrega)
- 
-    df_detalhes_coleta.to_csv(paths.ARQUIVO_CUSTO_COLETA_CSV, index=False)
-    df_detalhes_entrega.to_csv(paths.ARQUIVO_CUSTO_ENTREGA_CSV, index=False)
-    print(f"Detalhamento linha a linha salvo em: {paths.ARQUIVO_CUSTO_COLETA_CSV}")
-    print(f"Detalhamento linha a linha salvo em: {paths.ARQUIVO_CUSTO_ENTREGA_CSV}")
+
+    salvar_resultado(nomes, coleta, entrega, saidas)
+
+    df_detalhes_coleta.to_csv(saidas["coleta_csv"], index=False)
+    df_detalhes_entrega.to_csv(saidas["entrega_csv"], index=False)
+    print(f"Detalhamento salvo em: {saidas['coleta_csv']} e {saidas['entrega_csv']}")
     return True
