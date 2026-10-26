@@ -61,37 +61,49 @@ def gerar_matriz_fluxo(df_dados, gamma, T):
                     
     return matriz_fluxo_normalizada
 
-def salvar_resultado(df_regioes, demanda):
-    nomes = df_regioes["Região Intermediária"].tolist()
+NIVEIS = {
+    "intermediarias": {
+        "coluna_nome": "Região Intermediária",
+        "entrada": paths.ARQUIVO_REGIOES_INTERMEDIARIAS_SP,
+        "saida_json": paths.ARQUIVO_MATRIZ_DEMANDA_INTERMEDIARIAS,
+        "saida_csv": paths.ARQUIVO_MATRIZ_DEMANDA_INTERMEDIARIAS_CSV,
+    },
+    "imediatas": {
+        "coluna_nome": "Região Imediata",
+        "entrada": paths.ARQUIVO_REGIOES_IMEDIATAS_SP,
+        "saida_json": paths.ARQUIVO_MATRIZ_DEMANDA_IMEDIATAS,
+        "saida_csv": paths.ARQUIVO_MATRIZ_DEMANDA_IMEDIATAS_CSV,
+    },
+}
+
+
+def salvar_resultado(nomes, demanda, caminho_json):
+    caminho_json.parent.mkdir(parents=True, exist_ok=True)
     resultado = {
         "regioes": nomes,
-        "parametros": {
-            "gamma": params.GAMMA,
-            "T": params.T,
-        },
+        "parametros": {"gamma": params.GAMMA, "T": params.T},
         "matriz_demanda_Wij": demanda.tolist(),
     }
-    with open(paths.ARQUIVO_MATRIZ_DEMANDA, "w", encoding="utf-8") as f:
+    with open(caminho_json, "w", encoding="utf-8") as f:
         json.dump(resultado, f, ensure_ascii=False, indent=4)
-    print(f"Matriz de demanda salva em: {paths.ARQUIVO_MATRIZ_DEMANDA}")
+    print(f"Matriz de demanda salva em: {caminho_json}")
 
-def main():
-    
-    if not os.path.exists(paths.ARQUIVO_REGIOES_SP):
-        print(f"Erro: Arquivo base {paths.ARQUIVO_REGIOES_SP} não encontrado.")
+
+def main(nivel="intermediarias"):
+    cfg = paths.NIVEIS_REGIOES[nivel]
+    saidas = paths.caminhos_saida(nivel)
+
+    if not os.path.exists(cfg["arquivo"]):
+        print(f"Erro: Arquivo base {cfg['arquivo']} não encontrado.")
         exit()
 
-    # Lê os dados processados
-    df_regioes = pd.read_json(paths.ARQUIVO_REGIOES_SP)
+    df_regioes = pd.read_json(cfg["arquivo"])
+    nomes = df_regioes[cfg["coluna_nome"]].tolist()
 
-    # Gera a instância limpa
     matriz_fluxo = gerar_matriz_fluxo(df_regioes, params.GAMMA, params.T)
 
-    salvar_resultado(df_regioes, matriz_fluxo)
-    regiões = df_regioes["Região Intermediária"].tolist()
+    salvar_resultado(nomes, matriz_fluxo, saidas["demanda_json"])
 
-    pd.DataFrame(matriz_fluxo, columns=regiões, index=regiões).to_csv(
-        paths.ARQUIVO_MATRIZ_DEMANDA_CSV,
-    )
-    print(f"Matriz de demanda detalhada salva em: {paths.ARQUIVO_MATRIZ_DEMANDA_CSV}")
+    pd.DataFrame(matriz_fluxo, columns=nomes, index=nomes).to_csv(saidas["demanda_csv"])
+    print(f"Matriz de demanda detalhada salva em: {saidas['demanda_csv']}")
     return True
