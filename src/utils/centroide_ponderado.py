@@ -47,37 +47,36 @@ def buscar_coordenadas_municipios(df_mun, arquivo_cache):
     df_mun['Latitude'] = lats
     df_mun['Longitude'] = lons
 
-    df_mun.to_json(arquivo_cache, orient="records", force_ascii=False, indent=4)
+    df_mun.to_json(arquivo_cache, orient=" ", force_ascii=False, indent=4)
     return df_mun
 
-
-def calcular_centroide_ponderado(df_mun):
-    """
-    Aplica a modelagem matemática exata:
+def calcular_centroide_ponderado(df_mun, colunas_grupo=("Região Imediata",)):
+    """ 
     lat_r = sum(Pop_m * lat_m) / sum(Pop_m)
     lon_r = sum(Pop_m * lon_m) / sum(Pop_m)
+    agrupando pelas colunas indicadas em `colunas_grupo`.
     """
-    print("\nCalculando os centroides ponderados por população...")
+    colunas_grupo = list(colunas_grupo)
+    print(f"\nCalculando centroides ponderados por população ({', '.join(colunas_grupo)})...")
 
     df_calc = df_mun.dropna(subset=['Latitude', 'Longitude']).copy()
 
     df_calc['Lat_Ponderada'] = df_calc['Latitude'] * df_calc['Populacao']
     df_calc['Lon_Ponderada'] = df_calc['Longitude'] * df_calc['Populacao']
 
-    df_regioes = df_calc.groupby('Região Intermediária').agg(
+    df_regioes = df_calc.groupby(colunas_grupo).agg(
+        N_Municipios=('Cod_IBGE', 'count'),
         Pop_Total=('Populacao', 'sum'),
         Soma_Lat_Pond=('Lat_Ponderada', 'sum'),
-        Soma_Lon_Pond=('Lon_Ponderada', 'sum')
+        Soma_Lon_Pond=('Lon_Ponderada', 'sum'),
     ).reset_index()
 
     df_regioes['Latitude_Centroide'] = df_regioes['Soma_Lat_Pond'] / df_regioes['Pop_Total']
     df_regioes['Longitude_Centroide'] = df_regioes['Soma_Lon_Pond'] / df_regioes['Pop_Total']
 
-    df_final = df_regioes[['Região Intermediária', 'Pop_Total', 'Latitude_Centroide', 'Longitude_Centroide']]
-    df_final = df_final.sort_values(by='Pop_Total', ascending=False).reset_index(drop=True)
-
-    return df_final
-
+    df_final = df_regioes[colunas_grupo + ['N_Municipios', 'Pop_Total',
+                                           'Latitude_Centroide', 'Longitude_Centroide']]
+    return df_final.sort_values(by='Pop_Total', ascending=False).reset_index(drop=True)
 
 def buscar_json_via_browser(url, browser, tentativas=3, timeout_ms=20000):
     """
@@ -132,7 +131,7 @@ def main():
     paths.ensure_directories()
 
     arquivo_cache_coord = paths.ARQUIVO_MUNICIPIOS_SP
-    arquivo_saida = paths.ARQUIVO_REGIOES_SP
+    path_saida = paths.DATA_REGIOES_DIR
 
     usar_csv = os.path.exists(paths.ARQUIVO_PLANILHA_POPULACAO) 
 
@@ -170,7 +169,9 @@ def main():
             {
                 "Cod_IBGE": str(m["id"]),
                 "Nome_Municipio": m["nome"],
+                "Cod_Regiao_Imediata": str(m["regiao-imediata"]["id"]),
                 "Região Intermediária": m["regiao-imediata"]["regiao-intermediaria"]["nome"],
+                "Região Imediata": m["regiao-imediata"]["nome"],
             }
             for m in resp_local
         ]
@@ -198,11 +199,30 @@ def main():
         df_com_coordenadas = buscar_coordenadas_municipios(df_completo_mun, arquivo_cache_coord)
 
     print("\n3. Aplicando Modelagem Matemática...")
-    df_centroides = calcular_centroide_ponderado(df_com_coordenadas)
 
-    print("\n--- RESULTADO FINAL: CENTROIDES PONDERADOS (CENTRO DE MASSA) ---")
-    print(df_centroides.to_string(index=False))
+    # Regiões intermediárias
+    df_intermediarias = calcular_centroide_ponderado(
+        df_com_coordenadas,
+        colunas_grupo=("Região Intermediária",),
+    )
+    print("\n--- CENTROIDES PONDERADOS: REGIÕES INTERMEDIÁRIAS ---")
+    print(df_intermediarias.to_string(index=False))
+    df_intermediarias.to_json(
+        paths.ARQUIVO_REGIOES_INTERMEDIARIAS_SP,
+        orient="records", force_ascii=False, indent=4,
+    )
 
-    df_centroides.to_json(arquivo_saida, orient="records", force_ascii=False, indent=4)
-    print(f"\nSucesso! Arquivo completo salvo em: {arquivo_saida}")
+    # Regiões imediatas
+    df_imediatas = calcular_centroide_ponderado(
+        df_com_coordenadas,
+        colunas_grupo=("Cod_Regiao_Imediata", "Região Imediata", "Região Intermediária"),
+    )
+    print("\n--- CENTROIDES PONDERADOS: REGIÕES IMEDIATAS ---")
+    print(df_imediatas.to_string(index=False))
+    df_imediatas.to_json(
+        paths.ARQUIVO_REGIOES_IMEDIATAS_SP,
+        orient="records", force_ascii=False, indent=4,
+    )
+
+    print(f"\nSucesso! Arquivos salvos em:\n  {paths.ARQUIVO_REGIOES_INTERMEDIARIAS_SP}\n  {paths.ARQUIVO_REGIOES_IMEDIATAS_SP}")
     return True
