@@ -16,7 +16,7 @@ def ler_regioes(arquivo_regioes):
     df = pd.read_json(arquivo_regioes)
  
     campo_area = None
-    for candidato in ["Area_Urbana_Total", "Ai", "Area_Urbana_2024"]:
+    for candidato in ["Area_Urbana_Regiao", "Ai", "Area_Urbana_2024"]:
         if candidato in df.columns:
             campo_area = candidato
             break
@@ -24,7 +24,7 @@ def ler_regioes(arquivo_regioes):
         raise ValueError(
             "Nenhuma coluna de área (Ai) encontrada em regioes_sp.json. "
             "Rode antes o script que adiciona a área urbana às regiões "
-            "(campo esperado: 'Area_Urbana_Total')."
+            "(campo esperado: 'Area_Urbana_Regiao')."
         )
  
     df = df.rename(columns={campo_area: "Ai"})

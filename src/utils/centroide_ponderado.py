@@ -198,6 +198,14 @@ def main():
         print("\n2. Iniciando Motor de Geocodificação (Nominatim)...")
         df_com_coordenadas = buscar_coordenadas_municipios(df_completo_mun, arquivo_cache_coord)
 
+    # Base por município (consumida depois por area_urbana.py, que adiciona
+    # Area_Urbana_Municipio e Area_Total_Municipio a este JSON).
+    df_com_coordenadas.to_json(
+        paths.ARQUIVO_MUNICIPIOS_SP,
+        orient="records", force_ascii=False, indent=4,
+    )
+    print(f"Base de municípios salva em: {paths.ARQUIVO_MUNICIPIOS_SP}")
+
     print("\n3. Aplicando Modelagem Matemática...")
 
     # Regiões intermediárias

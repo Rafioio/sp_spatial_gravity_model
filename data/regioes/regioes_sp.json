@@ -1,0 +1,532 @@
+[
+    {
+        "Cod_Regiao_Imediata":350001,
+        "Região Imediata":"São Paulo",
+        "Região Intermediária":"São Paulo",
+        "N_Municipios":39,
+        "Pop_Total":20731920,
+        "Latitude_Centroide":-23.616206436,
+        "Longitude_Centroide":-46.6219317531,
+        "Area_Urbana_Total":2417.3422612558
+    },
+    {
+        "Cod_Regiao_Imediata":350038,
+        "Região Imediata":"Campinas",
+        "Região Intermediária":"Campinas",
+        "N_Municipios":18,
+        "Pop_Total":3041424,
+        "Latitude_Centroide":-22.865150802,
+        "Longitude_Centroide":-47.1450822725,
+        "Area_Urbana_Total":1888.2029170932
+    },
+    {
+        "Cod_Regiao_Imediata":350003,
+        "Região Imediata":"Sorocaba",
+        "Região Intermediária":"Sorocaba",
+        "N_Municipios":22,
+        "Pop_Total":1835565,
+        "Latitude_Centroide":-23.4508594149,
+        "Longitude_Centroide":-47.4263870221,
+        "Area_Urbana_Total":992.1395634659
+    },
+    {
+        "Cod_Regiao_Imediata":350002,
+        "Região Imediata":"Santos",
+        "Região Intermediária":"São Paulo",
+        "N_Municipios":11,
+        "Pop_Total":1832340,
+        "Latitude_Centroide":-23.9633180597,
+        "Longitude_Centroide":-46.4456865119,
+        "Area_Urbana_Total":2417.3422612558
+    },
+    {
+        "Cod_Regiao_Imediata":350031,
+        "Região Imediata":"Ribeirão Preto",
+        "Região Intermediária":"Ribeirão Preto",
+        "N_Municipios":26,
+        "Pop_Total":1446059,
+        "Latitude_Centroide":-21.1927777307,
+        "Longitude_Centroide":-47.8724688366,
+        "Area_Urbana_Total":670.6392520913
+    },
+    {
+        "Cod_Regiao_Imediata":350049,
+        "Região Imediata":"São José dos Campos",
+        "Região Intermediária":"São José dos Campos",
+        "N_Municipios":8,
+        "Pop_Total":1086313,
+        "Latitude_Centroide":-23.1493550897,
+        "Longitude_Centroide":-45.918124193,
+        "Area_Urbana_Total":591.9596878617
+    },
+    {
+        "Cod_Regiao_Imediata":350039,
+        "Região Imediata":"Jundiaí",
+        "Região Intermediária":"Campinas",
+        "N_Municipios":9,
+        "Pop_Total":978943,
+        "Latitude_Centroide":-23.1644379042,
+        "Longitude_Centroide":-46.8895584123,
+        "Area_Urbana_Total":1888.2029170932
+    },
+    {
+        "Cod_Regiao_Imediata":350025,
+        "Região Imediata":"São José do Rio Preto",
+        "Região Intermediária":"São José do Rio Preto",
+        "N_Municipios":36,
+        "Pop_Total":940530,
+        "Latitude_Centroide":-20.8396245756,
+        "Longitude_Centroide":-49.4187019207,
+        "Area_Urbana_Total":472.4885592798
+    },
+    {
+        "Cod_Regiao_Imediata":350009,
+        "Região Imediata":"Bauru",
+        "Região Intermediária":"Bauru",
+        "N_Municipios":19,
+        "Pop_Total":649863,
+        "Latitude_Centroide":-22.3129159111,
+        "Longitude_Centroide":-49.0916354195,
+        "Area_Urbana_Total":425.3605285103
+    },
+    {
+        "Cod_Regiao_Imediata":350050,
+        "Região Imediata":"Taubaté - Pindamonhangaba",
+        "Região Intermediária":"São José dos Campos",
+        "N_Municipios":10,
+        "Pop_Total":620034,
+        "Latitude_Centroide":-22.9874510643,
+        "Longitude_Centroide":-45.4995850109,
+        "Area_Urbana_Total":591.9596878617
+    },
+    {
+        "Cod_Regiao_Imediata":350040,
+        "Região Imediata":"Piracicaba",
+        "Região Intermediária":"Campinas",
+        "N_Municipios":11,
+        "Pop_Total":613642,
+        "Latitude_Centroide":-22.756224711,
+        "Longitude_Centroide":-47.7596679021,
+        "Area_Urbana_Total":1888.2029170932
+    },
+    {
+        "Cod_Regiao_Imediata":350036,
+        "Região Imediata":"Araraquara",
+        "Região Intermediária":"Araraquara",
+        "N_Municipios":17,
+        "Pop_Total":595663,
+        "Latitude_Centroide":-21.7002436003,
+        "Longitude_Centroide":-48.3943470104,
+        "Area_Urbana_Total":335.4532221654
+    },
+    {
+        "Cod_Regiao_Imediata":350018,
+        "Região Imediata":"Presidente Prudente",
+        "Região Intermediária":"Presidente Prudente",
+        "N_Municipios":28,
+        "Pop_Total":525771,
+        "Latitude_Centroide":-22.1589983438,
+        "Longitude_Centroide":-51.4677138835,
+        "Area_Urbana_Total":265.1122332262
+    },
+    {
+        "Cod_Regiao_Imediata":350037,
+        "Região Imediata":"São Carlos",
+        "Região Intermediária":"Araraquara",
+        "N_Municipios":9,
+        "Pop_Total":505051,
+        "Latitude_Centroide":-21.9283951981,
+        "Longitude_Centroide":-47.7463845284,
+        "Area_Urbana_Total":335.4532221654
+    },
+    {
+        "Cod_Regiao_Imediata":350041,
+        "Região Imediata":"Bragança Paulista",
+        "Região Intermediária":"Campinas",
+        "N_Municipios":11,
+        "Pop_Total":493718,
+        "Latitude_Centroide":-22.9870893444,
+        "Longitude_Centroide":-46.5283056698,
+        "Area_Urbana_Total":1888.2029170932
+    },
+    {
+        "Cod_Regiao_Imediata":350033,
+        "Região Imediata":"Franca",
+        "Região Intermediária":"Ribeirão Preto",
+        "N_Municipios":10,
+        "Pop_Total":424174,
+        "Latitude_Centroide":-20.5390320415,
+        "Longitude_Centroide":-47.3883486384,
+        "Area_Urbana_Total":670.6392520913
+    },
+    {
+        "Cod_Regiao_Imediata":350032,
+        "Região Imediata":"Barretos",
+        "Região Intermediária":"Ribeirão Preto",
+        "N_Municipios":16,
+        "Pop_Total":416919,
+        "Latitude_Centroide":-20.6804534652,
+        "Longitude_Centroide":-48.6265769839,
+        "Area_Urbana_Total":670.6392520913
+    },
+    {
+        "Cod_Regiao_Imediata":350013,
+        "Região Imediata":"Marília",
+        "Região Intermediária":"Marília",
+        "N_Municipios":18,
+        "Pop_Total":380834,
+        "Latitude_Centroide":-22.1784070655,
+        "Longitude_Centroide":-49.9533487494,
+        "Area_Urbana_Total":303.9849699668
+    },
+    {
+        "Cod_Regiao_Imediata":350042,
+        "Região Imediata":"Limeira",
+        "Região Intermediária":"Campinas",
+        "N_Municipios":4,
+        "Pop_Total":357916,
+        "Latitude_Centroide":-22.5839643856,
+        "Longitude_Centroide":-47.3666958257,
+        "Area_Urbana_Total":1888.2029170932
+    },
+    {
+        "Cod_Regiao_Imediata":350004,
+        "Região Imediata":"Itapeva",
+        "Região Intermediária":"Sorocaba",
+        "N_Municipios":19,
+        "Pop_Total":344651,
+        "Latitude_Centroide":-24.0425953872,
+        "Longitude_Centroide":-48.8613602943,
+        "Area_Urbana_Total":992.1395634659
+    },
+    {
+        "Cod_Regiao_Imediata":350051,
+        "Região Imediata":"Caraguatatuba - Ubatuba - São Sebastião",
+        "Região Intermediária":"São José dos Campos",
+        "N_Municipios":4,
+        "Pop_Total":344383,
+        "Latitude_Centroide":-23.6181721082,
+        "Longitude_Centroide":-45.3741378718,
+        "Area_Urbana_Total":591.9596878617
+    },
+    {
+        "Cod_Regiao_Imediata":350043,
+        "Região Imediata":"Mogi Guaçu",
+        "Região Intermediária":"Campinas",
+        "N_Municipios":4,
+        "Pop_Total":329533,
+        "Latitude_Centroide":-22.3374973118,
+        "Longitude_Centroide":-46.9584981254,
+        "Area_Urbana_Total":1888.2029170932
+    },
+    {
+        "Cod_Regiao_Imediata":350010,
+        "Região Imediata":"Jaú",
+        "Região Intermediária":"Bauru",
+        "N_Municipios":12,
+        "Pop_Total":324768,
+        "Latitude_Centroide":-22.3123533741,
+        "Longitude_Centroide":-48.5161682057,
+        "Area_Urbana_Total":425.3605285103
+    },
+    {
+        "Cod_Regiao_Imediata":350022,
+        "Região Imediata":"Araçatuba",
+        "Região Intermediária":"Araçatuba",
+        "N_Municipios":14,
+        "Pop_Total":309596,
+        "Latitude_Centroide":-21.0786502367,
+        "Longitude_Centroide":-50.6003255467,
+        "Area_Urbana_Total":221.4611454679
+    },
+    {
+        "Cod_Regiao_Imediata":350052,
+        "Região Imediata":"Guaratinguetá",
+        "Região Intermediária":"São José dos Campos",
+        "N_Municipios":8,
+        "Pop_Total":306223,
+        "Latitude_Centroide":-22.8229127314,
+        "Longitude_Centroide":-45.1661200571,
+        "Area_Urbana_Total":591.9596878617
+    },
+    {
+        "Cod_Regiao_Imediata":350044,
+        "Região Imediata":"São João da Boa Vista",
+        "Região Intermediária":"Campinas",
+        "N_Municipios":9,
+        "Pop_Total":296445,
+        "Latitude_Centroide":-21.9443068138,
+        "Longitude_Centroide":-46.9369551119,
+        "Area_Urbana_Total":1888.2029170932
+    },
+    {
+        "Cod_Regiao_Imediata":350023,
+        "Região Imediata":"Birigui - Penápolis",
+        "Região Intermediária":"Araçatuba",
+        "N_Municipios":19,
+        "Pop_Total":273714,
+        "Latitude_Centroide":-21.3306641115,
+        "Longitude_Centroide":-50.2627477993,
+        "Area_Urbana_Total":221.4611454679
+    },
+    {
+        "Cod_Regiao_Imediata":350045,
+        "Região Imediata":"Araras",
+        "Região Intermediária":"Campinas",
+        "N_Municipios":4,
+        "Pop_Total":261405,
+        "Latitude_Centroide":-22.2796237262,
+        "Longitude_Centroide":-47.3120162562,
+        "Area_Urbana_Total":1888.2029170932
+    },
+    {
+        "Cod_Regiao_Imediata":350011,
+        "Região Imediata":"Botucatu",
+        "Região Intermediária":"Bauru",
+        "N_Municipios":9,
+        "Pop_Total":255289,
+        "Latitude_Centroide":-22.8707828735,
+        "Longitude_Centroide":-48.4617193258,
+        "Area_Urbana_Total":425.3605285103
+    },
+    {
+        "Cod_Regiao_Imediata":350005,
+        "Região Imediata":"Registro",
+        "Região Intermediária":"Sorocaba",
+        "N_Municipios":13,
+        "Pop_Total":251043,
+        "Latitude_Centroide":-24.5705871952,
+        "Longitude_Centroide":-47.856312622,
+        "Area_Urbana_Total":992.1395634659
+    },
+    {
+        "Cod_Regiao_Imediata":350026,
+        "Região Imediata":"Catanduva",
+        "Região Intermediária":"São José do Rio Preto",
+        "N_Municipios":16,
+        "Pop_Total":241118,
+        "Latitude_Centroide":-21.1523132394,
+        "Longitude_Centroide":-48.9194079518,
+        "Area_Urbana_Total":472.4885592798
+    },
+    {
+        "Cod_Regiao_Imediata":350006,
+        "Região Imediata":"Itapetininga",
+        "Região Intermediária":"Sorocaba",
+        "N_Municipios":6,
+        "Pop_Total":240959,
+        "Latitude_Centroide":-23.6397889214,
+        "Longitude_Centroide":-48.1468364747,
+        "Area_Urbana_Total":992.1395634659
+    },
+    {
+        "Cod_Regiao_Imediata":350046,
+        "Região Imediata":"Rio Claro",
+        "Região Intermediária":"Campinas",
+        "N_Municipios":5,
+        "Pop_Total":240644,
+        "Latitude_Centroide":-22.3780177347,
+        "Longitude_Centroide":-47.5804191219,
+        "Area_Urbana_Total":1888.2029170932
+    },
+    {
+        "Cod_Regiao_Imediata":350007,
+        "Região Imediata":"Avaré",
+        "Região Intermediária":"Sorocaba",
+        "N_Municipios":12,
+        "Pop_Total":234603,
+        "Latitude_Centroide":-23.2103014939,
+        "Longitude_Centroide":-49.0419296973,
+        "Area_Urbana_Total":992.1395634659
+    },
+    {
+        "Cod_Regiao_Imediata":350014,
+        "Região Imediata":"Assis",
+        "Região Intermediária":"Marília",
+        "N_Municipios":12,
+        "Pop_Total":234483,
+        "Latitude_Centroide":-22.6388350022,
+        "Longitude_Centroide":-50.4786897155,
+        "Area_Urbana_Total":303.9849699668
+    },
+    {
+        "Cod_Regiao_Imediata":350015,
+        "Região Imediata":"Ourinhos",
+        "Região Intermediária":"Marília",
+        "N_Municipios":11,
+        "Pop_Total":225711,
+        "Latitude_Centroide":-22.915575985,
+        "Longitude_Centroide":-49.7540649965,
+        "Area_Urbana_Total":303.9849699668
+    },
+    {
+        "Cod_Regiao_Imediata":350024,
+        "Região Imediata":"Andradina",
+        "Região Intermediária":"Araçatuba",
+        "N_Municipios":11,
+        "Pop_Total":194197,
+        "Latitude_Centroide":-20.8287945454,
+        "Longitude_Centroide":-51.2616039115,
+        "Area_Urbana_Total":221.4611454679
+    },
+    {
+        "Cod_Regiao_Imediata":350047,
+        "Região Imediata":"São José do Rio Pardo - Mococa",
+        "Região Intermediária":"Campinas",
+        "N_Municipios":7,
+        "Pop_Total":178448,
+        "Latitude_Centroide":-21.5478935366,
+        "Longitude_Centroide":-46.8865693321,
+        "Area_Urbana_Total":1888.2029170932
+    },
+    {
+        "Cod_Regiao_Imediata":350027,
+        "Região Imediata":"Votuporanga",
+        "Região Intermediária":"São José do Rio Preto",
+        "N_Municipios":12,
+        "Pop_Total":171884,
+        "Latitude_Centroide":-20.4043133771,
+        "Longitude_Centroide":-49.9610068174,
+        "Area_Urbana_Total":472.4885592798
+    },
+    {
+        "Cod_Regiao_Imediata":350008,
+        "Região Imediata":"Tatuí",
+        "Região Intermediária":"Sorocaba",
+        "N_Municipios":6,
+        "Pop_Total":167629,
+        "Latitude_Centroide":-23.3185954305,
+        "Longitude_Centroide":-47.9021572107,
+        "Area_Urbana_Total":992.1395634659
+    },
+    {
+        "Cod_Regiao_Imediata":350012,
+        "Região Imediata":"Lins",
+        "Região Intermediária":"Bauru",
+        "N_Municipios":8,
+        "Pop_Total":154124,
+        "Latitude_Centroide":-21.6321013648,
+        "Longitude_Centroide":-49.6987695017,
+        "Area_Urbana_Total":425.3605285103
+    },
+    {
+        "Cod_Regiao_Imediata":350053,
+        "Região Imediata":"Cruzeiro",
+        "Região Intermediária":"São José dos Campos",
+        "N_Municipios":9,
+        "Pop_Total":148770,
+        "Latitude_Centroide":-22.6088214537,
+        "Longitude_Centroide":-44.9052317455,
+        "Area_Urbana_Total":591.9596878617
+    },
+    {
+        "Cod_Regiao_Imediata":350034,
+        "Região Imediata":"São Joaquim da Barra ¿ Orlândia",
+        "Região Intermediária":"Ribeirão Preto",
+        "N_Municipios":6,
+        "Pop_Total":148066,
+        "Latitude_Centroide":-20.6310944176,
+        "Longitude_Centroide":-47.9661748446,
+        "Area_Urbana_Total":670.6392520913
+    },
+    {
+        "Cod_Regiao_Imediata":350020,
+        "Região Imediata":"Dracena",
+        "Região Intermediária":"Presidente Prudente",
+        "N_Municipios":12,
+        "Pop_Total":132622,
+        "Latitude_Centroide":-21.458741173,
+        "Longitude_Centroide":-51.6042502754,
+        "Area_Urbana_Total":265.1122332262
+    },
+    {
+        "Cod_Regiao_Imediata":350048,
+        "Região Imediata":"Amparo",
+        "Região Intermediária":"Campinas",
+        "N_Municipios":5,
+        "Pop_Total":131473,
+        "Latitude_Centroide":-22.6339341438,
+        "Longitude_Centroide":-46.7305193021,
+        "Area_Urbana_Total":1888.2029170932
+    },
+    {
+        "Cod_Regiao_Imediata":350019,
+        "Região Imediata":"Adamantina - Lucélia",
+        "Região Intermediária":"Presidente Prudente",
+        "N_Municipios":10,
+        "Pop_Total":130843,
+        "Latitude_Centroide":-21.6324047746,
+        "Longitude_Centroide":-51.0318833828,
+        "Area_Urbana_Total":265.1122332262
+    },
+    {
+        "Cod_Regiao_Imediata":350016,
+        "Região Imediata":"Tupã",
+        "Região Intermediária":"Marília",
+        "N_Municipios":8,
+        "Pop_Total":125835,
+        "Latitude_Centroide":-21.9074098664,
+        "Longitude_Centroide":-50.5911916892,
+        "Area_Urbana_Total":303.9849699668
+    },
+    {
+        "Cod_Regiao_Imediata":350029,
+        "Região Imediata":"Fernandópolis",
+        "Região Intermediária":"São José do Rio Preto",
+        "N_Municipios":11,
+        "Pop_Total":115774,
+        "Latitude_Centroide":-20.2213524724,
+        "Longitude_Centroide":-50.2920251023,
+        "Area_Urbana_Total":472.4885592798
+    },
+    {
+        "Cod_Regiao_Imediata":350035,
+        "Região Imediata":"Ituverava",
+        "Região Intermediária":"Ribeirão Preto",
+        "N_Municipios":6,
+        "Pop_Total":111606,
+        "Latitude_Centroide":-20.2537376777,
+        "Longitude_Centroide":-47.8215479609,
+        "Area_Urbana_Total":670.6392520913
+    },
+    {
+        "Cod_Regiao_Imediata":350028,
+        "Região Imediata":"Jales",
+        "Região Intermediária":"São José do Rio Preto",
+        "N_Municipios":18,
+        "Pop_Total":109875,
+        "Latitude_Centroide":-20.2647704882,
+        "Longitude_Centroide":-50.6287956653,
+        "Area_Urbana_Total":472.4885592798
+    },
+    {
+        "Cod_Regiao_Imediata":350021,
+        "Região Imediata":"Presidente Epitácio-Presidente Venceslau",
+        "Região Intermediária":"Presidente Prudente",
+        "N_Municipios":5,
+        "Pop_Total":88009,
+        "Latitude_Centroide":-21.8657830044,
+        "Longitude_Centroide":-52.0058254657,
+        "Area_Urbana_Total":265.1122332262
+    },
+    {
+        "Cod_Regiao_Imediata":350017,
+        "Região Imediata":"Piraju",
+        "Região Intermediária":"Marília",
+        "N_Municipios":5,
+        "Pop_Total":56372,
+        "Latitude_Centroide":-23.2633311212,
+        "Longitude_Centroide":-49.4253626959,
+        "Area_Urbana_Total":303.9849699668
+    },
+    {
+        "Cod_Regiao_Imediata":350030,
+        "Região Imediata":"Santa Fé do Sul",
+        "Região Intermediária":"São José do Rio Preto",
+        "N_Municipios":7,
+        "Pop_Total":54464,
+        "Latitude_Centroide":-20.2362004747,
+        "Longitude_Centroide":-50.9298309023,
+        "Area_Urbana_Total":472.4885592798
+    }
+]
