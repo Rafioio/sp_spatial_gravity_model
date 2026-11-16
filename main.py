@@ -3,6 +3,7 @@ from src.construcao_matriz_demanda import main as construcao_matriz_demanda
 from src.utils.area_urbana import main as area_urbana
 from src.construcao_matriz_custo_de_coleta import main as construcao_custo_de_coleta
 from src.utils.gerador_instancia import main as gerar_instancia
+from src.utils.demanda_regioes_municipios import main as demanda_regioes_municipios
 
 NIVEIS = ["intermediarias", "imediatas"]
 
@@ -18,6 +19,10 @@ def main():
         construcao_matriz_demanda(nivel)
         construcao_custo_de_coleta(nivel)
         gerar_instancia(nivel)
+
+    # Depende das matrizes de demanda dos dois níveis (e escreve nos JSONs de
+    # regiões e municípios recriados por centroide_ponderado/area_urbana)
+    demanda_regioes_municipios(NIVEIS)
 
     print("\nFluxo concluído com sucesso!")
 

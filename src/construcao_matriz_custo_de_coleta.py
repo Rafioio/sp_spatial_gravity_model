@@ -16,15 +16,17 @@ def ler_regioes(arquivo_regioes):
     df = pd.read_json(arquivo_regioes)
  
     campo_area = None
-    for candidato in ["Area_Urbana_Regiao", "Ai", "Area_Urbana_2024"]:
+
+    # ultilizando a Área Total da Regiao
+    for candidato in ["Area_Total_Regiao"]:
         if candidato in df.columns:
             campo_area = candidato
             break
     if campo_area is None:
         raise ValueError(
             "Nenhuma coluna de área (Ai) encontrada em regioes_sp.json. "
-            "Rode antes o script que adiciona a área urbana às regiões "
-            "(campo esperado: 'Area_Urbana_Regiao')."
+            "Rode antes o script que adiciona a área às regiões "
+            "(campo esperado: 'Area_Total_Regiao')."
         )
  
     df = df.rename(columns={campo_area: "Ai"})
@@ -105,7 +107,8 @@ def calcular_custos(df_regioes, matriz_wij, nome_coluna):
             continue
 
         # Passo 2
-        N_col_i = O[i] / params.RHO_COL
+        #N_col_i = O[i] / params.RHO_COL
+        N_col_i = df_regioes["N_Municipios"].iloc[i]  # Número de municípios na região i (já calculado no passo 2)
 
         # Passo 3
         R_col_i = ceil(O[i] / params.Q_COL)
@@ -177,7 +180,8 @@ def calcular_custos(df_regioes, matriz_wij, nome_coluna):
             continue
 
         # Número de paradas de entrega
-        N_ent_j = D[j] / params.RHO_ENT
+        #N_ent_j = D[j] / params.RHO_ENT
+        N_ent_j = df_regioes["N_Municipios"].iloc[j]
 
         # Número de rotas de entrega
         R_ent_j = ceil(D[j] / params.Q_ENT)
